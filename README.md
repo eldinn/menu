@@ -1,2 +1,3 @@
 # menu
-Scène d'intro avant d'arriver au menu + menu interactif de selection des 5 parties
+Scène d'intro avant d'arriver au menu + menu interactif de sélection des 5 parties
+Introcuction of story + interactive menu 
