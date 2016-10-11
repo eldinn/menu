@@ -1,5 +1,5 @@
-# menu
-Scène d'intro avant d'arriver au menu 
+# Menu
++ Scène d'intro avant d'arriver au menu 
 + menu interactif de sélection des 5 parties
 
 # Bref résumé du projet
