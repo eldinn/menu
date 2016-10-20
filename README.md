@@ -1,6 +1,7 @@
-# Menu
-+ Scène d'intro avant d'arriver au menu 
-+ menu interactif de sélection des 5 parties
+# Eyjar i Eldinn
+Contenu de ce depot :
++le menu de séléction des 5 parties
++les 5 parties et leurs chapitres
 
 # Bref résumé du projet
 Eyjar i Eldinn est un récit dans un univers fantastique, qui est découpé en différentes parties, celles-ci accessibles via l'interaction avec des scènes illustrées (clics sur des objets, déplacements, etc.).
