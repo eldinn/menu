@@ -7,6 +7,7 @@
 html,body{
   height:100%;
   background-color: #1D010F;
+  overflow: hidden;
 }
 
 /*-----------------------------------------*/
@@ -109,6 +110,60 @@ animation-iteration-count: infinite;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 115%;
+  /*z-index: 1;*/
+}
+
+
+
+/*-----------------------------------------*/
+/*   LUMIERE                          */
+/*-----------------------------------------------------------*/
+.lux{
+  position: absolute;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f4e5ad+0,f9d74f+12,ee8623+43,7db9e8+100&1+0,0+76,0+100 */
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(244,229,173,1) 0%, rgba(249,215,79,0.84) 12%, rgba(238,134,35,0.43) 43%, rgba(173,164,149,0) 76%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(244,229,173,1) 0%,rgba(249,215,79,0.84) 12%,rgba(238,134,35,0.43) 43%,rgba(173,164,149,0) 76%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center,  rgba(244,229,173,1) 0%,rgba(249,215,79,0.84) 12%,rgba(238,134,35,0.43) 43%,rgba(173,164,149,0) 76%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4e5ad', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.luxD{
+  width: 38%;
+  height: 32%;
+  margin-top: -1% ;
+  margin-left: 50%;
+  -webkit-transform: skew(-52deg);
+  -moz-transform: skew(-52deg);
+  transform: skew(-52deg);
+
+  -webkit-animation: animLuxD linear 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+}
+@-webkit-keyframes animLuxD {
+  0% {opacity:1;}
+  50% {opacity: 0.36;}
+  100% {opacity: 1;}
+}
+
+
+.luxG{
+  width: 26%;
+  height: 30%;
+  margin-top: 8% ;
+  margin-left: 10%;
+  -webkit-transform: skew(56deg);
+  -moz-transform: skew(56deg);
+  transform: skew(56deg);
+
+  -webkit-animation: animLuxG linear 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+}
+@-webkit-keyframes animLuxG {
+  0% {opacity:0.24;}
+  50% {opacity: 1;}
+  100% {opacity: 0.24;}
 }
 
 
@@ -181,6 +236,14 @@ opacity:0;
 	display: inline-block;
 	float: left;
 }
+#cristaux .containerElemt{
+  width: 52%;
+  height: 118%;
+  }
+  #cristaux .containerElemt img{
+  width: 100%;
+  }
+
 #portail{
 	width: 38%;
 	height: 15%;
@@ -211,6 +274,7 @@ opacity:0;
 	height: 100%;
 	display: inline-block;
 	float: left;
+  z-index: 1;
 
 }
 #UIg{
@@ -280,7 +344,7 @@ opacity:0;
 	height: 100%;
 	display: inline-block;
 	float: right;
-	z-index: 1;
+	/*z-index: 1;*/
 
 }
 #UId{
@@ -433,20 +497,6 @@ white-space: nowrap;
 color:#DDD;
 }
 
-
-.containerElemt .tooltip:after {
-position: absolute; 
-top: 50%; 
-left: 20%; 
-height: 0; 
-width: 0;
-border: 6px solid transparent; 
-border-top: 6px solid rgba(0, 0, 30, 0.5);
-/*content: "Awesome!"; */
-white-space: nowrap; 
-color:#DDD;
-}
-
 .containerElemt:hover .tooltip {
 opacity: 1; top: -10px;
 }
@@ -456,12 +506,21 @@ opacity: 1; top: -10px;
 
 
 /****    Partie 2   ******/
-
-
+#partie2 .tooltip{
+  top: -20px; 
+}
+#partie2:hover .tooltip{
+  top: -47px;
+}
 
 /****    Partie 3   ******/
-
-
+#partie4 .tooltip{
+  top: -20px; 
+  left: 29px;
+}
+#partie4:hover .tooltip{
+  top: -52px;
+}
 
 /****    Partie 4   ******/
 
@@ -675,6 +734,19 @@ opacity: 1; top: -10px;
 
 
 @media screen and (max-aspect-ratio : 4/3) {
+
+.luxD{
+  margin-top: 4% ;
+}
+.luxG{
+  width: 37%;
+  height: 16%;
+  margin-top: 29% ;
+  margin-left: 14%;
+  -webkit-transform: skew(61deg);
+  -moz-transform: skew(61deg);
+  transform: skew(61deg);
+}
 
 
 #blocMenu{
