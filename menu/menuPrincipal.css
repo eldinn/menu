@@ -8,6 +8,7 @@ html,body{
   height:100%;
   background-color: #1D010F;
   overflow: hidden;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*-----------------------------------------*/
@@ -182,6 +183,7 @@ animation-iteration-count: infinite;
 .containerElemt {
 position:relative; 
 width: 100%;
+  cursor:pointer;
 }
 .containerElemt img {
 position:absolute; 
@@ -200,6 +202,7 @@ opacity:0;
 position:relative; 
 width: 100%;
 height: 100%;
+cursor:pointer;
 }
 .containerElemtF img {
 position:absolute; 
@@ -318,6 +321,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .containerMenu {
 position:relative; 
 width: 100%;
+cursor:pointer;
 
 }
 .containerMenu img {
@@ -390,6 +394,9 @@ opacity:0;
   bottom: 0;
 }
 
+.containerVue1, .containerVue2{
+  cursor:pointer;
+}
 .containerVue1 img {
 position:absolute; 
 width: 100%;
@@ -767,6 +774,7 @@ opacity: 1; top: -10px;
 }
 .containerElemt img {
 width: 60%;
+
 }
 
 #fractures{
