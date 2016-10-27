@@ -5,14 +5,19 @@
 }
 
 html,body{
-  height:100%;
-  background-color: #16000b;
+  width: 100%;
+  /*height:100%;*/
+  background-color: #01060F;
     font-family: 'Roboto', sans-serif;
 }
 
 #bodySkroll{
   width: 100%;
-  height: 100%;
+  /*height: 500%;*/
+  background-image: url(imgIntro/Space.png);
+  background-repeat: repeat;
+
+  /*background-size: 100%;*/
   /*position: absolute;*/
   z-index: 0;
   /*top: 0;*/
@@ -103,6 +108,12 @@ animation-iteration-count: infinite;
 .space200{
   min-height: 200px;
 }
+.space300{
+  min-height: 300px;
+}
+.space500{
+  min-height: 500px;
+}
 .space1000{
   min-height: 1000px;
 }
@@ -134,17 +145,18 @@ animation-iteration-count: infinite;
   margin: 0 auto;
   position: relative;
 }
-.bleue{
+.vortasgoth{
   width: 40%;
   margin-top: -230px;
   display: block;
 }
-.rouge{
-  margin: 50px 0px 0px 800px;
+.husphel{
+  width: 15%;
+  margin: 50px 0px 0px 750px;
   display: block;
 
 }
-.violet{
+.nune{
   width: 2%;
   margin: -90px 0px 0px 900px;
   display: block;
@@ -178,7 +190,7 @@ animation-iteration-count: infinite;
 .containerTerre{
   width: 100%;
   height: 2000px;
-  margin-top: -410px;
+  margin-top: -575px;
 
   overflow: hidden;
 }
@@ -194,7 +206,7 @@ animation-iteration-count: infinite;
   width: 100%;
 
 }*/
-.repereTest{
+/*.repereTest{
   margin-top: 200px;
 
 }
@@ -202,4 +214,116 @@ animation-iteration-count: infinite;
   width: 20%;
   height: 40%;
   background-color: #000;
+}
+*/
+
+
+
+/*-----------------------------------------*/
+/*    SCENE 3 : IMMERSION                         */
+/*-----------------------------------------------------------*/
+.scene3{
+  width: 100%;
+}
+.planeteS3{
+  width: 1000px;
+  height: 1200px;
+  /*min-height: 200px;*/
+  margin: 0 auto;
+  position: relative;
+}
+.ebes{
+  width: 79%;
+  margin-left: -500px;
+  display: block;
+}
+.tintyph{
+  width: 26%;
+  margin: -550px 0px 0px 0px;
+  display: block;
+}
+.eldinn{
+  /*width: 26%;*/
+  margin: -250px 0px 0px 240px;
+  display: block;
+}
+.roack{
+  width: 10%;
+  margin: 290px 0px 0px 795px;
+  display: block;
+}
+.nox{
+  width: 30%;
+  margin: 90px 0px 0px 400px;
+  display: block;
+}
+
+.blocHistoire{
+  width: 1000px;
+  margin: 0 auto;
+  z-index: 1;
+}
+#boxHistoire{
+  width: 1000px;
+  height: 385px;
+  /*background-color: #fff;*/
+  padding: 30px 10px;
+  margin: 0 auto;
+  background-image: url(imgIntro/boxHistoire.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  /*position: relative;*/
+}
+#boxHistoire img{
+    width: 3%;
+    margin: 0 auto;
+    display: block;
+    padding-top: 110px;
+    padding-bottom: 20px;
+}
+#boxHistoire p{
+  font-size: 20px;
+  width: 50%;
+  height: 25%;
+  overflow: hidden;
+  margin: 0 auto;
+  /*padding-top: 160px;*/
+    /*display: block;*/
+}
+
+/*-----------------------------------------*/
+/*    SCENE 4 : FLUX                         */
+/*-----------------------------------------------------------*/
+.scene4{
+  width: 100%;
+}
+.blocFluxS4{
+  margin-top: -100px;
+}
+.fluxS4{
+  width: 1000px;
+  height: 1200px;
+  /*min-height: 200px;*/
+  margin: 0 auto;
+  /*position: relative;*/
+  z-index: 0;
+}
+.fluxS4 img{
+  width: 30px;
+  padding-right: 150px;
+}
+
+
+/*-----------------------------------------*/
+/*    SCENE 5 : PORTAIL (fin)                         */
+/*-----------------------------------------------------------*/
+.scene5{
+  width: 100%;
+}
+.blocPortail{
+  width: 1000px;
+  height: 1200px;
+  /*min-height: 200px;*/
+  margin: 0 auto;
+  position: relative;
 }
