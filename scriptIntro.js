@@ -48,6 +48,52 @@ jQuery(document).ready(function($)
 // };
 
 /********************************************************   
+----- - SMOOTH SCROLL -   ---- 
+******************************************************/
+
+var smoothScroll = {
+    speed: 0,
+    delay: 10, // en ms
+    timer: null,
+    scrollSpeed: 4,
+    inertia: 0.95,
+    init: function(){
+        this.setEventsListeners();
+    },
+    setEventsListeners: function(){
+        var me = this;
+        $(document).bind('DOMMouseScroll mousewheel', function(e){
+            me.setSpeed(e.originalEvent);
+        });
+	 },
+    setSpeed: function(e){
+        var direction = e.detail ? -e.detail : e.wheelDelta;
+    	this.speed += direction < 0 ? -this.scrollSpeed : this.scrollSpeed;
+    	if(this.timer == null){
+    		this.timer = setTimeout(this.smoothScroll, this.delay, this); 
+    	}
+    	e.preventDefault();
+    },
+    smoothScroll: function(scope){
+		var self = scope;
+    	self.speed *= self.inertia;
+
+        var currScrollTop = $(window).scrollTop();
+        $(window).scrollTop(currScrollTop-self.speed);
+
+    	if(self.speed < self.inertia && self.speed > -self.inertia){
+    		self.speed = 0;
+    		clearTimeout(self.timer);
+    		self.timer = null;
+    	}else{
+    		self.timer = setTimeout(self.smoothScroll, self.delay, self);
+    	}
+    }
+}
+
+smoothScroll.init();
+
+/********************************************************   
 ----- - DEFILEMENT FLECHES -   ---- 
 ******************************************************/
 
@@ -96,29 +142,42 @@ jQuery(document).ready(function($)
 
 
 /* Scroll*/
+
 	$(function () { // wait for document ready
 		// build tween
-		var tween = new TimelineMax ()
-			.add([
-				TweenMax.fromTo(".vortasgoth", 1, {marginTop: "-10"} ,{marginTop: "-2500", ease: Linear.easeNone}),
-				TweenMax.fromTo(".husphel", 1, {marginTop: "100"}, {marginTop: "-1500", ease: Linear.easeNone}),
-				TweenMax.fromTo(".nune", 1, {marginTop: "100"}, {marginTop: "-1000", ease: Linear.easeNone}),
-				TweenMax.to("#bodySkroll", 1, {backgroundPosition: "50% 100%", ease: Linear.easeNone})
-			]);
+		var tween = TweenMax.to("#bodySkroll", 1, {backgroundPosition: "50% 50%", ease: Linear.easeNone});
 
 		// build scene
-		var scene3 = new ScrollMagic.Scene({triggerElement: 'body', duration: 7200})
+		var scene = new ScrollMagic.Scene({triggerElement: 'body', duration: 7200})
 						.setTween(tween)
 						// .setPin("#bodySkroll")
 						.addIndicators({name: "parallaxe"}) // add indicators (requires plugin)
 						.addTo(controller);
 	});
+/*
+	$(function () { // wait for document ready
+		// build tween
+		var tween2 = new TimelineMax ()
+			.add([
+				// TweenMax.fromTo(".bleue", 1, {marginTop: "-150"} ,{marginTop: "-1400", ease: Linear.easeNone}),
+			TweenMax.to(".vortasgoth", 1, {marginTop: "100", ease: Linear.easeNone}),
+			TweenMax.to(".husphel", 1, {marginTop: "50", ease: Linear.easeNone}),
+			TweenMax.to(".nune", 1, {marginTop: "50", ease: Linear.easeNone})
+				// TweenMax.to("#bodySkroll", 1, {backgroundPosition: "50% 100%", ease: Linear.easeNone})
+			]);
 
+		// build scene
+		var scene4 = new ScrollMagic.Scene({triggerElement: '.planeteS1', duration: 1200})
+						.setTween(tween2)
+						// .setPin("#bodySkroll")
+						.addIndicators({name: "planetes"}) // add indicators (requires plugin)
+						.addTo(controller);
+	});
 
-
+*/
 /*Event texte 1 */
 	$(function () {
-	var scene1 = new ScrollMagic.Scene({
+	var scene2 = new ScrollMagic.Scene({
 		triggerElement: "#repereBlocText"
 		})
 		// trigger a TweenMax.to tween
@@ -128,7 +187,7 @@ jQuery(document).ready(function($)
 		.addTo(controller);
 
 
-	var scene2 = new ScrollMagic.Scene({
+	var scene3 = new ScrollMagic.Scene({
 		triggerElement: "#repereBlocText2"
 		})
 		// trigger a TweenMax.to tween
@@ -144,19 +203,21 @@ jQuery(document).ready(function($)
 /*Event mouvement planetes scene 3*/
 	$(function () { // wait for document ready
 		// build tween
-		var tween2 = new TimelineMax ()
+		var tween3 = new TimelineMax ()
 			.add([
 				// TweenMax.fromTo(".bleue", 1, {marginTop: "-150"} ,{marginTop: "-1400", ease: Linear.easeNone}),
 				TweenMax.to(".tintyph", 1, {marginTop: "-100px", ease: Linear.easeNone}),
-				TweenMax.to(".eldinn", 1, {marginTop: "100px", ease: Linear.easeNone}),
-				TweenMax.to(".roack", 1, {marginTop: "150px", ease: Linear.easeNone}),
-				TweenMax.to(".nox", 1, {marginTop: "-300px", ease: Linear.easeNone})
+				TweenMax.to(".eldinn", 1, {marginTop: "100px", marginLeft: "100px", ease: Linear.easeNone}),
+				TweenMax.to(".roack", 1, {marginTop: "250px", marginRight: "50px", ease: Linear.easeNone}),
+				TweenMax.to(".nox", 1, {marginTop: "-500px", ease: Linear.easeNone}),
+				TweenMax.to("#flux1S3", 1, {height:"1500px"}),
+				TweenMax.to("#flux2S3", 1, {height:"1500px"})
 				// TweenMax.to("#bodySkroll", 1, {backgroundPosition: "50% 100%", ease: Linear.easeNone})
 			]);
 
 		// build scene
 		var scene4 = new ScrollMagic.Scene({triggerElement: '.blocPlaneteS3', duration: 1200})
-						.setTween(tween2)
+						.setTween(tween3)
 						// .setPin("#bodySkroll")
 						.addIndicators({name: "parallaxe2"}) // add indicators (requires plugin)
 						.addTo(controller);
@@ -166,18 +227,19 @@ jQuery(document).ready(function($)
 /*Event 4 flux*/
 	$(function () {
 
-		var tween3 = new TimelineMax ()
+		var tween4 = new TimelineMax ()
 			.add([
-				TweenMax.fromTo("#flux1", 1, {height: "0px"}, {height:"1200px"}),
-				TweenMax.fromTo("#flux2", 1, {height: "0px"}, {height:"1200px"}),
-				TweenMax.fromTo("#flux3", 1, {height: "0px"}, {height:"1200px"}),
-				TweenMax.fromTo("#flux4", 1, {height: "0px"}, {height:"1200px"})
+				TweenMax.to("#flux1S4", 1, {height:"1500px"}),
+				TweenMax.to("#flux2", 1, {height:"1500px"}),
+				TweenMax.to("#flux3", 1, {height:"1500px"}),
+				TweenMax.to("#flux4", 1, {height:"1500px"})
 			]);
 
 
-		var scene5 = new ScrollMagic.Scene({triggerElement: ".fluxS4", duration: 1500, offset: 50})
-					.setTween(tween3)
+		var scene5 = new ScrollMagic.Scene({triggerElement: ".fluxS4", duration: 1700, offset: 50})
+					.setTween(tween4)
 					.addIndicators({name: "width++"}) // add indicators (requires plugin)
 					.addTo(controller);
 
 	});
+

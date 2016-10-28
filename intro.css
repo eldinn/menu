@@ -137,7 +137,9 @@ animation-iteration-count: infinite;
 .scene1{
   width: 100%;
 }
-
+#repereBlocText{
+  margin-top: -32px;
+}
 .planeteS1{
   width: 1000px;
   height: 90%;
@@ -145,22 +147,29 @@ animation-iteration-count: infinite;
   margin: 0 auto;
   position: relative;
 }
-.vortasgoth{
+.planeteS1 img{
+    display: block;
+}
+#vortasgoth{
   width: 40%;
   margin-top: -230px;
-  display: block;
 }
-.husphel{
+#husphel{
   width: 15%;
-  margin: 50px 0px 0px 750px;
-  display: block;
-
+  margin: 16px 0px 0px 750px;
 }
-.nune{
+#nune{
   width: 2%;
-  margin: -90px 0px 0px 900px;
-  display: block;
-
+  margin: -120px 0px 0px 900px;
+}
+#flux1S1{
+  margin: -218px 0px 0px -300px;
+}
+#flux2S1{
+  margin: -758px 0px 0px 302px;
+}
+#flux3S1{
+  margin: -87px 0px 0px 841px;
 }
 
 .blocText{
@@ -180,6 +189,98 @@ animation-iteration-count: infinite;
 }
 
 
+.flux{
+  animation: animationFrames ease-in 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: animationFrames ease-in 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: animationFrames ease-in 2s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: animationFrames ease-in 2s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: animationFrames ease-in 2s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+}
+
+@keyframes animationFrames{
+  0% {
+    opacity:1;
+    transform:  scaleX(1.00) scaleY(1.00) ;
+  }
+  50% {
+    opacity:0.63;
+    transform:  scaleX(1.02) scaleY(1.02) ;
+  }
+    100% {
+    opacity:1;
+    transform:  scaleX(1.00) scaleY(1.00) ;
+  }
+}
+
+@-moz-keyframes animationFrames{
+  0% {
+    opacity:1;
+    transform:  scaleX(1.00) scaleY(1.00) ;
+  }
+  50% {
+    opacity:0.63;
+    transform:  scaleX(1.02) scaleY(1.02) ;
+  }
+    100% {
+    opacity:1;
+    transform:  scaleX(1.00) scaleY(1.00) ;
+  }
+}
+
+@-webkit-keyframes animationFrames {
+  0% {
+    opacity:1;
+    transform:  scaleX(1.00) scaleY(1.00) ;
+  }
+  50% {
+    opacity:0.63;
+    transform:  scaleX(1.02) scaleY(1.02) ;
+  }
+    100% {
+    opacity:1;
+    transform:  scaleX(1.00) scaleY(1.00) ;
+  }
+}
+
+@-o-keyframes animationFrames {
+  0% {
+    opacity:1;
+    transform:  scaleX(1.00) scaleY(1.00) ;
+  }
+  50% {
+    opacity:0.63;
+    transform:  scaleX(1.02) scaleY(1.02) ;
+  }
+    100% {
+    opacity:1;
+    transform:  scaleX(1.00) scaleY(1.00) ;
+  }
+}
+
+@-ms-keyframes animationFrames {
+  0% {
+    opacity:1;
+    transform:  scaleX(1.00) scaleY(1.00) ;
+  }
+  50% {
+    opacity:0.63;
+    transform:  scaleX(1.02) scaleY(1.02) ;
+  }
+    100% {
+    opacity:1;
+    transform:  scaleX(1.00) scaleY(1.00) ;
+  }
+}
 
 /*-----------------------------------------*/
 /*    SCENE 2 : TERRE                         */
@@ -254,8 +355,35 @@ animation-iteration-count: infinite;
 }
 .nox{
   width: 30%;
-  margin: 90px 0px 0px 400px;
+  margin: -400px 0px 0px 400px;
   display: block;
+}
+
+.blocFluxS3{
+  width: 1200px;
+  margin-top: -1200px;
+}
+#flux1S3{
+  width: 400px;
+  height: 1px;
+  background-image: url(imgIntro/flux1S3.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: block;
+  float: right;
+  margin-right: 431px;
+}
+#flux2S3{
+  width: 800px;
+  height: 1px;
+  background-image: url(imgIntro/flux2S3.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+  position: absolute;
+  margin: -190px 0px 0px -500px;
+  /*overflow: hidden;*/
 }
 
 .blocHistoire{
@@ -302,15 +430,23 @@ animation-iteration-count: infinite;
 }
 .fluxS4{
   width: 1000px;
-  height: 1200px;
+  height: 1500px;
   /*min-height: 200px;*/
   margin: 0 auto;
   /*position: relative;*/
   z-index: 0;
 }
-.fluxS4 img{
-  width: 30px;
+/*.fluxS4 img{
+  width: 50px;
   padding-right: 150px;
+}*/
+#flux1S4{
+  width: 500px;
+  height: 1px;
+  background-image: url(imgIntro/geeeeee.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  /*overflow: hidden;*/
 }
 
 
