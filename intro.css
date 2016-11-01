@@ -7,17 +7,17 @@
 html,body{
   width: 100%;
   /*height:100%;*/
-  background-color: #01060F;
+  background-color: #06051E;
     font-family: 'Roboto', sans-serif;
 }
 
 #bodySkroll{
   width: 100%;
   /*height: 500%;*/
-  background-image: url(imgIntro/Space.png);
+  background-image: url(imgIntro/bg4.png);
   background-repeat: repeat;
 
-  /*background-size: 100%;*/
+  background-size: 100%;
   /*position: absolute;*/
   z-index: 0;
   /*top: 0;*/
@@ -130,7 +130,14 @@ animation-iteration-count: infinite;
   display: none;
 }
 
-
+.planete{
+  opacity: 0;
+  -webkit-transition: opacity 1s ease; 
+  transition: opacity 1s ease;
+}
+.planete:hover{
+  opacity: 1;
+}
 /*-----------------------------------------*/
 /*    SCENE 1 : PRESENTATION                         */
 /*-----------------------------------------------------------*/
@@ -147,13 +154,34 @@ animation-iteration-count: infinite;
   margin: 0 auto;
   position: relative;
 }
-.planeteS1 img{
+/*.planeteS1 img{
     display: block;
-}
-#vortasgoth{
-  width: 40%;
+}*/
+.vortasgoth{
+  width: 410px;
+  height: 400px;
   margin-top: -230px;
+  display: block;
 }
+.vortasgoth img{
+  position: absolute;
+  width: 40%;
+}
+
+#vortasgothPsion{    
+  -webkit-animation:animationRotateD 10s linear infinite;
+  -moz-animation:animationRotateD 10s linear infinite;
+  animation:animationRotateD 10s linear infinite;
+}
+#vortasgothBD{    
+  -webkit-animation:animationRotateG 4s linear infinite;
+  -moz-animation:animationRotateG 4s linear infinite;
+  animation:animationRotateG 4s linear infinite;
+  }
+#vortasgothAutre{ 
+  -webkit-animation:animationRotateD 1s linear infinite;
+  -moz-animation:animationRotateD 1s linear infinite;
+  animation:animationRotateD 1s linear infinite;}
 #husphel{
   width: 15%;
   margin: 16px 0px 0px 750px;
@@ -292,16 +320,23 @@ animation-iteration-count: infinite;
   width: 100%;
   height: 2000px;
   margin-top: -575px;
-
   overflow: hidden;
 }
 .terre{
   width: 300%;
   height: 100%;
   border-radius: 50%;
-  background-color: #3D4FFF;
+  background-color: #06051E;
   margin-left: -570px;
   /*position: relative;*/
+}
+.terre img{
+  width: 100%;
+  /*margin-top: -130px;*/
+  -webkit-animation:animationRotateD 20s linear infinite;
+  -moz-animation:animationRotateD 20s linear infinite;
+  animation:animationRotateD 20s linear infinite;
+  /*z-index: 1;*/
 }
 /*.containerTest{
   width: 100%;
@@ -333,31 +368,119 @@ animation-iteration-count: infinite;
   margin: 0 auto;
   position: relative;
 }
+.ebes, .nox, .tintyph, .eldinn, .roack, .vortasgoth{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#06051e+0,000000+100&0.94+1,0.93+30,0.74+47,0+60,0+100 */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(6,5,30,0.94) 0%, rgba(6,5,30,0.94) 1%, rgba(4,4,21,0.93) 30%, rgba(3,3,16,0.74) 47%, rgba(2,2,12,0) 60%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(6,5,30,0.94) 0%,rgba(6,5,30,0.94) 1%,rgba(4,4,21,0.93) 30%,rgba(3,3,16,0.74) 47%,rgba(2,2,12,0) 60%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  rgba(6,5,30,0.94) 0%,rgba(6,5,30,0.94) 1%,rgba(4,4,21,0.93) 30%,rgba(3,3,16,0.74) 47%,rgba(2,2,12,0) 60%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
 .ebes{
-  width: 79%;
-  margin-left: -500px;
+  width: 650px;
+  height: 591px;
+  margin-top: 170px;
+  margin-left: -550px;
   display: block;
 }
+.ebes img{
+  position: absolute;
+     width: 65%;
+}
+#ebesPsion{ 
+    -webkit-animation:animationRotateD 10s linear infinite;
+    -moz-animation:animationRotateD 10s linear infinite;
+    animation:animationRotateD 10s linear infinite;
+}
+
+#ebesBorderline{
+    -webkit-animation:animationRotateG 4s linear infinite;
+    -moz-animation:animationRotateG 4s linear infinite;
+    animation:animationRotateG 4s linear infinite;
+}
+
+#ebesOblivion{
+    -webkit-animation:animationRotateD 1s linear infinite;
+    -moz-animation:animationRotateD 1s linear infinite;
+    animation:animationRotateD 1s linear infinite;
+}
+
+
 .tintyph{
-  width: 26%;
-  margin: -550px 0px 0px 0px;
+  width: 200px;
+  height: 197px;
+  margin: -400px 0px 0px 0px;
   display: block;
 }
+.tintyph img{
+  position: absolute;
+    width: 20%;
+}
+#tintyphAutre{
+    -webkit-animation:animationRotateD 10s linear infinite;
+    -moz-animation:animationRotateD 10s linear infinite;
+    animation:animationRotateD 10s linear infinite;
+}
+#tintyphBD{
+     -webkit-animation:animationRotateG 4s linear infinite;
+    -moz-animation:animationRotateG 4s linear infinite;
+    animation:animationRotateG 4s linear infinite;
+}
+
 .eldinn{
-  /*width: 26%;*/
+  width: 64px;
+  height: 72px;
   margin: -250px 0px 0px 240px;
   display: block;
 }
+.eldinn img{
+  position: absolute;
+}
+#eldinnOblivion{
+    -webkit-animation:animationRotateD 0.5s linear infinite;
+    -moz-animation:animationRotateD 0.5s linear infinite;
+    animation:animationRotateD 0.5s linear infinite;
+}
+
+
 .roack{
-  width: 10%;
+  width: 152px;
+  height: 144;
   margin: 290px 0px 0px 795px;
   display: block;
 }
+.roack img{
+  position: absolute;
+}
+#roackAutre{
+    -webkit-animation:animationRotateD 4s linear infinite;
+    -moz-animation:animationRotateD 4s linear infinite;
+    animation:animationRotateD 4s linear infinite;
+}
+
 .nox{
-  width: 30%;
+  width: 300px;
+  height: 296px;
   margin: -400px 0px 0px 400px;
   display: block;
 }
+.nox img{
+  position: absolute;
+  width: 30%;
+}
+#noxBD{
+    -webkit-animation:animationRotateG 4s linear infinite;
+    -moz-animation:animationRotateG 4s linear infinite;
+    animation:animationRotateG 4s linear infinite;
+}
+#noxAutre{
+     -webkit-animation:animationRotateD 1s linear infinite;
+    -moz-animation:animationRotateD 1s linear infinite;
+    animation:animationRotateD 1s linear infinite;
+}
+
+
 
 .blocFluxS3{
   width: 1200px;
@@ -382,7 +505,7 @@ animation-iteration-count: infinite;
   display: block;
   float: left;
   position: absolute;
-  margin: -190px 0px 0px -500px;
+  margin: -200px 0px 0px -700px;
   /*overflow: hidden;*/
 }
 
@@ -393,11 +516,11 @@ animation-iteration-count: infinite;
 }
 #boxHistoire{
   width: 1000px;
-  height: 385px;
+  height: 515px;
   /*background-color: #fff;*/
   padding: 30px 10px;
   margin: 0 auto;
-  background-image: url(imgIntro/boxHistoire.png);
+  background-image: url(imgIntro/boxTkt2.png);
   background-size: contain;
   background-repeat: no-repeat;
   /*position: relative;*/
@@ -412,7 +535,7 @@ animation-iteration-count: infinite;
 #boxHistoire p{
   font-size: 20px;
   width: 50%;
-  height: 25%;
+  height: 45%;
   overflow: hidden;
   margin: 0 auto;
   /*padding-top: 160px;*/
@@ -463,3 +586,15 @@ animation-iteration-count: infinite;
   margin: 0 auto;
   position: relative;
 }
+
+
+
+
+
+@keyframes animationRotateD{ 100% {transform:rotate(360deg);} }
+@-moz-keyframes animationRotateD { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes animationRotateD { 100% { -webkit-transform: rotate(360deg); } }
+
+@keyframes animationRotateG{ 100% {transform:rotate(-360deg);} }
+@-moz-keyframes animationRotateG { 100% { -moz-transform: rotate(-360deg); } }
+@-webkit-keyframes animationRotateG { 100% { -webkit-transform: rotate(-360deg); } }
