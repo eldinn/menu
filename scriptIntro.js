@@ -148,7 +148,7 @@ smoothScroll.init();
 		var tween = TweenMax.to("#bodySkroll", 1, {backgroundPosition: "50% 50%", ease: Linear.easeNone});
 
 		// build scene
-		var scene = new ScrollMagic.Scene({triggerElement: 'body', duration: 7200})
+		var scene = new ScrollMagic.Scene({triggerElement: 'body', duration: 6000})
 						.setTween(tween)
 						// .setPin("#bodySkroll")
 						.addIndicators({name: "parallaxe"}) // add indicators (requires plugin)
@@ -175,8 +175,8 @@ smoothScroll.init();
 	});
 
 */
-/*Event texte 1 */
-	$(function () {
+/*Event box texte 1 */
+$(function () {
 	var scene2 = new ScrollMagic.Scene({
 		triggerElement: "#repereBlocText"
 		})
@@ -195,7 +195,7 @@ smoothScroll.init();
 		 // add indicators (requires plugin)
 		.addIndicators({name: "box texte down"})
 		.addTo(controller);
-	});
+});
 
 
 
@@ -208,7 +208,8 @@ smoothScroll.init();
 				// TweenMax.fromTo(".bleue", 1, {marginTop: "-150"} ,{marginTop: "-1400", ease: Linear.easeNone}),
 				TweenMax.to(".tintyph", 1, {marginTop: "-100px", ease: Linear.easeNone}),
 				TweenMax.to(".eldinn", 1, {marginTop: "100px", marginLeft: "100px", ease: Linear.easeNone}),
-				TweenMax.to(".roack", 1, {marginTop: "250px", marginRight: "50px", ease: Linear.easeNone}),
+				TweenMax.to(".roack", 1, {marginTop: "350px", marginRight: "50px", ease: Linear.easeNone}),
+				TweenMax.to(".dyamtirie", 1, {marginTop: "-300px", ease: Linear.easeNone}),
 				TweenMax.to(".nox", 1, {marginTop: "-500px", ease: Linear.easeNone}),
 				TweenMax.to("#flux1S3", 1, {height:"1500px"}),
 				TweenMax.to("#flux2S3", 1, {height:"1500px"})
@@ -223,20 +224,50 @@ smoothScroll.init();
 						.addTo(controller);
 	});
 
+/*Event flux box texte*/
+	$(function () {
+
+		var tween5 = new TimelineMax ()
+			.add([
+				TweenMax.to("#fluxBTG", 1, {height:"600px"}),
+				TweenMax.to("#fluxBTD", 1, {height:"600px"})
+			]);
+
+
+		var scene7 = new ScrollMagic.Scene({triggerElement: ".blocHistoire", duration: 400})
+					.setTween(tween5)
+					.addIndicators({name: "width++ 2"}) // add indicators (requires plugin)
+					.addTo(controller);
+
+	});
+
+
+/*Event box texte 2*/
+	$(function () {
+		var scene6 = new ScrollMagic.Scene({
+			triggerElement: "#repereBlocHistoire"
+			})
+			// trigger a TweenMax.to tween
+			.setTween("#boxHistoire", 0.5, {scale: 1}) 
+			 // add indicators (requires plugin)
+			.addIndicators({name: "pop  texteHistoire"})
+			.addTo(controller);
+	});
+
 
 /*Event 4 flux*/
 	$(function () {
 
 		var tween4 = new TimelineMax ()
 			.add([
-				TweenMax.to("#flux1S4", 1, {height:"1500px"}),
-				TweenMax.to("#flux2", 1, {height:"1500px"}),
-				TweenMax.to("#flux3", 1, {height:"1500px"}),
-				TweenMax.to("#flux4", 1, {height:"1500px"})
+				TweenMax.to("#flux1S4", 1, {height:"1900px"}),
+				TweenMax.to("#flux2S4", 1, {height:"1900px"}),
+				TweenMax.to("#flux3S4", 1, {height:"1900px"}),
+				TweenMax.to("#flux4S4", 1, {height:"1900px"})
 			]);
 
 
-		var scene5 = new ScrollMagic.Scene({triggerElement: ".fluxS4", duration: 1700, offset: 50})
+		var scene5 = new ScrollMagic.Scene({triggerElement: ".fluxS4", duration: 2000, offset: 50})
 					.setTween(tween4)
 					.addIndicators({name: "width++"}) // add indicators (requires plugin)
 					.addTo(controller);

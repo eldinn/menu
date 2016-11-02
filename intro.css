@@ -22,7 +22,7 @@ html,body{
   z-index: 0;
   /*top: 0;*/
 }
-
+  
 
 /*-----------------------------------------*/
 /*      LOAD                          */
@@ -191,7 +191,7 @@ animation-iteration-count: infinite;
   margin: -120px 0px 0px 900px;
 }
 #flux1S1{
-  margin: -218px 0px 0px -300px;
+  margin: -290px 0px 0px -300px;
 }
 #flux2S1{
   margin: -758px 0px 0px 302px;
@@ -209,8 +209,11 @@ animation-iteration-count: infinite;
   /*height: 50px;*/
   background-color: #fff;
   padding: 10px 10px;
-  margin: 0 auto;
-  position: relative;
+  /*margin: 0 auto;*/
+  margin-left: 450px;
+  position: absolute;
+  display: block;
+  z-index: 9999;
 }
 #boxIntro p{
   font-size: 10px;
@@ -236,78 +239,33 @@ animation-iteration-count: infinite;
 }
 
 @keyframes animationFrames{
-  0% {
-    opacity:1;
-    transform:  scaleX(1.00) scaleY(1.00) ;
-  }
-  50% {
-    opacity:0.63;
-    transform:  scaleX(1.02) scaleY(1.02) ;
-  }
-    100% {
-    opacity:1;
-    transform:  scaleX(1.00) scaleY(1.00) ;
-  }
+  0% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+  50% {opacity:0.63; transform:  scaleX(1.02) scaleY(1.02) ; }
+  100% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
 }
 
 @-moz-keyframes animationFrames{
-  0% {
-    opacity:1;
-    transform:  scaleX(1.00) scaleY(1.00) ;
-  }
-  50% {
-    opacity:0.63;
-    transform:  scaleX(1.02) scaleY(1.02) ;
-  }
-    100% {
-    opacity:1;
-    transform:  scaleX(1.00) scaleY(1.00) ;
-  }
+  0% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+  50% {opacity:0.63; transform:  scaleX(1.02) scaleY(1.02) ; }
+  100% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
 }
 
 @-webkit-keyframes animationFrames {
-  0% {
-    opacity:1;
-    transform:  scaleX(1.00) scaleY(1.00) ;
-  }
-  50% {
-    opacity:0.63;
-    transform:  scaleX(1.02) scaleY(1.02) ;
-  }
-    100% {
-    opacity:1;
-    transform:  scaleX(1.00) scaleY(1.00) ;
-  }
+  0% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+  50% {opacity:0.63; transform:  scaleX(1.02) scaleY(1.02) ; }
+  100% { opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
 }
 
 @-o-keyframes animationFrames {
-  0% {
-    opacity:1;
-    transform:  scaleX(1.00) scaleY(1.00) ;
-  }
-  50% {
-    opacity:0.63;
-    transform:  scaleX(1.02) scaleY(1.02) ;
-  }
-    100% {
-    opacity:1;
-    transform:  scaleX(1.00) scaleY(1.00) ;
-  }
+  0% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+  50% { opacity:0.63; transform:  scaleX(1.02) scaleY(1.02) ; }
+  100% { opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
 }
 
 @-ms-keyframes animationFrames {
-  0% {
-    opacity:1;
-    transform:  scaleX(1.00) scaleY(1.00) ;
-  }
-  50% {
-    opacity:0.63;
-    transform:  scaleX(1.02) scaleY(1.02) ;
-  }
-    100% {
-    opacity:1;
-    transform:  scaleX(1.00) scaleY(1.00) ;
-  }
+  0% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+  50% {opacity:0.63; transform:  scaleX(1.02) scaleY(1.02) ; }
+  100% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
 }
 
 /*-----------------------------------------*/
@@ -326,17 +284,35 @@ animation-iteration-count: infinite;
   width: 300%;
   height: 100%;
   border-radius: 50%;
-  background-color: #06051E;
+  /*background-color: #06051E;*/
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#06051e+1,06051e+100&1+0,1+56,0.93+62,0.78+65,0+70 */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(6,5,30,1) 0%, rgba(6,5,30,1) 1%, rgba(6,5,30,1) 56%, rgba(6,5,30,0.93) 62%, rgba(6,5,30,0.78) 65%, rgba(6,5,30,0) 70%, rgba(6,5,30,0) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(6,5,30,1) 0%,rgba(6,5,30,1) 1%,rgba(6,5,30,1) 56%,rgba(6,5,30,0.93) 62%,rgba(6,5,30,0.78) 65%,rgba(6,5,30,0) 70%,rgba(6,5,30,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  rgba(6,5,30,1) 0%,rgba(6,5,30,1) 1%,rgba(6,5,30,1) 56%,rgba(6,5,30,0.93) 62%,rgba(6,5,30,0.78) 65%,rgba(6,5,30,0) 70%,rgba(6,5,30,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#06051e', endColorstr='#0006051e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
   margin-left: -570px;
   /*position: relative;*/
 }
 .terre img{
-  width: 100%;
-  /*margin-top: -130px;*/
-  -webkit-animation:animationRotateD 20s linear infinite;
-  -moz-animation:animationRotateD 20s linear infinite;
-  animation:animationRotateD 20s linear infinite;
-  /*z-index: 1;*/
+  /*position: absolute;*/
+
+  display: block;
+}
+#terrePsion{
+    width: 100%;
+  -webkit-animation:animationRotateG 20s linear infinite;
+  -moz-animation:animationRotateG 20s linear infinite;
+  animation:animationRotateG 20s linear infinite;
+}
+#terreBD{
+    width: 40%;
+    margin-top: -4500px;
+    margin-left: 1200px;
+  -webkit-animation:animationRotateD 10s linear infinite;
+  -moz-animation:animationRotateD 10s linear infinite;
+  animation:animationRotateD 10s linear infinite;
 }
 /*.containerTest{
   width: 100%;
@@ -389,15 +365,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
      width: 65%;
 }
 #ebesPsion{ 
-    -webkit-animation:animationRotateD 10s linear infinite;
-    -moz-animation:animationRotateD 10s linear infinite;
-    animation:animationRotateD 10s linear infinite;
+    -webkit-animation:animationRotateD 11s linear infinite;
+    -moz-animation:animationRotateD 11s linear infinite;
+    animation:animationRotateD 11s linear infinite;
 }
 
 #ebesBorderline{
-    -webkit-animation:animationRotateG 4s linear infinite;
-    -moz-animation:animationRotateG 4s linear infinite;
-    animation:animationRotateG 4s linear infinite;
+    -webkit-animation:animationRotateG 6s linear infinite;
+    -moz-animation:animationRotateG 6s linear infinite;
+    animation:animationRotateG 6s linear infinite;
 }
 
 #ebesOblivion{
@@ -444,6 +420,28 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
 }
 
 
+.dyamtirie{
+  width: 300px;
+  height: 296px;
+  margin: -400px 0px 0px 400px;
+  display: block;
+
+}
+.dyamtirie img{
+  position: absolute;
+  width: 30%;
+}
+#dyamtirieBD{
+    -webkit-animation:animationRotateG 4s linear infinite;
+    -moz-animation:animationRotateG 4s linear infinite;
+    animation:animationRotateG 4s linear infinite;
+}
+#dyamtirieAutre{
+    -webkit-animation:animationRotateD 1s linear infinite;
+    -moz-animation:animationRotateD 1s linear infinite;
+    animation:animationRotateD 1s linear infinite;
+}
+
 .roack{
   width: 152px;
   height: 144;
@@ -460,24 +458,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
 }
 
 .nox{
-  width: 300px;
-  height: 296px;
-  margin: -400px 0px 0px 400px;
+  width: 200px;
+  height: 198px;
+  margin: -300px 0px 0px 700px;
   display: block;
 }
 .nox img{
   position: absolute;
-  width: 30%;
+  width: 20%;
 }
 #noxBD{
-    -webkit-animation:animationRotateG 4s linear infinite;
-    -moz-animation:animationRotateG 4s linear infinite;
-    animation:animationRotateG 4s linear infinite;
+       -webkit-animation:animationRotateD 15s linear infinite;
+    -moz-animation:animationRotateD 15s linear infinite;
+    animation:animationRotateD 15s linear infinite;
 }
 #noxAutre{
-     -webkit-animation:animationRotateD 1s linear infinite;
-    -moz-animation:animationRotateD 1s linear infinite;
-    animation:animationRotateD 1s linear infinite;
+     -webkit-animation:animationRotateD 10s linear infinite;
+    -moz-animation:animationRotateD 10s linear infinite;
+    animation:animationRotateD 10s linear infinite;
 }
 
 
@@ -509,6 +507,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
   /*overflow: hidden;*/
 }
 
+
 .blocHistoire{
   width: 1000px;
   margin: 0 auto;
@@ -520,18 +519,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
   /*background-color: #fff;*/
   padding: 30px 10px;
   margin: 0 auto;
-  background-image: url(imgIntro/boxTkt2.png);
+  background-image: url(imgIntro/boxTkt3.png);
   background-size: contain;
   background-repeat: no-repeat;
+  transform : scale(0);
+  /*transition: transform 0.3s ease-out;*/
   /*position: relative;*/
 }
-#boxHistoire img{
-    width: 3%;
-    margin: 0 auto;
-    display: block;
-    padding-top: 110px;
-    padding-bottom: 20px;
-}
+
 #boxHistoire p{
   font-size: 20px;
   width: 50%;
@@ -541,7 +536,39 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
   /*padding-top: 160px;*/
     /*display: block;*/
 }
-
+#fluxBTG{
+  width: 333px;
+  height: 1px;
+  position: absolute;
+  display: inline-block;
+  background-image: url(imgIntro/fluxBoxTxtG.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#fluxBTD{
+  width: 253px;
+  height: 1px;
+  position: absolute;
+  display: inline-block;
+  background-image: url(imgIntro/fluxBoxTxtD.png);
+    background-size: 100%;
+  background-repeat: no-repeat;
+  margin-left: 700px;
+}
+#flecheHaut{
+      width: 3%;
+    margin: 0 auto;
+    display: block;
+    padding-top: 110px;
+    padding-bottom: 20px;
+}
+#flecheBas{
+    width: 3%;
+    margin: 0 auto;
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
 /*-----------------------------------------*/
 /*    SCENE 4 : FLUX                         */
 /*-----------------------------------------------------------*/
@@ -554,24 +581,39 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
 .fluxS4{
   width: 1000px;
   height: 1500px;
-  /*min-height: 200px;*/
   margin: 0 auto;
-  /*position: relative;*/
   z-index: 0;
 }
-/*.fluxS4 img{
-  width: 50px;
-  padding-right: 150px;
-}*/
-#flux1S4{
-  width: 500px;
+.fluxS4 div{
+  position: absolute;
   height: 1px;
-  background-image: url(imgIntro/geeeeee.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  /*overflow: hidden;*/
 }
+#flux1S4{
+  width: 500px;
+  margin-top: -200px;
+  margin-left: -37px;
+  background-image: url(imgIntro/fluxFinnnn1.png);
 
+}
+#flux2S4{
+  width: 164px;
+  margin-left: 700px;
+  background-image: url(imgIntro/fluxFin2.png);
+}
+#flux3S4{
+  width: 684px;
+  margin-top: -157px;
+  margin-left: 270px;
+  background-image: url(imgIntro/fluxFin3.png);
+}
+#flux4S4{
+  width: 1014px;
+  margin-left: 200px;
+  background-image: url(imgIntro/fluxFin4.png);
+}
+ 
 
 /*-----------------------------------------*/
 /*    SCENE 5 : PORTAIL (fin)                         */
@@ -580,13 +622,55 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
   width: 100%;
 }
 .blocPortail{
-  width: 1000px;
-  height: 1200px;
+  width: 100%;
+  height: 1000px;
   /*min-height: 200px;*/
   margin: 0 auto;
   position: relative;
 }
-
+.fondPortail{
+  width: 100%;
+  height: 1000px;
+  margin: 0 auto;
+  display: block;
+}
+#portail{
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  margin-left: 400px;
+  margin-top: 200px;
+}
+#fondPortail{
+  width: 100%;
+  height: 100%;
+}
+#fondPortailAnim{
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  animation: animationFrames ease-in 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: animationFrames ease-in 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: animationFrames ease-in 2s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: animationFrames ease-in 2s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: animationFrames ease-in 2s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+}
+.blocPortail a{
+  margin-top: -450px;
+  margin-left: 740px;
+  display: block;
+  position: absolute;
+}
 
 
 

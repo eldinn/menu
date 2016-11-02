@@ -171,7 +171,8 @@ F   A       A  CCCC EEEEE BBBBB     OO       OO    K   K   ::
     <div class="scene2">
       <div class="containerTerre">
         <div class="terre">
-          <img src="imgIntro/terre.png">
+          <img id="terrePsion" src="imgIntro/terrePsion.png">
+          <img id="terreBD" src="imgIntro/terreBD.png">
         </div>
         <div id="repereTest" class="repere"></div>
         <div class="test"></div>
@@ -191,6 +192,7 @@ F   A       A  CCCC EEEEE BBBBB     OO       OO    K   K   ::
             <img id="ebesBorderline" src="imgIntro/ebesBorderline.png">
             <img id="ebesOblivion" src="imgIntro/ebesOblivion.png">
             <img class="planete" src="imgIntro/ebes.png" >
+            
           </div>
           <div class="tintyph">
             <img id="tintyphAutre" src="imgIntro/tintyphAutre.png">
@@ -201,15 +203,21 @@ F   A       A  CCCC EEEEE BBBBB     OO       OO    K   K   ::
             <img id="eldinnOblivion" src="imgIntro/eldinnOblivion.png">
             <img class="planete" src="imgIntro/eldinn.png">
           </div>
-          <div class="roack">
-            <img id="roackAutre" src="imgIntro/roackAutre.png">
-            <img class="planete" src="imgIntro/roack.png">
-          </div>
           <div class="nox">
             <img id="noxBD" src="imgIntro/noxBD.png">
             <img id="noxAutre" src="imgIntro/noxAutre.png">
             <img class="planete" src="imgIntro/nox.png">
           </div>
+          <div class="roack">
+            <img id="roackAutre" src="imgIntro/roackAutre.png">
+            <img class="planete" src="imgIntro/roack.png">
+          </div>
+          <div class="dyamtirie">
+            <img id="dyamtirieBD" src="imgIntro/noxBD.png">
+            <img id="dyamtirieAutre" src="imgIntro/noxAutre.png">
+            <img class="planete" src="imgIntro/dyamtirie.png">
+          </div>
+
           <div class="blocFluxS3">
             <div id="flux1S3"></div>
             <div id="flux2S3"></div>
@@ -219,9 +227,11 @@ F   A       A  CCCC EEEEE BBBBB     OO       OO    K   K   ::
 
       <div class="blocHistoire">
 
-        <div id="repereBlocHistoire" class="repere"></div>
         <div class="space100"></div>
+          <div id="fluxBTG"></div>
+          <div id="fluxBTD"></div>
         <div id="boxHistoire">
+          <div id="repereBlocHistoire" class="repere"></div>
           <img id="flecheHaut" src="menu/img/flecheHaut.png">
           <p id="texteHistoire">Nec minus feminae quoque calamitatum participes fuere similium. nam ex hoc quoque sexu peremptae sunt originis altae conplures, adulteriorum flagitiis obnoxiae vel stuprorum. inter quas notiores fuere Claritas et Flaviana, quarum altera cum duceretur ad mortem, indumento, quo vestita erat, abrepto, ne velemen quidem secreto membrorum sufficiens retinere permissa est. ideoque carnifex nefas admisisse convictus inmane, vivus exustus est.
           </br></br>
@@ -244,10 +254,6 @@ F   A       A  CCCC EEEEE BBBBB     OO       OO    K   K   ::
           <div id="flux2S4"></div>
           <div id="flux3S4"></div>
           <div id="flux4S4"></div>
-<!--      <img src="imgIntro/flux2.jpg" id="flux2">
-          <img src="imgIntro/flux3.jpg" id="flux3">
-          <img src="imgIntro/flux4.jpg" id="flux4"> -->
-          <!-- <img src="imgIntro/flux5.jpg" id="flux5"> -->
         </div>
       </div>
 
@@ -258,19 +264,18 @@ F   A       A  CCCC EEEEE BBBBB     OO       OO    K   K   ::
   <!-- ********* Scene 5 : Portail (fin) ********* -->
     <div class="scene5">
      <div class="blocPortail">
-        <div class="">
-<!--           <img src="imgIntro/.png" class="flux1">
-          <img src="imgIntro/.png" class="flux2">
-          <img src="imgIntro/.png" class="flux3">
-          <img src="imgIntro/.png" class="flux4">
-          <img src="imgIntro/.png" class="flux5"> -->
+        <div class="fondPortail">
+          <img id="fondPortailAnim" src="imgIntro/fondPortailAnim.png">
+          <img id="portail" src="imgIntro/portail.png">
+          <img id="fondPortail" src="imgIntro/fondPortail.png">
+          <a href="menu/menu.html">Prendre le portail</a> 
         </div>
       </div>
 
     </div>
 
 
-  <div class="space1000"><p>fin</p></div>
+  <!-- <div class="space1000"><p>fin</p></div> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
     <script src="scrollMagic/ScrollMagic.js"></script>
     <script src="scrollMagic/debug.addIndicators.js"></script>
