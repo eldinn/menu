@@ -138,6 +138,7 @@ animation-iteration-count: infinite;
 .planete:hover{
   opacity: 1;
 }
+
 /*-----------------------------------------*/
 /*    SCENE 1 : PRESENTATION                         */
 /*-----------------------------------------------------------*/
@@ -188,35 +189,63 @@ animation-iteration-count: infinite;
 }
 #nune{
   width: 2%;
-  margin: -120px 0px 0px 900px;
+  margin: -161px 0px 0px 929px;
 }
 #flux1S1{
-  margin: -290px 0px 0px -300px;
+  width: 59%;
+  margin: -290px 0px 0px -258px;
 }
 #flux2S1{
-  margin: -758px 0px 0px 302px;
+  margin: -684px 0px 0px 302px;
 }
 #flux3S1{
-  margin: -87px 0px 0px 841px;
+  margin: -529px 0px 0px 864px;
 }
 
 .blocText{
   width: 1000px;
   margin: 0 auto;
 }
+/*#containtBoxIntro{
+  width: 293px;
+  margin-left: 350px;
+  display: block;
+  position: absolute;
+  z-index: 9999;
+}*/
 #boxIntro{
-  width: 150px;
+  width: 293px;
   /*height: 50px;*/
-  background-color: #fff;
-  padding: 10px 10px;
-  /*margin: 0 auto;*/
-  margin-left: 450px;
+  background-color: #6AEAFC;
+  border-radius: 10px;
+  padding: 10px 15px;
   position: absolute;
   display: block;
+  margin-left: 350px;
   z-index: 9999;
 }
 #boxIntro p{
   font-size: 10px;
+}
+.cellule{
+  display: block;
+  position: absolute;
+}
+#cellule1{
+  margin-top: -27px;
+  margin-left: -20px;
+}
+#cellule2{
+  margin-top: -20px;
+  margin-left: 149px;
+}
+#cellule3{
+  margin-top: 41px;
+  margin-left: 136px;
+}
+#cellule4{
+  margin-top: 45px;
+  margin-left: -17px;
 }
 
 
@@ -277,7 +306,7 @@ animation-iteration-count: infinite;
 .containerTerre{
   width: 100%;
   height: 2000px;
-  margin-top: -575px;
+  margin-top: -475px;
   overflow: hidden;
 }
 .terre{
@@ -301,18 +330,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#06051e', end
   display: block;
 }
 #terrePsion{
-    width: 100%;
+  width: 100%;
   -webkit-animation:animationRotateG 20s linear infinite;
   -moz-animation:animationRotateG 20s linear infinite;
   animation:animationRotateG 20s linear infinite;
 }
 #terreBD{
-    width: 40%;
-    margin-top: -4500px;
-    margin-left: 1200px;
+  width: 40%;
+  margin-top: -4500px;
+  margin-left: 1200px;
   -webkit-animation:animationRotateD 10s linear infinite;
   -moz-animation:animationRotateD 10s linear infinite;
   animation:animationRotateD 10s linear infinite;
+}
+#terreOblivion{
+  width: 10%;
+  margin-top: -1300px;
+  margin-left: 1800px;
+  -webkit-animation:animationRotateG 2s linear infinite;
+  -moz-animation:animationRotateG 2s linear infinite;
+  animation:animationRotateG 2s linear infinite;
 }
 /*.containerTest{
   width: 100%;
@@ -328,7 +365,61 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#06051e', end
   background-color: #000;
 }
 */
+/*.containerBulleTxt{
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}*/
+.bulleTxt{
+  position: absolute;
+  background-color: #C4B1E2;
+  padding: 15px 15px;
+  border-radius: 30px;
+  /*opacity: 0;*/
+}
+#bulle1{
+  margin-top: -500px;
+  margin-left: 100px;
+  opacity: 0;
+}
+#bulle2{
+  margin-top: -400px;
+  margin-left: 150px;
+  opacity: 0;
+}
+#bulle3{
+  margin-top: -350px;
+  margin-left: 380px;
+  opacity: 0;
+}
+#bulle4{
+  margin-top: -200px;
+  margin-left: 300px;
+  opacity: 0;
+}
+#bulle5{
+ margin-top: -184px;
+ margin-left: 900px;
+ font-size: 20px; 
+ font-style: italic; 
+ opacity: 0;
+}
+#bulle6{
+ margin-top: -50px;
+ margin-left: 400px;
+ opacity: 0;  
+}
+#bulle7{
+  margin-top: 0px;
+  margin-left: 450px;
+  opacity: 0;
+}
+#bulle8{
+  
+}
+#bulle9{
 
+}
 
 
 /*-----------------------------------------*/
@@ -423,7 +514,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
 .dyamtirie{
   width: 300px;
   height: 296px;
-  margin: -400px 0px 0px 400px;
+  margin: -500px 0px 0px 400px;
   display: block;
 
 }
@@ -468,9 +559,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
   width: 20%;
 }
 #noxBD{
-       -webkit-animation:animationRotateD 15s linear infinite;
-    -moz-animation:animationRotateD 15s linear infinite;
-    animation:animationRotateD 15s linear infinite;
+       -webkit-animation:animationRotateG 15s linear infinite;
+    -moz-animation:animationRotateG 15s linear infinite;
+    animation:animationRotateG 15s linear infinite;
 }
 #noxAutre{
      -webkit-animation:animationRotateD 10s linear infinite;
@@ -485,14 +576,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
   margin-top: -1200px;
 }
 #flux1S3{
-  width: 400px;
+  width: 561px;
   height: 1px;
-  background-image: url(imgIntro/flux1S3.png);
+  background-image: url(imgIntro/flux1S3gg.png);
   background-size: 100%;
   background-repeat: no-repeat;
   display: block;
   float: right;
-  margin-right: 431px;
+  margin-right: 368px;
+  margin-top: -81px;
 }
 #flux2S3{
   width: 800px;
@@ -559,7 +651,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
       width: 3%;
     margin: 0 auto;
     display: block;
-    padding-top: 110px;
+    margin-top: 110px;
     padding-bottom: 20px;
 }
 #flecheBas{

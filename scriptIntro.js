@@ -145,11 +145,11 @@ smoothScroll.init();
 
 	$(function () { // wait for document ready
 		// build tween
-		var tween = TweenMax.to("#bodySkroll", 1, {backgroundPosition: "50% 50%", ease: Linear.easeNone});
+		var tween1 = TweenMax.to("#bodySkroll", 1, {backgroundPosition: "50% 50%", ease: Linear.easeNone});
 
 		// build scene
-		var scene = new ScrollMagic.Scene({triggerElement: 'body', duration: 6000})
-						.setTween(tween)
+		var scene1 = new ScrollMagic.Scene({triggerElement: 'body', duration: 6000})
+						.setTween(tween1)
 						// .setPin("#bodySkroll")
 						.addIndicators({name: "parallaxe"}) // add indicators (requires plugin)
 						.addTo(controller);
@@ -181,23 +181,64 @@ $(function () {
 		triggerElement: "#repereBlocText"
 		})
 		// trigger a TweenMax.to tween
-		.setTween("#boxIntro", 0.5, {backgroundColor: "green", scale: 2.5}) 
+		.setTween("#boxIntro", 0.5, {backgroundColor: "#85D86E", scale: 2.5}) 
 		 // add indicators (requires plugin)
 		.addIndicators({name: "box texte pop"})
 		.addTo(controller);
+
+
 
 
 	var scene3 = new ScrollMagic.Scene({
 		triggerElement: "#repereBlocText2"
 		})
 		// trigger a TweenMax.to tween
-		.setTween("#boxIntro", 0.5, {backgroundColor: "#fff", scale: 1}) 
+		.setTween("#boxIntro", 0.5, {backgroundColor: "#6AEAFC", scale: 1}) 
 		 // add indicators (requires plugin)
 		.addIndicators({name: "box texte down"})
 		.addTo(controller);
 });
 
 
+
+/*Déplie cellule*/
+$(function () {
+	// build tween
+	var tween2 = new TimelineMax ()
+		.add([
+			// TweenMax.fromTo(".bleue", 1, {marginTop: "-150"} ,{marginTop: "-1400", ease: Linear.easeNone}),
+			TweenMax.to("#cellule1", 1, {marginTop: "2px", marginLeft: "-50px", width: "25%", rotation: -90, ease: Linear.easeNone}),
+			TweenMax.to("#cellule2", 1, {marginTop: "-19px", marginLeft: "231px", width: "25%", ease: Linear.easeNone}),
+			TweenMax.to("#cellule3", 1, {marginTop: "59px", marginLeft: "260px", width: "25%", rotation: -90, ease: Linear.easeNone}), 
+			TweenMax.to("#cellule4", 1, {marginTop: "90px", marginLeft: "-21px", width: "25%", ease: Linear.easeNone})
+		]);
+
+	// build scene
+	var scene4 = new ScrollMagic.Scene({triggerElement: '#repereBlocText', duration: 0})
+		.setTween(tween2)
+		.addIndicators({name: "deplie cellule"}) // add indicators (requires plugin)
+		.addTo(controller);
+});
+
+
+/*Replie cellule*/
+$(function () {
+	// build tween
+	var tween7 = new TimelineMax ()
+		.add([
+			// TweenMax.fromTo(".bleue", 1, {marginTop: "-150"} ,{marginTop: "-1400", ease: Linear.easeNone}),
+			TweenMax.to("#cellule1", 1, {marginTop: "-23px", marginLeft: "-27px", width: "60%", rotation: 0, ease: Linear.easeNone}),
+			TweenMax.to("#cellule2", 1, {marginTop: "-19px", marginLeft: "154px", width: "50%", ease: Linear.easeNone}),
+			TweenMax.to("#cellule3", 1, {marginTop: "40px", marginLeft: "137px", width: "60%", rotation: 0, ease: Linear.easeNone}), 
+			TweenMax.to("#cellule4", 1, {marginTop: "45px", marginLeft: "-20px", width: "50%", ease: Linear.easeNone})
+		]);
+
+	// build scene
+	var scene8 = new ScrollMagic.Scene({triggerElement: '#repereBlocText2', duration: 0})
+		.setTween(tween7)
+		.addIndicators({name: "replie cellule"}) // add indicators (requires plugin)
+		.addTo(controller);
+});
 
 
 /*Event mouvement planetes scene 3*/
@@ -224,6 +265,72 @@ $(function () {
 						.addTo(controller);
 	});
 
+
+
+
+
+$(function () {
+	// build scene
+	var scene9 = new ScrollMagic.Scene({triggerElement: "#bulle1"})
+					// trigger a velocity opaticy animation
+					.setTween("#bulle1", 1, {opacity: 1}, {duration: 0})
+					.addIndicators({name: "bulle1"}) // add indicators 
+					.addTo(controller);
+});
+$(function () {
+	// build scene
+	var scene10 = new ScrollMagic.Scene({triggerElement: "#bulle2"})
+					// trigger a velocity opaticy animation
+					.setTween("#bulle2", 1, {opacity: 1}, {duration: 0})
+					.addIndicators({name: "bulle2"}) // add indicators 
+					.addTo(controller);
+});
+$(function () {
+	// build scene
+	var scene11 = new ScrollMagic.Scene({triggerElement: "#bulle3"})
+					// trigger a velocity opaticy animation
+					.setTween("#bulle3", 1, {opacity: 1}, {duration: 0})
+					.addIndicators({name: "bulle3"}) // add indicators 
+					.addTo(controller);
+});
+$(function () {
+	// build scene
+	var scene12 = new ScrollMagic.Scene({triggerElement: "#bulle4"})
+					// trigger a velocity opaticy animation
+					.setTween("#bulle4", 1, {opacity: 1}, {duration: 0})
+					.addIndicators({name: "bulle4"}) // add indicators 
+					.addTo(controller);
+});
+$(function () {
+	// build scene
+	var scene13 = new ScrollMagic.Scene({triggerElement: "#bulle5"})
+					// trigger a velocity opaticy animation
+					.setTween("#bulle5", 1, {opacity: 1}, {duration: 0})
+					.addIndicators({name: "bulle5"}) // add indicators 
+					.addTo(controller);
+});
+$(function () {
+	// build scene
+	var scene14 = new ScrollMagic.Scene({triggerElement: "#bulle6"})
+					// trigger a velocity opaticy animation
+					.setTween("#bulle6", 1, {opacity: 1}, {duration: 0})
+					.addIndicators({name: "bulle6"}) // add indicators 
+					.addTo(controller);
+});
+$(function () {
+	// build scene
+	var scene15 = new ScrollMagic.Scene({triggerElement: "#bulle7"})
+					// trigger a velocity opaticy animation
+					.setTween("#bulle7", 1, {opacity: 1}, {duration: 0})
+					.addIndicators({name: "bulle7"}) // add indicators 
+					.addTo(controller);
+});
+
+
+
+
+
+
 /*Event flux box texte*/
 	$(function () {
 
@@ -234,7 +341,7 @@ $(function () {
 			]);
 
 
-		var scene7 = new ScrollMagic.Scene({triggerElement: ".blocHistoire", duration: 400})
+		var scene5 = new ScrollMagic.Scene({triggerElement: ".blocHistoire", duration: 400})
 					.setTween(tween5)
 					.addIndicators({name: "width++ 2"}) // add indicators (requires plugin)
 					.addTo(controller);
@@ -258,7 +365,7 @@ $(function () {
 /*Event 4 flux*/
 	$(function () {
 
-		var tween4 = new TimelineMax ()
+		var tween6 = new TimelineMax ()
 			.add([
 				TweenMax.to("#flux1S4", 1, {height:"1900px"}),
 				TweenMax.to("#flux2S4", 1, {height:"1900px"}),
@@ -267,8 +374,8 @@ $(function () {
 			]);
 
 
-		var scene5 = new ScrollMagic.Scene({triggerElement: ".fluxS4", duration: 2000, offset: 50})
-					.setTween(tween4)
+		var scene7 = new ScrollMagic.Scene({triggerElement: ".fluxS4", duration: 2000, offset: 50})
+					.setTween(tween6)
 					.addIndicators({name: "width++"}) // add indicators (requires plugin)
 					.addTo(controller);
 
