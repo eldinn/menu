@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Grand+Hotel|Just+Me+Again+Down+Here|Montez|Nothing+You+Could+Do|Patrick+Hand|Poiret+One');
 *{ 
   margin:0;
   padding:0;
@@ -13,17 +14,36 @@ html,body{
 
 #bodySkroll{
   width: 100%;
-  /*height: 500%;*/
-  background-image: url(imgIntro/bg4.png);
-  background-repeat: repeat;
-
-  background-size: 100%;
+  /*height: 100%;*/
   /*position: absolute;*/
   z-index: 0;
   /*top: 0;*/
 }
   
+#BGplan1{
+  width: 100%;
+  /*height: 100%;*/
+  background-image: url(imgIntro/BGplan1.png);
+  background-repeat: repeat;
+  background-size: 100%;
+}
+#BGplan2{
+  width: 100%;
+  /*height: 100%;*/
+  background-image: url(imgIntro/BGplan2.png);
+  background-repeat: repeat;
+  background-size: 70%;
+  background-position: 50% 50%;
+}
+#BGplan3{
+  width: 100%;
+  /*height: 100%;*/
+  background-image: url(imgIntro/BGplan3.png);
+  background-repeat: repeat;
+  background-size: 50%;
+  background-position: 50% 50%;
 
+}
 /*-----------------------------------------*/
 /*      LOAD                          */
 /*-----------------------------------------------------------*/
@@ -131,12 +151,12 @@ animation-iteration-count: infinite;
 }
 
 .planete{
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 1s ease; 
   transition: opacity 1s ease;
 }
 .planete:hover{
-  opacity: 1;
+  opacity: 0;
 }
 
 /*-----------------------------------------*/
@@ -144,24 +164,113 @@ animation-iteration-count: infinite;
 /*-----------------------------------------------------------*/
 .scene1{
   width: 100%;
+  height: 500px;
 }
-#repereBlocText{
+/*
+.banniereTop{
+  width: 100%;
+  height: 230px;
+  background-image: url(imgIntro/banniereIntroSite.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: 50% 50%;
+  margin-top: -60px;
+
+}*/
+/*#texteIntro{
+    width: 1000px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}*/
+.containerTexteIntro{
+  width: 250px;
+  height: 500px;
+  background-color: #fff;
+  display: block;
+  position: relative;
+  margin-top: -320px;
+  margin-left: 52px
+}
+.containerTexteIntro p{
+  padding: 32px 37px;
+  text-align: justify;
+}
+
+
+.containerMedio{
+  width: 1000px;
+  margin: 0 auto;
+}
+h1{
+  /*width: 200px;*/
+  margin: 0 auto;
+  margin-top: -300px;
+  display: block;
+  position: relative;
+  font: bold 90px 'Nothing You Could Do', sans-serif;
+  text-align: center;
+  color: #fff;
+}
+h2{
+   margin: 0 auto;
+  /*margin-top: -300px;*/
+  display: block;
+  position: relative;
+  font: normal 25px 'Poiret One', sans-serif;
+  text-align: center;
+  color: #fff;
+}
+/*.containerMedio p{
+  margin-top: -190px;
+  display: block;
+  position: relative;
+}*/
+
+#medioPlanete{
+  width: 500px;
+  margin-left: 250px;
+  margin-top: -635px;
+  display: block;
+  position: relative;
+}
+#medioHalo{
+  width: 800px;
+  margin-left: 100px;
+  display: block;
+  animation: animationBreath ease-in 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: animationBreath ease-in 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: animationBreath ease-in 2s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: animationBreath ease-in 2s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: animationBreath ease-in 2s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+}
+/*#repereBlocText{
   margin-top: -32px;
 }
 .planeteS1{
   width: 1000px;
-  height: 90%;
+  height: 58%;
   min-height: 200px;
   margin: 0 auto;
   position: relative;
-}
+}*/
 /*.planeteS1 img{
     display: block;
 }*/
+/*
 .vortasgoth{
   width: 410px;
   height: 400px;
-  margin-top: -230px;
   display: block;
 }
 .vortasgoth img{
@@ -183,13 +292,19 @@ animation-iteration-count: infinite;
   -webkit-animation:animationRotateD 1s linear infinite;
   -moz-animation:animationRotateD 1s linear infinite;
   animation:animationRotateD 1s linear infinite;}
-#husphel{
-  width: 15%;
-  margin: 16px 0px 0px 750px;
+
+
+.husphel{
+  margin: -163px 0px 0px 750px;
 }
+.husphel img{
+  position: absolute;
+  width: 15%;
+}
+
 #nune{
   width: 2%;
-  margin: -161px 0px 0px 929px;
+  margin: 0px 0px 0px 929px;
 }
 #flux1S1{
   width: 59%;
@@ -206,6 +321,7 @@ animation-iteration-count: infinite;
   width: 1000px;
   margin: 0 auto;
 }
+*/
 /*#containtBoxIntro{
   width: 293px;
   margin-left: 350px;
@@ -213,9 +329,9 @@ animation-iteration-count: infinite;
   position: absolute;
   z-index: 9999;
 }*/
+/*
 #boxIntro{
   width: 293px;
-  /*height: 50px;*/
   background-color: #6AEAFC;
   border-radius: 10px;
   padding: 10px 15px;
@@ -266,42 +382,15 @@ animation-iteration-count: infinite;
   -ms-animation-iteration-count: infinite;
   -ms-transform-origin: 50% 50%;
 }
+*/
 
-@keyframes animationFrames{
-  0% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
-  50% {opacity:0.63; transform:  scaleX(1.02) scaleY(1.02) ; }
-  100% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
-}
-
-@-moz-keyframes animationFrames{
-  0% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
-  50% {opacity:0.63; transform:  scaleX(1.02) scaleY(1.02) ; }
-  100% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
-}
-
-@-webkit-keyframes animationFrames {
-  0% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
-  50% {opacity:0.63; transform:  scaleX(1.02) scaleY(1.02) ; }
-  100% { opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
-}
-
-@-o-keyframes animationFrames {
-  0% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
-  50% { opacity:0.63; transform:  scaleX(1.02) scaleY(1.02) ; }
-  100% { opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
-}
-
-@-ms-keyframes animationFrames {
-  0% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
-  50% {opacity:0.63; transform:  scaleX(1.02) scaleY(1.02) ; }
-  100% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
-}
 
 /*-----------------------------------------*/
 /*    SCENE 2 : TERRE                         */
 /*-----------------------------------------------------------*/
 .scene2{
   width: 100%;
+  height: 1200px;
 }
 .containerTerre{
   width: 100%;
@@ -329,27 +418,45 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#06051e', end
 
   display: block;
 }
-#terrePsion{
-  width: 100%;
+#medioHaut{
+  width: 68%;
+  /*margin-top: -100px;*/
+  margin-left: 68px;
   -webkit-animation:animationRotateG 20s linear infinite;
   -moz-animation:animationRotateG 20s linear infinite;
   animation:animationRotateG 20s linear infinite;
 }
-#terreBD{
+#medioPsion{
   width: 40%;
-  margin-top: -4500px;
-  margin-left: 1200px;
+  margin-top: -3100px;
+  margin-left: 600px;
   -webkit-animation:animationRotateD 10s linear infinite;
   -moz-animation:animationRotateD 10s linear infinite;
   animation:animationRotateD 10s linear infinite;
 }
-#terreOblivion{
+#medioBD{
+  width: 20%;
+  margin-top: -1450px;
+  margin-left: 1100px;
+  -webkit-animation:animationRotateG 6s linear infinite;
+  -moz-animation:animationRotateG 6s linear infinite;
+  animation:animationRotateG 6s linear infinite;
+}
+#medioOblivion{
   width: 10%;
-  margin-top: -1300px;
-  margin-left: 1800px;
-  -webkit-animation:animationRotateG 2s linear infinite;
-  -moz-animation:animationRotateG 2s linear infinite;
-  animation:animationRotateG 2s linear infinite;
+  margin-top: -700px;
+  margin-left: 1339px;
+  -webkit-animation:animationRotateD 2s linear infinite;
+  -moz-animation:animationRotateD 2s linear infinite;
+  animation:animationRotateD 2s linear infinite;
+}
+#medioTenebrus{
+  width: 2%;
+  margin-top: -284px;
+  margin-left: 1530px;
+  -webkit-animation:animationRotateG 0.5s linear infinite;
+  -moz-animation:animationRotateG 0.5s linear infinite;
+  animation:animationRotateG 0.5s linear infinite;
 }
 /*.containerTest{
   width: 100%;
@@ -468,6 +575,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
 }
 
 #ebesOblivion{
+  width: 10%;
     -webkit-animation:animationRotateD 1s linear infinite;
     -moz-animation:animationRotateD 1s linear infinite;
     animation:animationRotateD 1s linear infinite;
@@ -585,6 +693,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
   float: right;
   margin-right: 368px;
   margin-top: -81px;
+  /*border-bottom: 1px solid #CCC;*/
 }
 #flux2S3{
   width: 800px;
@@ -762,6 +871,38 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
   margin-left: 740px;
   display: block;
   position: absolute;
+}
+
+
+
+@keyframes animationBreath{
+  0% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+  50% {opacity:0.63; transform:  scaleX(1.02) scaleY(1.02) ; }
+  100% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+}
+
+@-moz-keyframes animationBreath{
+  0% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+  50% {opacity:0.63; transform:  scaleX(1.02) scaleY(1.02) ; }
+  100% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+}
+
+@-webkit-keyframes animationBreath {
+  0% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+  50% {opacity:0.63; transform:  scaleX(1.02) scaleY(1.02) ; }
+  100% { opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+}
+
+@-o-keyframes animationBreath {
+  0% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+  50% { opacity:0.63; transform:  scaleX(1.02) scaleY(1.02) ; }
+  100% { opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+}
+
+@-ms-keyframes animationBreath {
+  0% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+  50% {opacity:0.63; transform:  scaleX(1.02) scaleY(1.02) ; }
+  100% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
 }
 
 

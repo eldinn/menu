@@ -145,15 +145,60 @@ smoothScroll.init();
 
 	$(function () { // wait for document ready
 		// build tween
-		var tween1 = TweenMax.to("#bodySkroll", 1, {backgroundPosition: "50% 50%", ease: Linear.easeNone});
+		var tween1 = TweenMax.to("#BGplan1", 1, {backgroundPosition: "50% 30%", ease: Linear.easeNone});
 
 		// build scene
-		var scene1 = new ScrollMagic.Scene({triggerElement: 'body', duration: 6000})
+		var scene1 = new ScrollMagic.Scene({triggerElement: '#repereBG', duration: 6000})
 						.setTween(tween1)
 						// .setPin("#bodySkroll")
-						.addIndicators({name: "parallaxe"}) // add indicators (requires plugin)
+						.addIndicators({name: "parallaxePlan1"}) // add indicators (requires plugin)
+						.addTo(controller);
+	});	
+
+	$(function () { // wait for document ready
+		// build tween
+		var tween2 = TweenMax.to("#BGplan2", 1, {backgroundPosition: "50% 60%", ease: Linear.easeNone});
+
+		// build scene
+		var scene2 = new ScrollMagic.Scene({triggerElement: '#repereBG', duration: 6000})
+						.setTween(tween2)
+						// .setPin("#bodySkroll")
+						.addIndicators({name: "parallaxePlan2"}) // add indicators (requires plugin)
 						.addTo(controller);
 	});
+
+	$(function () { // wait for document ready
+		// build tween
+		var tween3 = TweenMax.to("#BGplan3", 1, {backgroundPosition: "50% 90%", ease: Linear.easeNone});
+
+		// build scene
+		var scene3 = new ScrollMagic.Scene({triggerElement: '#repereBG', duration: 6000})
+						.setTween(tween3)
+						// .setPin("#bodySkroll")
+						.addIndicators({name: "parallaxePlan2"}) // add indicators (requires plugin)
+						.addTo(controller);
+	});
+
+
+
+
+
+/*EVENT TITRE + TEXTE INTRO*/
+	$(function () { 
+		var tween4 = new TimelineMax ()
+			.add([
+				TweenMax.to("h1", 1, {marginTop: "-500px", ease: Linear.easeNone}),
+				TweenMax.to("h2", 1, {marginLeft: "1000px", ease: Linear.easeNone}),
+				TweenMax.to(".containerTexteIntro", 1, {marginLeft: "-200px", ease: Linear.easeNone})
+			]);
+
+		// build scene
+		var scene5 = new ScrollMagic.Scene({triggerElement: '', duration: 200})
+						.setTween(tween4)
+						.addIndicators({name: "titre+intro se barrent"})
+						.addTo(controller);
+	});
+
 /*
 	$(function () { // wait for document ready
 		// build tween
@@ -176,6 +221,7 @@ smoothScroll.init();
 
 */
 /*Event box texte 1 */
+/*
 $(function () {
 	var scene2 = new ScrollMagic.Scene({
 		triggerElement: "#repereBlocText"
@@ -199,9 +245,10 @@ $(function () {
 		.addTo(controller);
 });
 
-
+*/
 
 /*Déplie cellule*/
+/*
 $(function () {
 	// build tween
 	var tween2 = new TimelineMax ()
@@ -219,9 +266,10 @@ $(function () {
 		.addIndicators({name: "deplie cellule"}) // add indicators (requires plugin)
 		.addTo(controller);
 });
-
+*/
 
 /*Replie cellule*/
+/*
 $(function () {
 	// build tween
 	var tween7 = new TimelineMax ()
@@ -239,9 +287,10 @@ $(function () {
 		.addIndicators({name: "replie cellule"}) // add indicators (requires plugin)
 		.addTo(controller);
 });
-
+*/
 
 /*Event mouvement planetes scene 3*/
+/*
 	$(function () { // wait for document ready
 		// build tween
 		var tween3 = new TimelineMax ()
@@ -265,10 +314,10 @@ $(function () {
 						.addTo(controller);
 	});
 
+*/
 
 
-
-
+/*
 $(function () {
 	// build scene
 	var scene9 = new ScrollMagic.Scene({triggerElement: "#bulle1"})
@@ -328,10 +377,11 @@ $(function () {
 
 
 
-
+*/
 
 
 /*Event flux box texte*/
+/*
 	$(function () {
 
 		var tween5 = new TimelineMax ()
@@ -348,8 +398,9 @@ $(function () {
 
 	});
 
-
+*/
 /*Event box texte 2*/
+/*
 	$(function () {
 		var scene6 = new ScrollMagic.Scene({
 			triggerElement: "#repereBlocHistoire"
@@ -361,8 +412,9 @@ $(function () {
 			.addTo(controller);
 	});
 
-
+*/
 /*Event 4 flux*/
+/*
 	$(function () {
 
 		var tween6 = new TimelineMax ()
@@ -381,3 +433,4 @@ $(function () {
 
 	});
 
+*/

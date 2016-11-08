@@ -130,33 +130,53 @@ F   A       A  CCCC EEEEE BBBBB     OO       OO    K   K   ::
 
 <body>
   <div id="bodySkroll">
+    <div id="BGplan1">
+    <div id="BGplan2">
+    <div id="BGplan3">
   <!--   <div id="oLoading"><div><img src="img/loading5.gif" alt="Vous voyagez hors de la matière..." /></div></div> -->
 
 
   <!-- ********* Scene 1 : Presentation ********* -->
-    <div class="scene1">
-
-      <div class="blocPlaneteS1">
+      <div class="scene1">
+        <div class="containerMedio">
+          <img id="medioHalo" src="imgIntro/medioHalo.png">
+          <img id="medioPlanete" src="imgIntro/medio.png">
+            <h1>Eyjar i Eldinn</h1>
+            <h2>Récit fantastique en ligne</h2>
+        </div>
+        <div class="containerTexteIntro">
+          <p>Bienvenue au coeur du <span style="font-style: italic">système.</span>
+            <br/> Vous allez découvrir une aventure à la narration particulière.
+            </br>En défilant votre page web, vous allez animer des formes, déclencher des évènements, faire apparaitre des textes, comme avec ce cadre par exemple.
+            Soyez curieux et passez votre souris sur les différents éléments que vous croiserez, certains réagiront ! </br>
+            Maintenant laissez-vous plonger dans l’histoire ou
+            <a href="menu/menu.html">passez l'intro</a>. 
+          </p>
+        </div>
+        <div id="repereBG" class="repere"></div>
+<!--       <div class="blocPlaneteS1">
         <div class="planeteS1">
-          <!-- <img src="imgIntro/vortasgoth.png" id="vortasgoth"> -->
           <div class="vortasgoth">
             <img id="vortasgothPsion" src="imgIntro/vortasgothPsion.png">
             <img id="vortasgothBD" src="imgIntro/vortasgothBD.png">
             <img id="vortasgothAutre" src="imgIntro/vortasgothAutre.png">
             <img class="planete" src="imgIntro/vortasgothPlanete.png">
+          </div>          
+          <div class="husphel">
+            <img id="vortasgothBD" src="imgIntro/vortasgothBD.png">
+            <img id="vortasgothAutre" src="imgIntro/vortasgothAutre.png">
+            <img class="planete" src="imgIntro/husphel.png">
           </div>
-          <img src="imgIntro/husphel.png" id="husphel">
-          <img src="imgIntro/nune.png" id="nune">
-          <img src="imgIntro/flux1S1gg.png" class="flux" id="flux1S1">
+          <img src="imgIntro/nune.png" id="nune"> -->
+<!--           <img src="imgIntro/flux1S1gg.png" class="flux" id="flux1S1">
           <img src="imgIntro/flux2S1gg.png" class="flux" id="flux2S1">
-          <img src="imgIntro/flux3S1gg.png" class="flux" id="flux3S1">
-        </div>
+          <img src="imgIntro/flux3S1gg.png" class="flux" id="flux3S1"> -->
+<!--         </div>
       </div>
 
       <div class="blocText">
         <div id="repereBlocText" class="repere"></div>
         <div class="space200"></div>
-        <!-- <div id="containtBoxIntro"> -->
           <div id="boxIntro">
             <img src="imgIntro/cellule1.png" class="cellule" id="cellule1">
             <img src="imgIntro/cellule2.png" class="cellule" id="cellule2">
@@ -170,22 +190,23 @@ F   A       A  CCCC EEEEE BBBBB     OO       OO    K   K   ::
             <a href="menu/menu.html">passez l'intro</a>. 
             </p>
           </div>
-        <!-- </div> -->
         <div class="space200"></div>
         <div id="repereBlocText2" class="repere"></div>
       </div>
+ -->
 
-
-  </div>
+    </div>
 
   <!-- ********* Scene 2 : Terre ********* -->
     <div class="scene2">
       <div class="containerTerre">
-        <div class="terre">
-          <img id="terrePsion" src="imgIntro/terrePsion.png">
-          <img id="terreBD" src="imgIntro/terreBD.png">
-          <img id="terreOblivion" src="imgIntro/terreOblivion.png">
-        </div>
+<!--         <div class="terre">
+          <img id="medioHaut" src="imgIntro/medioTerreHaut.png">
+          <img id="medioPsion" src="imgIntro/medioPsion.png">
+          <img id="medioBD" src="imgIntro/medioBD.png">
+          <img id="medioOblivion" src="imgIntro/medioOblivion.png">
+          <img id="medioTenebrus" src="imgIntro/medioTenebrus.png">
+        </div> -->
         <div class="containerBulleTxt">
         <div id="repereBulle1" class="repere"></div>
           <p class="bulleTxt" id="bulle1">Le système.</p>
@@ -208,9 +229,9 @@ F   A       A  CCCC EEEEE BBBBB     OO       OO    K   K   ::
       <div class="blocPlaneteS3">
         <div class="planeteS3">
           <div class="ebes">
-            <img id="ebesPsion" src="imgIntro/ebesPsion.png">
-            <img id="ebesBorderline" src="imgIntro/ebesBorderline.png">
-            <img id="ebesOblivion" src="imgIntro/ebesOblivion.png">
+            <img id="ebesPsion" src="imgIntro/psion.png">
+            <img id="ebesBorderline" src="imgIntro/borderline.png">
+            <img id="ebesOblivion" src="imgIntro/oblivion.png">
             <img class="planete" src="imgIntro/ebes.png" >
             
           </div>
@@ -294,7 +315,9 @@ F   A       A  CCCC EEEEE BBBBB     OO       OO    K   K   ::
 
     </div>
 
-
+</div>
+</div>
+</div>
   <!-- <div class="space1000"><p>fin</p></div> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
     <script src="scrollMagic/ScrollMagic.js"></script>
