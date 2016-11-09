@@ -18,6 +18,7 @@ html,body{
   /*position: absolute;*/
   z-index: 0;
   /*top: 0;*/
+  overflow: hidden;
 }
   
 #BGplan1{
@@ -131,6 +132,9 @@ animation-iteration-count: infinite;
 .space300{
   min-height: 300px;
 }
+.space400{
+  min-height: 400px;
+}
 .space500{
   min-height: 500px;
 }
@@ -164,7 +168,7 @@ animation-iteration-count: infinite;
 /*-----------------------------------------------------------*/
 .scene1{
   width: 100%;
-  height: 500px;
+  height: 600px;
 }
 /*
 .banniereTop{
@@ -189,7 +193,7 @@ animation-iteration-count: infinite;
   background-color: #fff;
   display: block;
   position: relative;
-  margin-top: -320px;
+  margin-top: -470px;
   margin-left: 52px
 }
 .containerTexteIntro p{
@@ -198,28 +202,31 @@ animation-iteration-count: infinite;
 }
 
 
-.containerMedio{
+.containerEldinn{
   width: 1000px;
   margin: 0 auto;
 }
 h1{
-  /*width: 200px;*/
+  width: 1000px;
   margin: 0 auto;
-  margin-top: -300px;
+  margin-top: -480px;
   display: block;
-  position: relative;
+  position: absolute;
   font: bold 90px 'Nothing You Could Do', sans-serif;
   text-align: center;
   color: #fff;
+  z-index: 9;
 }
 h2{
+  width: 1000px;
    margin: 0 auto;
-  /*margin-top: -300px;*/
+  margin-top: -380px;
   display: block;
-  position: relative;
+  position: absolute;
   font: normal 25px 'Poiret One', sans-serif;
   text-align: center;
   color: #fff;
+  z-index: 9;
 }
 /*.containerMedio p{
   margin-top: -190px;
@@ -227,14 +234,14 @@ h2{
   position: relative;
 }*/
 
-#medioPlanete{
+#eldinnPlanete{
   width: 500px;
-  margin-left: 250px;
-  margin-top: -635px;
+  margin-left: 255px;
+  margin-top: -640px;
   display: block;
   position: relative;
 }
-#medioHalo{
+#eldinnHalo{
   width: 800px;
   margin-left: 100px;
   display: block;
@@ -384,7 +391,9 @@ h2{
 }
 */
 
-
+.reperePlanete{
+  margin-top: -80px;
+}
 /*-----------------------------------------*/
 /*    SCENE 2 : TERRE                         */
 /*-----------------------------------------------------------*/
@@ -395,7 +404,7 @@ h2{
 .containerTerre{
   width: 100%;
   height: 2000px;
-  margin-top: -475px;
+  /*margin-top: -475px;*/
   overflow: hidden;
 }
 .terre{
@@ -552,15 +561,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
 
 
 .ebes{
-  width: 650px;
-  height: 591px;
-  margin-top: 170px;
-  margin-left: -550px;
+  width: 500px;
+  height: 500px;
+  margin-top: 380px;
+  margin-left: -200px;
   display: block;
 }
 .ebes img{
   position: absolute;
-     width: 65%;
+  width: 50%;
+}
+.ebes :nth-child(4), .ebes :nth-child(5){
+  width: 550px;
+  height: 500px;
 }
 #ebesPsion{ 
     -webkit-animation:animationRotateD 11s linear infinite;
@@ -575,7 +588,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
 }
 
 #ebesOblivion{
-  width: 10%;
     -webkit-animation:animationRotateD 1s linear infinite;
     -moz-animation:animationRotateD 1s linear infinite;
     animation:animationRotateD 1s linear infinite;
@@ -585,12 +597,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
 .tintyph{
   width: 200px;
   height: 197px;
-  margin: -400px 0px 0px 0px;
+  margin: -75px 0px 0px -180px;
   display: block;
 }
 .tintyph img{
   position: absolute;
-    width: 20%;
+  width: 20%;
 }
 #tintyphAutre{
     -webkit-animation:animationRotateD 10s linear infinite;
@@ -603,7 +615,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
     animation:animationRotateG 4s linear infinite;
 }
 
-.eldinn{
+/*.eldinn{
   width: 64px;
   height: 72px;
   margin: -250px 0px 0px 240px;
@@ -617,18 +629,53 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
     -moz-animation:animationRotateD 0.5s linear infinite;
     animation:animationRotateD 0.5s linear infinite;
 }
+*/
+.nox{
+  width: 143px;
+  height: 138px;
+  margin: -400px 0px 0px -285px;
+  display: block;
+}
+.nox img{
+  position: absolute;
+  width: 14%;
+}
+#noxBD{
+       -webkit-animation:animationRotateG 15s linear infinite;
+    -moz-animation:animationRotateG 15s linear infinite;
+    animation:animationRotateG 15s linear infinite;
+}
+#noxAutre{
+     -webkit-animation:animationRotateD 10s linear infinite;
+    -moz-animation:animationRotateD 10s linear infinite;
+    animation:animationRotateD 10s linear infinite;
+}
 
+.roack{
+  width: 152px;
+  height: 144px;
+  margin: -200px 0px 0px 795px;
+  display: block;
+}
+.roack img{
+  position: absolute;
+}
+#roackAutre{
+    -webkit-animation:animationRotateD 4s linear infinite;
+    -moz-animation:animationRotateD 4s linear infinite;
+    animation:animationRotateD 4s linear infinite;
+}
 
 .dyamtirie{
   width: 300px;
   height: 296px;
-  margin: -500px 0px 0px 400px;
+  margin: -340px 0px 0px 570px;
   display: block;
 
 }
 .dyamtirie img{
   position: absolute;
-  width: 30%;
+  width: 16%;
 }
 #dyamtirieBD{
     -webkit-animation:animationRotateG 4s linear infinite;
@@ -641,41 +688,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
     animation:animationRotateD 1s linear infinite;
 }
 
-.roack{
-  width: 152px;
-  height: 144;
-  margin: 290px 0px 0px 795px;
-  display: block;
-}
-.roack img{
-  position: absolute;
-}
-#roackAutre{
-    -webkit-animation:animationRotateD 4s linear infinite;
-    -moz-animation:animationRotateD 4s linear infinite;
-    animation:animationRotateD 4s linear infinite;
-}
 
-.nox{
-  width: 200px;
-  height: 198px;
-  margin: -300px 0px 0px 700px;
-  display: block;
-}
-.nox img{
-  position: absolute;
-  width: 20%;
-}
-#noxBD{
-       -webkit-animation:animationRotateG 15s linear infinite;
-    -moz-animation:animationRotateG 15s linear infinite;
-    animation:animationRotateG 15s linear infinite;
-}
-#noxAutre{
-     -webkit-animation:animationRotateD 10s linear infinite;
-    -moz-animation:animationRotateD 10s linear infinite;
-    animation:animationRotateD 10s linear infinite;
-}
 
 
 

@@ -140,15 +140,23 @@ smoothScroll.init();
 	var controller = new ScrollMagic.Controller();
 
 
+/*FIXED INTRO*/
+	$(function () { 
+		var scene4 = new ScrollMagic.Scene({triggerElement: "", duration: 400})
+			.setPin("#BGplan1", "#BGplan2", "#BGplan3")
+			.addIndicators({name: "FIXE"})
+			.addTo (controller);
+		});
 
-/* Scroll*/
+
+/*SCROLL BG (en 3 plans)*/
 
 	$(function () { // wait for document ready
 		// build tween
 		var tween1 = TweenMax.to("#BGplan1", 1, {backgroundPosition: "50% 30%", ease: Linear.easeNone});
 
 		// build scene
-		var scene1 = new ScrollMagic.Scene({triggerElement: '#repereBG', duration: 6000})
+		var scene1 = new ScrollMagic.Scene({triggerElement: '#reperePlanete', duration: 6000})
 						.setTween(tween1)
 						// .setPin("#bodySkroll")
 						.addIndicators({name: "parallaxePlan1"}) // add indicators (requires plugin)
@@ -160,7 +168,7 @@ smoothScroll.init();
 		var tween2 = TweenMax.to("#BGplan2", 1, {backgroundPosition: "50% 60%", ease: Linear.easeNone});
 
 		// build scene
-		var scene2 = new ScrollMagic.Scene({triggerElement: '#repereBG', duration: 6000})
+		var scene2 = new ScrollMagic.Scene({triggerElement: '#reperePlanete', duration: 6000})
 						.setTween(tween2)
 						// .setPin("#bodySkroll")
 						.addIndicators({name: "parallaxePlan2"}) // add indicators (requires plugin)
@@ -172,7 +180,7 @@ smoothScroll.init();
 		var tween3 = TweenMax.to("#BGplan3", 1, {backgroundPosition: "50% 90%", ease: Linear.easeNone});
 
 		// build scene
-		var scene3 = new ScrollMagic.Scene({triggerElement: '#repereBG', duration: 6000})
+		var scene3 = new ScrollMagic.Scene({triggerElement: '#reperePlanete', duration: 6000})
 						.setTween(tween3)
 						// .setPin("#bodySkroll")
 						.addIndicators({name: "parallaxePlan2"}) // add indicators (requires plugin)
@@ -187,9 +195,9 @@ smoothScroll.init();
 	$(function () { 
 		var tween4 = new TimelineMax ()
 			.add([
-				TweenMax.to("h1", 1, {marginTop: "-500px", ease: Linear.easeNone}),
+				TweenMax.to("h1", 1, {marginTop: "-700px", ease: Linear.easeNone}),
 				TweenMax.to("h2", 1, {marginLeft: "1000px", ease: Linear.easeNone}),
-				TweenMax.to(".containerTexteIntro", 1, {marginLeft: "-200px", ease: Linear.easeNone})
+				TweenMax.to(".containerTexteIntro", 1, {marginLeft: "-500px", ease: Linear.easeNone})
 			]);
 
 		// build scene
@@ -199,6 +207,19 @@ smoothScroll.init();
 						.addTo(controller);
 	});
 
+
+/*PLENETE REDUIT + SE PLACE DANS LE SYSTEME*/
+	$(function () { // wait for document ready
+		// build tween
+		var tween5 = TweenMax.to("#eldinnPlanete", 1, {width: "50px", marginTop: "600px", ease: Linear.easeNone});
+
+		// build scene
+		var scene6 = new ScrollMagic.Scene({triggerElement: '#reperePlanete', duration: 500})
+						.setTween(tween5)
+						// .setPin("#bodySkroll")
+						.addIndicators({name: "move planete"}) // add indicators (requires plugin)
+						.addTo(controller);
+	});	
 /*
 	$(function () { // wait for document ready
 		// build tween
