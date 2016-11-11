@@ -193,7 +193,7 @@ animation-iteration-count: infinite;
   background-color: #fff;
   display: block;
   position: relative;
-  margin-top: -470px;
+  margin-top: -635px;
   margin-left: 52px
 }
 .containerTexteIntro p{
@@ -233,13 +233,19 @@ h2{
   display: block;
   position: relative;
 }*/
-
-#eldinnPlanete{
+/*#containerEldinnPlanete{
   width: 500px;
-  margin-left: 255px;
+  height: 500px;
+  margin: 0 auto;
   margin-top: -640px;
   display: block;
   position: relative;
+}*/
+#eldinnPlanete{
+  width: 500px;
+  margin-left: 255px;
+  position: relative;
+  margin-top: -640px;
 }
 #eldinnHalo{
   width: 800px;
@@ -394,13 +400,52 @@ h2{
 .reperePlanete{
   margin-top: -80px;
 }
+
+
 /*-----------------------------------------*/
-/*    SCENE 2 : TERRE                         */
+/*    SCENE 2 : SYSTEME                       */
 /*-----------------------------------------------------------*/
 .scene2{
   width: 100%;
-  height: 1200px;
+  height: 2000px;
 }
+/*.blocPlaneteS3{
+  width: 100%;
+  height: 1000px;
+}*/
+
+.blocPlaneteS3{
+    width: 1000px;
+  /*height: 1200px;*/
+  margin: 0 auto;
+  position: relative;
+}
+.planeteS3{
+  width: 1000px;
+  height: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.ebes, .nox, .tintyph, .eldinn, .roack, .vortasgoth, .nune, .husphel, .dyamtirie{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#06051e+0,000000+100&0.94+1,0.93+30,0.74+47,0+60,0+100 */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(6,5,30,0.94) 0%, rgba(6,5,30,0.94) 1%, rgba(4,4,21,0.93) 30%, rgba(3,3,16,0.74) 47%, rgba(2,2,12,0) 60%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(6,5,30,0.94) 0%,rgba(6,5,30,0.94) 1%,rgba(4,4,21,0.93) 30%,rgba(3,3,16,0.74) 47%,rgba(2,2,12,0) 60%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  rgba(6,5,30,0.94) 0%,rgba(6,5,30,0.94) 1%,rgba(4,4,21,0.93) 30%,rgba(3,3,16,0.74) 47%,rgba(2,2,12,0) 60%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+#repereFixeSysteme{
+  margin-top: 640px;
+  position: absolute;
+}
+
+
+
+
+
+.containerPlanete img{
+    position: absolute;
+}
+
 .containerTerre{
   width: 100%;
   height: 2000px;
@@ -411,14 +456,6 @@ h2{
   width: 300%;
   height: 100%;
   border-radius: 50%;
-  /*background-color: #06051E;*/
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#06051e+1,06051e+100&1+0,1+56,0.93+62,0.78+65,0+70 */
-background: -moz-radial-gradient(center, ellipse cover,  rgba(6,5,30,1) 0%, rgba(6,5,30,1) 1%, rgba(6,5,30,1) 56%, rgba(6,5,30,0.93) 62%, rgba(6,5,30,0.78) 65%, rgba(6,5,30,0) 70%, rgba(6,5,30,0) 100%); /* FF3.6-15 */
-background: -webkit-radial-gradient(center, ellipse cover,  rgba(6,5,30,1) 0%,rgba(6,5,30,1) 1%,rgba(6,5,30,1) 56%,rgba(6,5,30,0.93) 62%,rgba(6,5,30,0.78) 65%,rgba(6,5,30,0) 70%,rgba(6,5,30,0) 100%); /* Chrome10-25,Safari5.1-6 */
-background: radial-gradient(ellipse at center,  rgba(6,5,30,1) 0%,rgba(6,5,30,1) 1%,rgba(6,5,30,1) 56%,rgba(6,5,30,0.93) 62%,rgba(6,5,30,0.78) 65%,rgba(6,5,30,0) 70%,rgba(6,5,30,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#06051e', endColorstr='#0006051e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-
   margin-left: -570px;
   /*position: relative;*/
 }
@@ -467,97 +504,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#06051e', end
   -moz-animation:animationRotateG 0.5s linear infinite;
   animation:animationRotateG 0.5s linear infinite;
 }
-/*.containerTest{
-  width: 100%;
-
-}*/
-/*.repereTest{
-  margin-top: 200px;
-
-}
-.test{
-  width: 20%;
-  height: 40%;
-  background-color: #000;
-}
-*/
-/*.containerBulleTxt{
-  width: 1000px;
-  margin: 0 auto;
-  position: relative;
-}*/
-.bulleTxt{
-  position: absolute;
-  background-color: #C4B1E2;
-  padding: 15px 15px;
-  border-radius: 30px;
-  /*opacity: 0;*/
-}
-#bulle1{
-  margin-top: -500px;
-  margin-left: 100px;
-  opacity: 0;
-}
-#bulle2{
-  margin-top: -400px;
-  margin-left: 150px;
-  opacity: 0;
-}
-#bulle3{
-  margin-top: -350px;
-  margin-left: 380px;
-  opacity: 0;
-}
-#bulle4{
-  margin-top: -200px;
-  margin-left: 300px;
-  opacity: 0;
-}
-#bulle5{
- margin-top: -184px;
- margin-left: 900px;
- font-size: 20px; 
- font-style: italic; 
- opacity: 0;
-}
-#bulle6{
- margin-top: -50px;
- margin-left: 400px;
- opacity: 0;  
-}
-#bulle7{
-  margin-top: 0px;
-  margin-left: 450px;
-  opacity: 0;
-}
-#bulle8{
-  
-}
-#bulle9{
-
-}
 
 
-/*-----------------------------------------*/
-/*    SCENE 3 : IMMERSION                         */
-/*-----------------------------------------------------------*/
-.scene3{
-  width: 100%;
-}
-.planeteS3{
-  width: 1000px;
-  height: 1200px;
-  /*min-height: 200px;*/
-  margin: 0 auto;
-  position: relative;
-}
-.ebes, .nox, .tintyph, .eldinn, .roack, .vortasgoth{
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#06051e+0,000000+100&0.94+1,0.93+30,0.74+47,0+60,0+100 */
-background: -moz-radial-gradient(center, ellipse cover,  rgba(6,5,30,0.94) 0%, rgba(6,5,30,0.94) 1%, rgba(4,4,21,0.93) 30%, rgba(3,3,16,0.74) 47%, rgba(2,2,12,0) 60%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-background: -webkit-radial-gradient(center, ellipse cover,  rgba(6,5,30,0.94) 0%,rgba(6,5,30,0.94) 1%,rgba(4,4,21,0.93) 30%,rgba(3,3,16,0.74) 47%,rgba(2,2,12,0) 60%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-background: radial-gradient(ellipse at center,  rgba(6,5,30,0.94) 0%,rgba(6,5,30,0.94) 1%,rgba(4,4,21,0.93) 30%,rgba(3,3,16,0.74) 47%,rgba(2,2,12,0) 60%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-}
 
 
 .ebes{
@@ -568,7 +516,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
   display: block;
 }
 .ebes img{
-  position: absolute;
   width: 50%;
 }
 .ebes :nth-child(4), .ebes :nth-child(5){
@@ -601,7 +548,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
   display: block;
 }
 .tintyph img{
-  position: absolute;
   width: 20%;
 }
 #tintyphAutre{
@@ -637,7 +583,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
   display: block;
 }
 .nox img{
-  position: absolute;
   width: 14%;
 }
 #noxBD{
@@ -657,24 +602,42 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
   margin: -200px 0px 0px 795px;
   display: block;
 }
-.roack img{
-  position: absolute;
-}
 #roackAutre{
     -webkit-animation:animationRotateD 4s linear infinite;
     -moz-animation:animationRotateD 4s linear infinite;
     animation:animationRotateD 4s linear infinite;
 }
 
+.nune{
+  width: 135px;
+  height: 135px;
+  margin: -400px 0px 0px 700px;
+  display: block;
+
+}
+.nune img{
+  width: 13%;
+}
+/*#nuneBD{
+    -webkit-animation:animationRotateG 4s linear infinite;
+    -moz-animation:animationRotateG 4s linear infinite;
+    animation:animationRotateG 4s linear infinite;
+}*/
+#nuneAutre{
+    -webkit-animation:animationRotateD 1s linear infinite;
+    -moz-animation:animationRotateD 1s linear infinite;
+    animation:animationRotateD 1s linear infinite;
+}
+
+
 .dyamtirie{
-  width: 300px;
-  height: 296px;
-  margin: -340px 0px 0px 570px;
+  width: 165px;
+  height: 165px;
+  margin: -105px 0px 0px 572px;
   display: block;
 
 }
 .dyamtirie img{
-  position: absolute;
   width: 16%;
 }
 #dyamtirieBD{
@@ -688,10 +651,75 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
     animation:animationRotateD 1s linear infinite;
 }
 
+.vortasgoth{
+  width: 27%;
+  height: 24%;
+  margin: 110px 0px 0px 570px;
+  display: block;
+
+}
+.vortasgoth img{
+  width: 27%;
+}
+#vortasgothPsion{
+    -webkit-animation:animationRotateG 4s linear infinite;
+    -moz-animation:animationRotateG 4s linear infinite;
+    animation:animationRotateG 4s linear infinite;
+}
+#vortasgothAutre{
+    -webkit-animation:animationRotateD 1s linear infinite;
+    -moz-animation:animationRotateD 1s linear infinite;
+    animation:animationRotateD 1s linear infinite;
+}
+
+.husphel{
+  width: 23%;
+  height: 13%;
+  margin: -130px 0px 0px 784px;
+  display: block;
+
+}
+.husphel img{
+  width: 23%;
+}
+#husphelPsion{
+    -webkit-animation:animationRotateG 4s linear infinite;
+    -moz-animation:animationRotateG 4s linear infinite;
+    animation:animationRotateG 4s linear infinite;
+}
+#husphelAutre{
+    -webkit-animation:animationRotateD 1s linear infinite;
+    -moz-animation:animationRotateD 1s linear infinite;
+    animation:animationRotateD 1s linear infinite;
+}
+
+#repereEldinnDown{
+  margin-top: -170px;
+}
+
+/*-----------------------------------------*/
+/*    SCENE 3 : ELDINN                         */
+/*-----------------------------------------------------------*/
+.scene3{
+  width: 100%;
+  height: 1200px;
+  /*margin: 0 auto;*/
+}
+#particules{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
 
 
 
 
+
+
+
+/*-----------------------------------------*/
+/*    SCENE 4 : HISTOIRE                         */
+/*-----------------------------------------------------------*/
 .blocFluxS3{
   width: 1200px;
   margin-top: -1200px;
@@ -782,6 +810,58 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
     display: block;
     padding-top: 50px;
     padding-bottom: 20px;
+}
+
+
+.bulleTxt{
+  position: absolute;
+  background-color: #C4B1E2;
+  padding: 15px 15px;
+  border-radius: 30px;
+  /*opacity: 0;*/
+}
+#bulle1{
+  margin-top: -500px;
+  margin-left: 100px;
+  opacity: 0;
+}
+#bulle2{
+  margin-top: -400px;
+  margin-left: 150px;
+  opacity: 0;
+}
+#bulle3{
+  margin-top: -350px;
+  margin-left: 380px;
+  opacity: 0;
+}
+#bulle4{
+  margin-top: -200px;
+  margin-left: 300px;
+  opacity: 0;
+}
+#bulle5{
+ margin-top: -184px;
+ margin-left: 900px;
+ font-size: 20px; 
+ font-style: italic; 
+ opacity: 0;
+}
+#bulle6{
+ margin-top: -50px;
+ margin-left: 400px;
+ opacity: 0;  
+}
+#bulle7{
+  margin-top: 0px;
+  margin-left: 450px;
+  opacity: 0;
+}
+#bulle8{
+  
+}
+#bulle9{
+
 }
 /*-----------------------------------------*/
 /*    SCENE 4 : FLUX                         */
@@ -885,7 +965,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
   display: block;
   position: absolute;
 }
-
+#reperePortailFixe{
+  margin-top: 631px;
+  position: absolute;
+}
 
 
 @keyframes animationBreath{

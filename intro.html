@@ -142,7 +142,9 @@ F   A       A  CCCC EEEEE BBBBB     OO       OO    K   K   ::
           <img id="eldinnHalo" src="imgIntro/medioHalo.png">
           <h1>Eyjar i Eldinn</h1>
           <h2>Récit fantastique en ligne</h2>
-          <img id="eldinnPlanete" src="imgIntro/eldinnPlanete.png">
+          <!-- <div id="containerEldinnPlanete"> -->
+            <img id="eldinnPlanete" src="imgIntro/eldinnPlanete72dpi.png">
+          <!-- </div> -->
         </div>
         <div class="containerTexteIntro">
           <p>Bienvenue au coeur du <span style="font-style: italic">système.</span>
@@ -194,22 +196,26 @@ F   A       A  CCCC EEEEE BBBBB     OO       OO    K   K   ::
         <div id="repereBlocText2" class="repere"></div>
       </div>
  -->
-
     </div>
  <div id="reperePlanete" class="repere"></div>
-  <!-- ********* Scene 2 : Terre ********* -->
+
+
+
+
+  <!-- ********* Scene 2 : Systeme ********* -->
     <div class="scene2">
       <div class="space400"></div>
+<div id="repereFixeSysteme" class="repere"></div>
       <div class="blocPlaneteS3">
         <div class="planeteS3">
-          <div class="ebes">
+          <div class="containerPlanete ebes">
             <img id="ebesPsion" src="imgIntro/psion.png">
             <img id="ebesBorderline" src="imgIntro/BD.png">
             <img id="ebesOblivion" src="imgIntro/oblivion.png">
             <img class="planete" src="imgIntro/ebesCreux.png" >
             <img class="planete" src="imgIntro/ebes.png" >
           </div>
-          <div class="tintyph">
+          <div class="containerPlanete tintyph">
             <img id="tintyphAutre" src="imgIntro/psion.png">
             <img id="tintyphBD" src="imgIntro/BD.png">
             <img class="planete" src="imgIntro/tintyphCreux.png" >
@@ -219,23 +225,45 @@ F   A       A  CCCC EEEEE BBBBB     OO       OO    K   K   ::
             <img id="eldinnOblivion" src="imgIntro/eldinnOblivion.png">
             <img class="planete" src="imgIntro/eldinn.png">
           </div> -->
-          <div class="nox">
+          <div class="containerPlanete nox">
             <img id="noxBD" src="imgIntro/BD.png">
             <img id="noxAutre" src="imgIntro/noxAutre.png">
             <img class="planete" src="imgIntro/noxCreux.png">
             <img class="planete" src="imgIntro/nox.png">
           </div>
-          <div class="roack">
+
+          <div class="containerPlanete roack">
             <img id="roackAutre" src="imgIntro/roackAutre.png">
             <img class="planete" src="imgIntro/roackCreux.png">
             <img class="planete" src="imgIntro/roack.png">
           </div>
-          <div class="dyamtirie">
+
+
+          <div class="containerPlanete nune">
+            <img id="nuneAutre" src="imgIntro/roackAutre.png">
+            <img class="planete" src="imgIntro/nuneCreux.png">
+            <img class="planete" src="imgIntro/nune.png">
+          </div>
+          <div class="containerPlanete dyamtirie">
             <img id="dyamtirieBD" src="imgIntro/BD.png">
             <img id="dyamtirieAutre" src="imgIntro/noxAutre.png">
             <img class="planete" src="imgIntro/dyamtirieCreux.png">
             <img class="planete" src="imgIntro/dyamtirie.png">
           </div>
+          <div class="containerPlanete vortasgoth">
+            <img id="vortasgothPsion" src="imgIntro/psion.png">
+            <img id="vortasgothBD" src="imgIntro/BD.png">
+            <img id="vortasgothAutre" src="imgIntro/roackAutre.png">
+            <img class="planete" src="imgIntro/vortasgothCreux.png">
+            <img class="planete" src="imgIntro/vortasgoth.png">
+          </div>
+          <div class="containerPlanete husphel">
+            <img id="husphelAutre" src="imgIntro/psion.png">
+            <img id="roackAutre" src="imgIntro/roackAutre.png">
+            <img class="planete" src="imgIntro/husphelCreux.png">
+            <img class="planete" src="imgIntro/husphel.png">
+          </div>
+<div id="repereEldinnDown" class="repere"></div>
 
 <!--           <div class="blocFluxS3">
             <div id="flux1S3"></div>
@@ -267,8 +295,17 @@ F   A       A  CCCC EEEEE BBBBB     OO       OO    K   K   ::
     </div>
 
 
-  <!-- ********* Scene 3 : Immersion ********* -->
+  <!-- ********* Scene 3 : Eldinn ********* -->
     <div class="scene3">
+      <div class="space200"></div>
+      <img id="particules" src="imgIntro/particules.png">
+    </div>
+
+
+
+
+  <!-- ********* Scene 4 : Histoire ********* -->
+    <div class="scene4">
 
 
       <div class="blocHistoire">
@@ -309,6 +346,7 @@ F   A       A  CCCC EEEEE BBBBB     OO       OO    K   K   ::
 
   <!-- ********* Scene 5 : Portail (fin) ********* -->
     <div class="scene5">
+    <div id="reperePortailFixe" class="repere"></div>
      <div class="blocPortail">
         <div class="fondPortail">
           <img id="fondPortailAnim" src="imgIntro/fondPortailAnim.png">

@@ -207,19 +207,56 @@ smoothScroll.init();
 						.addTo(controller);
 	});
 
-
-/*PLENETE REDUIT + SE PLACE DANS LE SYSTEME*/
+/*FIXED SYSTEME*/
+	$(function () { 
+		var scene8 = new ScrollMagic.Scene({triggerElement: "#repereFixeSysteme", duration: 600})
+			.setPin(".blocPlaneteS3")
+			.addIndicators({name: "FIXE SYSTEME"})
+			.addTo (controller);
+		});
+/*ELDINN SUIT LE SYSTEME*/
 	$(function () { // wait for document ready
 		// build tween
-		var tween5 = TweenMax.to("#eldinnPlanete", 1, {width: "50px", marginTop: "600px", ease: Linear.easeNone});
+		var tween7 = TweenMax.to("#eldinnPlanete", 1, {marginTop:"1200px", ease: Linear.easeNone});
+
+		// build scene
+		var scene9 = new ScrollMagic.Scene({triggerElement: '#repereFixeSysteme', duration: 600})
+						.setTween(tween7)
+						// .setPin("#bodySkroll")
+						.addIndicators({name: "eldinn suit"}) // add indicators (requires plugin)
+						.addTo(controller);
+	});
+
+
+/*ELDINN REDUIT + SE PLACE DANS LE SYSTEME*/
+	$(function () { // wait for document ready
+		// build tween
+		var tween5 = TweenMax.to("#eldinnPlanete", 1, {width: "50px", marginTop: "600px", marginLeft: "250px", ease: Linear.easeNone});
 
 		// build scene
 		var scene6 = new ScrollMagic.Scene({triggerElement: '#reperePlanete', duration: 500})
 						.setTween(tween5)
 						// .setPin("#bodySkroll")
-						.addIndicators({name: "move planete"}) // add indicators (requires plugin)
+						.addIndicators({name: "move eldinn"}) // add indicators (requires plugin)
 						.addTo(controller);
 	});	
+
+
+/*ELDINN DESCEND + GROSSI*/
+	$(function () { // wait for document ready
+		// build tween
+		var tween6 = TweenMax.to("#eldinnPlanete", 1, {width: "1200px", marginTop: "1800px", marginLeft:"-100px", rotation: -160, ease: Linear.easeNone});
+
+		// build scene
+		var scene7 = new ScrollMagic.Scene({triggerElement: '#repereEldinnDown', duration: 400})
+						.setTween(tween6)
+						// .setPin("#bodySkroll")
+						.addIndicators({name: "move eldinn 2"}) // add indicators (requires plugin)
+						.addTo(controller);
+	});	
+
+
+
 /*
 	$(function () { // wait for document ready
 		// build tween
@@ -402,7 +439,7 @@ $(function () {
 
 
 /*Event flux box texte*/
-/*
+
 	$(function () {
 
 		var tween5 = new TimelineMax ()
@@ -419,9 +456,9 @@ $(function () {
 
 	});
 
-*/
+
 /*Event box texte 2*/
-/*
+
 	$(function () {
 		var scene6 = new ScrollMagic.Scene({
 			triggerElement: "#repereBlocHistoire"
@@ -433,9 +470,9 @@ $(function () {
 			.addTo(controller);
 	});
 
-*/
+
 /*Event 4 flux*/
-/*
+
 	$(function () {
 
 		var tween6 = new TimelineMax ()
@@ -454,4 +491,10 @@ $(function () {
 
 	});
 
-*/
+/*FIXED PORTAIL*/
+	$(function () { 
+		var scene10 = new ScrollMagic.Scene({triggerElement: "#reperePortailFixe", duration: 1000})
+			.setPin(".blocPortail")
+			.addIndicators({name: "FIXE PORTAIL"})
+			.addTo (controller);
+		});
