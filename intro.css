@@ -8,7 +8,7 @@
 html,body{
   width: 100%;
   /*height:100%;*/
-  background-color: #06051E;
+  background-color: #17051e;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -24,14 +24,15 @@ html,body{
 #BGplan1{
   width: 100%;
   /*height: 100%;*/
-  background-image: url(imgIntro/BGplan1.png);
+  background-image: url(imgIntro/BGplan1-72.png);
   background-repeat: repeat;
   background-size: 100%;
+  background-position: 50% 50%;
 }
 #BGplan2{
   width: 100%;
   /*height: 100%;*/
-  background-image: url(imgIntro/BGplan2.png);
+  background-image: url(imgIntro/BGplan2-72.png);
   background-repeat: repeat;
   background-size: 70%;
   background-position: 50% 50%;
@@ -39,7 +40,7 @@ html,body{
 #BGplan3{
   width: 100%;
   /*height: 100%;*/
-  background-image: url(imgIntro/BGplan3.png);
+  background-image: url(imgIntro/BGplan3-72.png);
   background-repeat: repeat;
   background-size: 50%;
   background-position: 50% 50%;
@@ -414,6 +415,24 @@ h2{
   height: 1000px;
 }*/
 
+.repereApparition{
+  position: absolute;
+}
+.A1{
+  margin-top: 600px;
+}
+.A2{
+  margin-top: 700px;
+}
+.A3{
+  margin-top: 850px;
+}
+.A4{
+  margin-top: 900px;
+}
+
+
+
 .blocPlaneteS3{
     width: 1000px;
   /*height: 1200px;*/
@@ -426,275 +445,273 @@ h2{
   margin: 0 auto;
   position: relative;
 }
-.ebes, .nox, .tintyph, .eldinn, .roack, .vortasgoth, .nune, .husphel, .dyamtirie{
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#06051e+0,000000+100&0.94+1,0.93+30,0.74+47,0+60,0+100 */
-background: -moz-radial-gradient(center, ellipse cover,  rgba(6,5,30,0.94) 0%, rgba(6,5,30,0.94) 1%, rgba(4,4,21,0.93) 30%, rgba(3,3,16,0.74) 47%, rgba(2,2,12,0) 60%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-background: -webkit-radial-gradient(center, ellipse cover,  rgba(6,5,30,0.94) 0%,rgba(6,5,30,0.94) 1%,rgba(4,4,21,0.93) 30%,rgba(3,3,16,0.74) 47%,rgba(2,2,12,0) 60%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-background: radial-gradient(ellipse at center,  rgba(6,5,30,0.94) 0%,rgba(6,5,30,0.94) 1%,rgba(4,4,21,0.93) 30%,rgba(3,3,16,0.74) 47%,rgba(2,2,12,0) 60%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-}
+/*.ebes, .nox, .tintyph, .roack, .vortasgoth, .nune, .husphel, .dyamtirie{
+
+}*/
 #repereFixeSysteme{
   margin-top: 640px;
   position: absolute;
 }
 
 
+#hideEldinn{
+  margin-top: 103px;
+  position: absolute;
+}
+#showEldinn{
+  margin-top: 99px;
+  position: absolute;
+}
 
-
-
+.containerPlanete{
+    opacity: 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#06051e+0,000000+100&0.94+1,0.93+30,0.74+47,0+60,0+100 */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(6,5,30,0.94) 0%, rgba(6,5,30,0.94) 1%, rgba(4,4,21,0.93) 30%, rgba(3,3,16,0.74) 47%, rgba(2,2,12,0) 60%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(6,5,30,0.94) 0%,rgba(6,5,30,0.94) 1%,rgba(4,4,21,0.93) 30%,rgba(3,3,16,0.74) 47%,rgba(2,2,12,0) 60%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  rgba(6,5,30,0.94) 0%,rgba(6,5,30,0.94) 1%,rgba(4,4,21,0.93) 30%,rgba(3,3,16,0.74) 47%,rgba(2,2,12,0) 60%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
 .containerPlanete img{
-    position: absolute;
+  position: absolute;
+  display: block;
+
 }
 
-.containerTerre{
-  width: 100%;
-  height: 2000px;
+/*.containerTerre{*/
+  /*width: 100%;*/
+  /*height: 2000px;*/
   /*margin-top: -475px;*/
-  overflow: hidden;
-}
-.terre{
+  /*overflow: hidden;*/
+/*}*/
+/*.terre{
   width: 300%;
   height: 100%;
   border-radius: 50%;
-  margin-left: -570px;
+  margin-left: -570px;*/
   /*position: relative;*/
-}
-.terre img{
+/*}*/
+/*.terre img{*/
   /*position: absolute;*/
 
-  display: block;
-}
-#medioHaut{
-  width: 68%;
-  /*margin-top: -100px;*/
-  margin-left: 68px;
-  -webkit-animation:animationRotateG 20s linear infinite;
-  -moz-animation:animationRotateG 20s linear infinite;
-  animation:animationRotateG 20s linear infinite;
-}
-#medioPsion{
-  width: 40%;
-  margin-top: -3100px;
-  margin-left: 600px;
-  -webkit-animation:animationRotateD 10s linear infinite;
-  -moz-animation:animationRotateD 10s linear infinite;
-  animation:animationRotateD 10s linear infinite;
-}
-#medioBD{
-  width: 20%;
-  margin-top: -1450px;
-  margin-left: 1100px;
-  -webkit-animation:animationRotateG 6s linear infinite;
-  -moz-animation:animationRotateG 6s linear infinite;
-  animation:animationRotateG 6s linear infinite;
-}
-#medioOblivion{
-  width: 10%;
-  margin-top: -700px;
-  margin-left: 1339px;
-  -webkit-animation:animationRotateD 2s linear infinite;
-  -moz-animation:animationRotateD 2s linear infinite;
-  animation:animationRotateD 2s linear infinite;
-}
-#medioTenebrus{
-  width: 2%;
-  margin-top: -284px;
-  margin-left: 1530px;
-  -webkit-animation:animationRotateG 0.5s linear infinite;
-  -moz-animation:animationRotateG 0.5s linear infinite;
-  animation:animationRotateG 0.5s linear infinite;
-}
+  /*display: block;*/
+/*}*/
 
 
-
-
-.ebes{
-  width: 500px;
-  height: 500px;
-  margin-top: 380px;
-  margin-left: -200px;
-  display: block;
+.heeytee{
+  width: 40px;
+  height: 40px;
+  margin: 300px 0px 0px 660px;
 }
-.ebes img{
-  width: 50%;
-}
-.ebes :nth-child(4), .ebes :nth-child(5){
-  width: 550px;
-  height: 500px;
-}
-#ebesPsion{ 
-    -webkit-animation:animationRotateD 11s linear infinite;
-    -moz-animation:animationRotateD 11s linear infinite;
-    animation:animationRotateD 11s linear infinite;
-}
-
-#ebesBorderline{
-    -webkit-animation:animationRotateG 6s linear infinite;
-    -moz-animation:animationRotateG 6s linear infinite;
-    animation:animationRotateG 6s linear infinite;
-}
-
-#ebesOblivion{
-    -webkit-animation:animationRotateD 1s linear infinite;
-    -moz-animation:animationRotateD 1s linear infinite;
-    animation:animationRotateD 1s linear infinite;
-}
-
-
-.tintyph{
-  width: 200px;
-  height: 197px;
-  margin: -75px 0px 0px -180px;
-  display: block;
-}
-.tintyph img{
-  width: 20%;
-}
-#tintyphAutre{
-    -webkit-animation:animationRotateD 10s linear infinite;
-    -moz-animation:animationRotateD 10s linear infinite;
-    animation:animationRotateD 10s linear infinite;
-}
-#tintyphBD{
-     -webkit-animation:animationRotateG 4s linear infinite;
-    -moz-animation:animationRotateG 4s linear infinite;
-    animation:animationRotateG 4s linear infinite;
-}
-
-/*.eldinn{
-  width: 64px;
-  height: 72px;
-  margin: -250px 0px 0px 240px;
-  display: block;
-}
-.eldinn img{
-  position: absolute;
-}
-#eldinnOblivion{
-    -webkit-animation:animationRotateD 0.5s linear infinite;
-    -moz-animation:animationRotateD 0.5s linear infinite;
-    animation:animationRotateD 0.5s linear infinite;
-}
-*/
-.nox{
-  width: 143px;
-  height: 138px;
-  margin: -400px 0px 0px -285px;
-  display: block;
-}
-.nox img{
-  width: 14%;
-}
-#noxBD{
-       -webkit-animation:animationRotateG 15s linear infinite;
-    -moz-animation:animationRotateG 15s linear infinite;
-    animation:animationRotateG 15s linear infinite;
-}
-#noxAutre{
-     -webkit-animation:animationRotateD 10s linear infinite;
-    -moz-animation:animationRotateD 10s linear infinite;
-    animation:animationRotateD 10s linear infinite;
-}
-
-.roack{
-  width: 152px;
-  height: 144px;
-  margin: -200px 0px 0px 795px;
-  display: block;
-}
-#roackAutre{
-    -webkit-animation:animationRotateD 4s linear infinite;
-    -moz-animation:animationRotateD 4s linear infinite;
-    animation:animationRotateD 4s linear infinite;
-}
+.heeytee img{width: 40px;}
 
 .nune{
   width: 135px;
   height: 135px;
-  margin: -400px 0px 0px 700px;
-  display: block;
-
+  margin: -40px 0px 0px 670px;
 }
-.nune img{
-  width: 13%;
-}
-/*#nuneBD{
-    -webkit-animation:animationRotateG 4s linear infinite;
-    -moz-animation:animationRotateG 4s linear infinite;
-    animation:animationRotateG 4s linear infinite;
-}*/
-#nuneAutre{
-    -webkit-animation:animationRotateD 1s linear infinite;
-    -moz-animation:animationRotateD 1s linear infinite;
-    animation:animationRotateD 1s linear infinite;
-}
-
+.nune img{width: 135px;}
 
 .dyamtirie{
   width: 165px;
   height: 165px;
-  margin: -105px 0px 0px 572px;
-  display: block;
+  margin: -90px 0px 0px 540px;
+  /*opacity: 0;*/
+}
+.dyamtirie img{width: 165px; }
 
+.naoisis{
+  width: 50px;
+  height: 50px;
+  margin: -40px 0px 0px 655px;
 }
-.dyamtirie img{
-  width: 16%;
+.naoisis img{width: 50px;}
+
+.mudlafrig{
+  width: 60px;
+  height: 60px;
+  margin: -25px 0px 0px 900px;
 }
-#dyamtirieBD{
-    -webkit-animation:animationRotateG 4s linear infinite;
-    -moz-animation:animationRotateG 4s linear infinite;
-    animation:animationRotateG 4s linear infinite;
+.mudlafrig img{width: 60px;}
+
+.gooss{
+  width: 90px;
+  height: 90px;
+  margin: -70px 0px 0px 590px;
 }
-#dyamtirieAutre{
-    -webkit-animation:animationRotateD 1s linear infinite;
-    -moz-animation:animationRotateD 1s linear infinite;
-    animation:animationRotateD 1s linear infinite;
+.gooss img{width: 90px;}
+
+.uzukzh{
+  width: 60px;
+  height: 60px;
+  margin: -30px 0px 0px 750px;
 }
+.uzukzh img{width: 60px;}
+
+.roack{
+  width: 150px;
+  height: 150px;
+  margin: -92px 0px 0px 785px;
+}
+.roack img{width: 150px;}
+
+.ebes{
+  width: 500px;
+  height: 500px;
+  margin: -245px 0px 0px -165px;
+}
+.ebes img{width: 500px;}
+
+.medio{
+  width: 150px;
+  height: 150px;
+  margin: -345px 0px 0px 400px;
+}
+.medio img{width: 150px;}
+
+.nox{
+  width: 140px;
+  height: 140px;
+  margin: -52px 0px 0px -240px;
+}
+.nox img{width: 140px;}
+
+.keks{
+  width: 40px;
+  height: 40px;
+  margin: -189px 0px 0px 892px;
+}
+.keks img{width: 40px;}
+
+.aroll{
+  width: 90px;
+  height: 90px;
+  margin: -45px 0px 0px 914px;
+}
+.aroll img{width: 90px;}
+
+.tam{
+  width: 20px;
+  height: 20px;
+  margin: -45px 0px 0px 992px;
+}
+.tam img{width: 20px;}
+
+.suah{
+  width: 90px;
+  height: 90px;
+  margin: -45px 0px 0px 1000px;
+}
+.suah img{width: 90px;}
 
 .vortasgoth{
-  width: 27%;
-  height: 24%;
-  margin: 110px 0px 0px 570px;
-  display: block;
+  width: 270px;
+  height: 270px;
+  margin: -90px 0px 0px 640px;
+}
+.vortasgoth img{width: 270px;}
 
+.soth{
+  width: 80px;
+  height: 80px;
+  margin: -210px 0px 0px 1047px;
 }
-.vortasgoth img{
-  width: 27%;
+.soth img{width: 80px;}
+
+.omian{
+  width: 110px;
+  height: 110px;
+  margin: -15px 0px 0px 400px;
 }
-#vortasgothPsion{
-    -webkit-animation:animationRotateG 4s linear infinite;
-    -moz-animation:animationRotateG 4s linear infinite;
-    animation:animationRotateG 4s linear infinite;
+.omian img{width: 110px;}
+
+.doplis{
+  width: 45px;
+  height: 45px;
+  margin: -35px 0px 0px 383px;
 }
-#vortasgothAutre{
-    -webkit-animation:animationRotateD 1s linear infinite;
-    -moz-animation:animationRotateD 1s linear infinite;
-    animation:animationRotateD 1s linear infinite;
+.doplis img{width: 45px;}
+
+.atus{
+  width: 20px;
+  height: 20px;
+  margin: -23px 0px 0px 422px;
 }
+.atus img{width: 30px;}
+
+.sifh{
+  width: 60px;
+  height: 60px;
+  margin: -117px 0px 0px 1043px;
+}
+.sifh img{width: 60px;}
+
+.jufus{
+  width: 90px;
+  height: 90px;
+  margin: 25px 0px 0px 450px;
+}
+.jufus img{width: 90px;}
+
+.eolia{
+  width: 100px;
+  height: 100px;
+  margin: -57px 0px 0px 372px;
+}
+.eolia img{width: 100px;}
 
 .husphel{
-  width: 23%;
-  height: 13%;
-  margin: -130px 0px 0px 784px;
-  display: block;
-
+  width: 230px;
+  height: 230px;
+  margin: -237px 0px 0px 852px;
 }
 .husphel img{
-  width: 23%;
+  width: 230px;
 }
-#husphelPsion{
-    -webkit-animation:animationRotateG 4s linear infinite;
-    -moz-animation:animationRotateG 4s linear infinite;
-    animation:animationRotateG 4s linear infinite;
+
+.tintyph{
+  width: 170px;
+  height: 170px;
+  margin: -151px 0px 0px -105px;
 }
-#husphelAutre{
-    -webkit-animation:animationRotateD 1s linear infinite;
-    -moz-animation:animationRotateD 1s linear infinite;
-    animation:animationRotateD 1s linear infinite;
+.tintyph img{width: 170px;}
+
+.hriude{
+  width: 80px;
+  height: 80px;
+  margin: -106px 0px 0px 42px;
+}
+.hriude img{width: 80px;}
+
+.paaju{
+  width: 90px;
+  height: 90px;
+  margin: -50px 0px 0px 1008px;
+}
+.paaju img{width: 90px;}
+
+
+
+/*.ebes :nth-child(4), .ebes :nth-child(5){
+  width: 550px;
+  height: 500px;
+}*/
+
+
+.eldinn{
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  margin: -654px 0px 0px 251px;
+  display: none;
+}
+.eldinn img{
+  position: absolute;
+  width: 50px;
 }
 
 #repereEldinnDown{
-  margin-top: -170px;
+  margin-top: -850px;
+  position: absolute;
 }
 
 /*-----------------------------------------*/
@@ -888,24 +905,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
   width: 500px;
   margin-top: -200px;
   margin-left: -37px;
-  background-image: url(imgIntro/fluxFinnnn1.png);
+  background-image: url(imgIntro/fluxFin1V2.png);
 
 }
 #flux2S4{
   width: 164px;
   margin-left: 700px;
-  background-image: url(imgIntro/fluxFin2.png);
+  background-image: url(imgIntro/fluxFin2V2.png);
 }
 #flux3S4{
   width: 684px;
   margin-top: -157px;
   margin-left: 270px;
-  background-image: url(imgIntro/fluxFin3.png);
+  background-image: url(imgIntro/fluxFin3V2.png);
 }
 #flux4S4{
   width: 1014px;
   margin-left: 200px;
-  background-image: url(imgIntro/fluxFin4.png);
+  background-image: url(imgIntro/fluxFin4V2.png);
 }
  
 
@@ -917,22 +934,28 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
 }
 .blocPortail{
   width: 100%;
-  height: 1000px;
+  height: 1340px;
   /*min-height: 200px;*/
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   position: relative;
+  background-image: url(imgIntro/fondPortail.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 .fondPortail{
-  width: 100%;
+  width: 1200px;
   height: 1000px;
   margin: 0 auto;
+  /*background-image: url(imgIntro/portail.png);*/
+  background-repeat: no-repeat;
+  background-size: 100%;
   display: block;
 }
 #portail{
-  position: absolute;
+  /*position: absolute;*/
   width: 800px;
   height: 800px;
-  margin-left: 400px;
+  margin: 0 auto;
   margin-top: 200px;
 }
 #fondPortail{
@@ -942,33 +965,39 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
 #fondPortailAnim{
   width: 90%;
   height: 90%;
-  position: absolute;
-  animation: animationFrames ease-in 2s;
+  /*position: absolute;*/
+  animation: animationBreath ease-in 2s;
   animation-iteration-count: infinite;
   transform-origin: 50% 50%;
-  -webkit-animation: animationFrames ease-in 2s;
+  -webkit-animation: animationBreath ease-in 2s;
   -webkit-animation-iteration-count: infinite;
   -webkit-transform-origin: 50% 50%;
-  -moz-animation: animationFrames ease-in 2s;
+  -moz-animation: animationBreath ease-in 2s;
   -moz-animation-iteration-count: infinite;
   -moz-transform-origin: 50% 50%;
-  -o-animation: animationFrames ease-in 2s;
+  -o-animation: animationBreath ease-in 2s;
   -o-animation-iteration-count: infinite;
   -o-transform-origin: 50% 50%;
-  -ms-animation: animationFrames ease-in 2s;
+  -ms-animation: animationBreath ease-in 2s;
   -ms-animation-iteration-count: infinite;
   -ms-transform-origin: 50% 50%;
 }
 .blocPortail a{
-  margin-top: -450px;
-  margin-left: 740px;
+  padding-top: 450px;
+  margin-left: 500px;
   display: block;
   position: absolute;
 }
 #reperePortailFixe{
-  margin-top: 631px;
+  margin-top: 700px;
   position: absolute;
 }
+
+
+
+/*-----------------------------------------*/
+/*   ANIMATIONS                      */
+/*-----------------------------------------------------------*/
 
 
 @keyframes animationBreath{
@@ -1004,10 +1033,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
 
 
 
-@keyframes animationRotateD{ 100% {transform:rotate(360deg);} }
+/*@keyframes animationRotateD{ 100% {transform:rotate(360deg);} }
 @-moz-keyframes animationRotateD { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes animationRotateD { 100% { -webkit-transform: rotate(360deg); } }
 
 @keyframes animationRotateG{ 100% {transform:rotate(-360deg);} }
 @-moz-keyframes animationRotateG { 100% { -moz-transform: rotate(-360deg); } }
-@-webkit-keyframes animationRotateG { 100% { -webkit-transform: rotate(-360deg); } }
+@-webkit-keyframes animationRotateG { 100% { -webkit-transform: rotate(-360deg); } }*/
+
+
+
+@keyframes bounceIn{
+  0%{opacity: 0; transform: scale(0.3) translate3d(0,0,0);}
+  50%{opacity: 0.9; transform: scale(1.1);}
+  80%{opacity: 1; transform: scale(0.89);}
+  100%{opacity: 1; transform: scale(1) translate3d(0,0,0);}
+}

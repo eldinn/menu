@@ -1,4 +1,4 @@
-/********************************************************   
+/********************************************************    
 ----- - PRELOAD -   ---- 
 ******************************************************/
 
@@ -142,7 +142,7 @@ smoothScroll.init();
 
 /*FIXED INTRO*/
 	$(function () { 
-		var scene4 = new ScrollMagic.Scene({triggerElement: "", duration: 400})
+		var sceneFiceIntro = new ScrollMagic.Scene({triggerElement: "", duration: 400})
 			.setPin("#BGplan1", "#BGplan2", "#BGplan3")
 			.addIndicators({name: "FIXE"})
 			.addTo (controller);
@@ -150,71 +150,150 @@ smoothScroll.init();
 
 
 /*SCROLL BG (en 3 plans)*/
+	$(function () {
 
-	$(function () { // wait for document ready
-		// build tween
-		var tween1 = TweenMax.to("#BGplan1", 1, {backgroundPosition: "50% 30%", ease: Linear.easeNone});
+		var tweenScrollBG = new TimelineMax ()
+			.add([
+				TweenMax.to("#BGplan1", 1, {backgroundPosition: "50% 30%", ease: Linear.easeNone}),
+				TweenMax.to("#BGplan2", 1, {backgroundPosition: "50% 70%", ease: Linear.easeNone}),
+				TweenMax.to("#BGplan3", 1, {backgroundPosition: "50% 80%", ease: Linear.easeNone})
+			]);
 
-		// build scene
-		var scene1 = new ScrollMagic.Scene({triggerElement: '#reperePlanete', duration: 6000})
-						.setTween(tween1)
-						// .setPin("#bodySkroll")
-						.addIndicators({name: "parallaxePlan1"}) // add indicators (requires plugin)
-						.addTo(controller);
-	});	
 
-	$(function () { // wait for document ready
-		// build tween
-		var tween2 = TweenMax.to("#BGplan2", 1, {backgroundPosition: "50% 60%", ease: Linear.easeNone});
+		var sceneScrollBG = new ScrollMagic.Scene({triggerElement: "#reperePlanete", duration: 6000})
+					.setTween(tweenScrollBG)
+					.addIndicators({name: "parallaxePlans"}) // add indicators (requires plugin)
+					.addTo(controller);
 
-		// build scene
-		var scene2 = new ScrollMagic.Scene({triggerElement: '#reperePlanete', duration: 6000})
-						.setTween(tween2)
-						// .setPin("#bodySkroll")
-						.addIndicators({name: "parallaxePlan2"}) // add indicators (requires plugin)
-						.addTo(controller);
 	});
-
-	$(function () { // wait for document ready
-		// build tween
-		var tween3 = TweenMax.to("#BGplan3", 1, {backgroundPosition: "50% 90%", ease: Linear.easeNone});
-
-		// build scene
-		var scene3 = new ScrollMagic.Scene({triggerElement: '#reperePlanete', duration: 6000})
-						.setTween(tween3)
-						// .setPin("#bodySkroll")
-						.addIndicators({name: "parallaxePlan2"}) // add indicators (requires plugin)
-						.addTo(controller);
-	});
-
-
 
 
 
 /*EVENT TITRE + TEXTE INTRO*/
 	$(function () { 
-		var tween4 = new TimelineMax ()
+		var tweenEventIntro = new TimelineMax ()
 			.add([
 				TweenMax.to("h1", 1, {marginTop: "-700px", ease: Linear.easeNone}),
-				TweenMax.to("h2", 1, {marginLeft: "1000px", ease: Linear.easeNone}),
+				TweenMax.to("h2", 1, {marginLeft: "1500px", ease: Linear.easeNone}),
 				TweenMax.to(".containerTexteIntro", 1, {marginLeft: "-500px", ease: Linear.easeNone})
 			]);
 
 		// build scene
-		var scene5 = new ScrollMagic.Scene({triggerElement: '', duration: 200})
-						.setTween(tween4)
+		var sceneIntro = new ScrollMagic.Scene({triggerElement: '', duration: 200})
+						.setTween(tweenEventIntro)
 						.addIndicators({name: "titre+intro se barrent"})
 						.addTo(controller);
 	});
 
+
+/*APPARITION PLANETES*/
+	$(function () { 
+		var tweenA1 = new TimelineMax ()
+			.add([
+				TweenMax.to(".dyamtirie", 1, {animation: "bounceIn 1000ms linear both", opacity: 1}, {duration: 0}),
+				TweenMax.to(".heeytee", 1, {animation: "bounceIn 1000ms linear both", opacity: 1, delay: 0.2}, {duration: 0}),
+				TweenMax.to(".nune", 1, {animation: "bounceIn 1000ms linear both", opacity: 1, delay: 0.4}, {duration: 0}),
+				TweenMax.to(".naoisis", 1, {animation: "bounceIn 1000ms linear both", opacity: 1, delay: 0.6}, {duration: 0}),
+				TweenMax.to(".gooss", 1, {animation: "bounceIn 1000ms linear both", opacity: 1, delay: 0.8}, {duration: 0})
+			]);
+
+		// build scene
+		var sceneA1 = new ScrollMagic.Scene({triggerElement: '.A1'})
+						.setTween(tweenA1)
+						.addIndicators({name: "bounceIn"})
+						.addTo(controller);
+	});
+
+
+	$(function () { 
+		var tweenA2 = new TimelineMax ()
+			.add([
+				TweenMax.to(".mudlafrig", 1, {animation: "bounceIn 1000ms linear both", opacity: 1}, {duration: 0}),
+				TweenMax.to(".uzukzh", 1, {animation: "bounceIn 1000ms linear both", opacity: 1, delay: 0.2}, {duration: 0}),
+				TweenMax.to(".roack", 1, {animation: "bounceIn 1000ms linear both", opacity: 1, delay: 0.4}, {duration: 0}),
+				TweenMax.to(".keks", 1, {animation: "bounceIn 1000ms linear both", opacity: 1, delay: 0.6}, {duration: 0}),
+				TweenMax.to(".aroll", 1, {animation: "bounceIn 1000ms linear both", opacity: 1, delay: 0.8}, {duration: 0}),
+				TweenMax.to(".ebes", 1, {animation: "bounceIn 1000ms linear both", opacity: 1, delay: 0.9}, {duration: 0}),
+				TweenMax.to(".tam", 1, {animation: "bounceIn 1000ms linear both", opacity: 1, delay: 1}, {duration: 0})
+
+			]);
+
+		// build scene
+		var sceneA2 = new ScrollMagic.Scene({triggerElement: '.A2'})
+						.setTween(tweenA2)
+						.addIndicators({name: "bounceIn"})
+						.addTo(controller);
+	});		
+
+
+
+	$(function () { 
+		var tweenA3 = new TimelineMax ()
+			.add([
+				TweenMax.to(".husphel", 1, {animation: "bounceIn 1000ms linear both", opacity: 1}, {duration: 0}),
+				TweenMax.to(".vortasgoth", 1, {animation: "bounceIn 1000ms linear both", opacity: 1, delay: 0.2}, {duration: 0}),
+				TweenMax.to(".suah", 1, {animation: "bounceIn 1000ms linear both", opacity: 1, delay: 0.6}, {duration: 0}),
+				TweenMax.to(".soth", 1, {animation: "bounceIn 1000ms linear both", opacity: 1, delay: 0.6}, {duration: 0}),
+				TweenMax.to(".sifh", 1, {animation: "bounceIn 1000ms linear both", opacity: 1, delay: 0.6}, {duration: 0})
+			]);
+
+		// build scene
+		var sceneA3 = new ScrollMagic.Scene({triggerElement: '.A3'})
+						.setTween(tweenA3)
+						.addIndicators({name: "bounceIn"})
+						.addTo(controller);
+	});
+
+
+
+
+	$(function () { 
+		var tweenA4 = new TimelineMax ()
+			.add([
+				TweenMax.to(".omian", 1, {animation: "bounceIn 1000ms linear both", opacity: 1}, {duration: 0}),
+				TweenMax.to(".doplis", 1, {animation: "bounceIn 1000ms linear both", opacity: 1, delay: 0}, {duration: 0}),
+				TweenMax.to(".atus", 1, {animation: "bounceIn 1000ms linear both", opacity: 1, delay: 0}, {duration: 0}),
+				TweenMax.to(".jufus", 1, {animation: "bounceIn 1000ms linear both", opacity: 1, delay: 0}, {duration: 0}),
+				TweenMax.to(".eolia", 1, {animation: "bounceIn 1000ms linear both", opacity: 1, delay: 0.2}, {duration: 0}),
+				TweenMax.to(".tintyph", 1, {animation: "bounceIn 1000ms linear both", opacity: 1, delay: 0.4}, {duration: 0}),
+				TweenMax.to(".hriude", 1, {animation: "bounceIn 1000ms linear both", opacity: 1, delay: 0.6}, {duration: 0}),
+				TweenMax.to(".nox", 1, {animation: "bounceIn 1000ms linear both", opacity: 1, delay: 0.6}, {duration: 0}),
+				TweenMax.to(".paaju", 1, {animation: "bounceIn 1000ms linear both", opacity: 1, delay: 0.6}, {duration: 0}),
+				TweenMax.to(".medio", 1, {animation: "bounceIn 1000ms linear both", opacity: 1, delay: 1}, {duration: 0})
+			]);
+
+		// build scene
+		var sceneA4 = new ScrollMagic.Scene({triggerElement: '.A4'})
+						.setTween(tweenA4)
+						.addIndicators({name: "bounceIn"})
+						.addTo(controller);
+	});
+
+
+
+
+
 /*FIXED SYSTEME*/
 	$(function () { 
-		var scene8 = new ScrollMagic.Scene({triggerElement: "#repereFixeSysteme", duration: 600})
+		var scene8 = new ScrollMagic.Scene({triggerElement: '#repereFixeSysteme', duration: 600})
 			.setPin(".blocPlaneteS3")
+			 //    .on("#removePin", function (e) {
+    //     scene8.removePin(e.reset);
+    // })
 			.addIndicators({name: "FIXE SYSTEME"})
 			.addTo (controller);
-		});
-/*ELDINN SUIT LE SYSTEME*/
+	});
+
+
+/*
+	$(function () { 
+		var scene9 = new ScrollMagic.Scene({triggerElement: "#removePin"})
+		  .removePin(true)
+		  .addIndicators({name: "REMOVE PIN"})
+		  .addTo (controller);		
+	});*/
+
+/*ELDINN SUIT LE SYSTEME*//*
 	$(function () { // wait for document ready
 		// build tween
 		var tween7 = TweenMax.to("#eldinnPlanete", 1, {marginTop:"1200px", ease: Linear.easeNone});
@@ -226,31 +305,54 @@ smoothScroll.init();
 						.addIndicators({name: "eldinn suit"}) // add indicators (requires plugin)
 						.addTo(controller);
 	});
-
+*/
 
 /*ELDINN REDUIT + SE PLACE DANS LE SYSTEME*/
 	$(function () { // wait for document ready
 		// build tween
-		var tween5 = TweenMax.to("#eldinnPlanete", 1, {width: "50px", marginTop: "600px", marginLeft: "250px", ease: Linear.easeNone});
+		var tween5 = TweenLite.to("#eldinnPlanete", 1, {width: "50px", marginTop: "775px", marginLeft: "250px", ease: Linear.easeNone});
 
 		// build scene
 		var scene6 = new ScrollMagic.Scene({triggerElement: '#reperePlanete', duration: 500})
 						.setTween(tween5)
-						// .setPin("#bodySkroll")
+
 						.addIndicators({name: "move eldinn"}) // add indicators (requires plugin)
 						.addTo(controller);
 	});	
 
+	$(function () { 
+		var scene11 = new ScrollMagic.Scene({triggerElement: "#hideEldinn"})
+			.setClassToggle("#eldinnPlanete", "hide")
+			.addIndicators({name: "HIDE"})
+			.addTo (controller);
+		});
+
+	$(function () { 
+		var tween8 = TweenLite.to(".eldinn", 0, {display: "block", ease: Linear.easeNone});
+
+		var scene12 = new ScrollMagic.Scene({triggerElement: "#showEldinn"})
+			.setTween(tween8)
+			.addIndicators({name: "SHOW"})
+			.addTo (controller);
+		});
+
+
+
+
+
 
 /*ELDINN DESCEND + GROSSI*/
-	$(function () { // wait for document ready
-		// build tween
-		var tween6 = TweenMax.to("#eldinnPlanete", 1, {width: "1200px", marginTop: "1800px", marginLeft:"-100px", rotation: -160, ease: Linear.easeNone});
+	$(function () { // wait for document ready   
+
+		var tween6 = new TimelineMax ()
+			.add([
+				TweenMax.to(".eldinn img", 1, {width: "1200px", marginTop: "600px", marginLeft: "-350px", rotation: -160, ease: Linear.easeNone}),
+				TweenMax.to(".eldinn", 1, {width: "1000px", ease: Linear.easeNone})
+			]);
 
 		// build scene
 		var scene7 = new ScrollMagic.Scene({triggerElement: '#repereEldinnDown', duration: 400})
 						.setTween(tween6)
-						// .setPin("#bodySkroll")
 						.addIndicators({name: "move eldinn 2"}) // add indicators (requires plugin)
 						.addTo(controller);
 	});	
