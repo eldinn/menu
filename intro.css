@@ -46,6 +46,13 @@ html,body{
   background-position: 50% 50%;
 
 }
+
+audio{
+  position: absolute;
+  z-index: 2;
+  border-radius: 10px;
+}
+
 /*-----------------------------------------*/
 /*      LOAD                          */
 /*-----------------------------------------------------------*/
@@ -934,7 +941,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
 }
 .blocPortail{
   width: 100%;
-  height: 1340px;
+  height: 1500px;
   /*min-height: 200px;*/
   /*margin: 0 auto;*/
   position: relative;
@@ -946,17 +953,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
   width: 1200px;
   height: 1000px;
   margin: 0 auto;
+  padding-top: 285px;
   /*background-image: url(imgIntro/portail.png);*/
   background-repeat: no-repeat;
   background-size: 100%;
   display: block;
 }
 #portail{
-  /*position: absolute;*/
-  width: 800px;
-  height: 800px;
+  position: absolute;
+  width: 600px;
+  height: 700px;
   margin: 0 auto;
-  margin-top: 200px;
+  margin-top: 290px;
+  margin-left: 195px;
+      -webkit-animation: animationBreath2 5s ease-out infinite normal;
+    animation: animationBreath2 5s ease-out infinite normal;
 }
 #fondPortail{
   width: 100%;
@@ -983,16 +994,45 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
   -ms-transform-origin: 50% 50%;
 }
 .blocPortail a{
-  padding-top: 450px;
-  margin-left: 500px;
+  /*padding-top: 450px;*/
+  margin-left: 490px;
   display: block;
   position: absolute;
+  bottom: 425;
+        -webkit-animation: animationBreath2 5s ease-out infinite normal;
+    animation: animationBreath2 5s ease-out infinite normal;
 }
 #reperePortailFixe{
-  margin-top: 700px;
+  margin-top: 850px;
   position: absolute;
 }
 
+#cristal1{
+  position: absolute;
+  bottom: 0;
+}
+#cristal2{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#cristal3{
+  position: absolute;
+  /*bottom: 44;*/
+  left: 50;
+}
+#cristal4{
+  position: absolute;
+  bottom: 250;
+  right: 500;
+
+}
+#cristal5{
+  position: absolute;
+  right: 1200;
+  bottom: 830;
+
+}
 
 
 /*-----------------------------------------*/
@@ -1032,6 +1072,35 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
 
 
 
+@keyframes animationBreath2{
+  0% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+  50% {opacity:0.63; transform:  scaleX(1.04) scaleY(1.04) ; }
+  100% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+}
+
+@-moz-keyframes animationBreath2{
+  0% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+  50% {opacity:0.63; transform:  scaleX(1.04) scaleY(1.04) ; }
+  100% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+}
+
+@-webkit-keyframes animationBreath2 {
+  0% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+  50% {opacity:0.63; transform:  scaleX(1.04) scaleY(1.04) ; }
+  100% { opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+}
+
+@-o-keyframes animationBreath2 {
+  0% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+  50% { opacity:0.63; transform:  scaleX(1.04) scaleY(1.04) ; }
+  100% { opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+}
+
+@-ms-keyframes animationBreath2 {
+  0% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+  50% {opacity:0.63; transform:  scaleX(1.04) scaleY(1.04) ; }
+  100% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+}
 
 /*@keyframes animationRotateD{ 100% {transform:rotate(360deg);} }
 @-moz-keyframes animationRotateD { 100% { -moz-transform: rotate(360deg); } }
@@ -1049,3 +1118,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', e
   80%{opacity: 1; transform: scale(0.89);}
   100%{opacity: 1; transform: scale(1) translate3d(0,0,0);}
 }
+
+
+

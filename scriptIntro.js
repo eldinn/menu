@@ -579,10 +579,10 @@ $(function () {
 
 		var tween6 = new TimelineMax ()
 			.add([
-				TweenMax.to("#flux1S4", 1, {height:"1900px"}),
-				TweenMax.to("#flux2S4", 1, {height:"1900px"}),
-				TweenMax.to("#flux3S4", 1, {height:"1900px"}),
-				TweenMax.to("#flux4S4", 1, {height:"1900px"})
+				TweenMax.to("#flux1S4", 1, {height:"2000px"}),
+				TweenMax.to("#flux2S4", 1, {height:"2000px"}),
+				TweenMax.to("#flux3S4", 1, {height:"2000px"}),
+				TweenMax.to("#flux4S4", 1, {height:"2000px"})
 			]);
 
 
@@ -595,8 +595,17 @@ $(function () {
 
 /*FIXED PORTAIL*/
 	$(function () { 
-		var scene10 = new ScrollMagic.Scene({triggerElement: "#reperePortailFixe", duration: 1000})
+		var scene10 = new ScrollMagic.Scene({triggerElement: "#reperePortailFixe", duration: 1300})
 			.setPin(".blocPortail")
 			.addIndicators({name: "FIXE PORTAIL"})
 			.addTo (controller);
 		});
+
+
+/* APPARTITION PORTAIL */
+	// $(function () { 
+	// 	var scene11 = new ScrollMagic.Scene({triggerElement: "#reperePortailFixe", duration: 1000})
+	// 		.setPin(".blocPortail")
+	// 		.addIndicators({name: "FIXE PORTAIL"})
+	// 		.addTo (controller);
+	// 	});
