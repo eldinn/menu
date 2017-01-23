@@ -7,7 +7,7 @@
 html,body{
   height:100%;
   background-color: #1D010F;
-  background:  url('img/bgPartie3.jpg') no-repeat ;
+  background:  url('img/bgPartie5.jpg') no-repeat ;
   background-size: 100% 100%;
   font-family: 'Roboto', sans-serif;
 
@@ -115,6 +115,14 @@ animation-iteration-count: infinite;
 .retour a{
    text-decoration: none;
 }
+
+
+audio{
+  position: absolute;
+  z-index: 2;
+  border-radius: 10px;
+}
+
 
 
 
