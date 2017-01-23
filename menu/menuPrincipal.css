@@ -107,7 +107,7 @@ animation-iteration-count: infinite;
 #blocMenu{
   width: 100%;
   height: 100%;
-  background-image: url(img/BGouh.jpg);
+  background-image: url(img/BGanime.gif);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 115%;
@@ -115,7 +115,11 @@ animation-iteration-count: infinite;
 }
 
 
-
+audio{
+  position: absolute;
+  z-index: 2;
+  border-radius: 10px;
+}
 /*-----------------------------------------*/
 /*   LUMIERE                          */
 /*-----------------------------------------------------------*/
