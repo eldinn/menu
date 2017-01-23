@@ -85,6 +85,13 @@ animation-iteration-count: infinite;
   margin:0 3px 0 0;
 }
 
+audio{
+  position: absolute;
+  z-index: 2;
+  border-radius: 10px;
+}
+
+
 /*BOUTON REPLI MENU*/
 .btnRepli{
   position: absolute;
