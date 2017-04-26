@@ -4,6 +4,7 @@
 	<meta charset="utf-8" />
 	<title>Menu partie 4</title>
 
+	<link type="text/css" rel="stylesheet" href="../toolsMenus/menuParties.css" />
 	<link type="text/css" rel="stylesheet" href="menuPartie4.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script src="jquery-2.1.4.min.js"></script>
@@ -14,18 +15,23 @@
 <body>
 
 <div id="oLoading"><div><!-- <p>Vous voyagez hors de la matière ...</p> --><img src="../menu/img/loading5.gif" alt="Vous voyagez hors de la matière..." /></div></div>
-<audio src="partie4-atriumCarceri-theDarkMother.mp3" controls loop autoplay></audio>
+<audio id="audioPlayer" src="partie4-atriumCarceri-theDarkMother.mp3" controls loop autoplay></audio>
+<img id="controlSon" src="../menu/img/iconSonActive.png" onclick="play('audioPlayer', this)">
 </br></br>
 
 <div class="menuChapitres">
+  <div class="containChapitres">
 	<h1>Les Glorieuses - Partie 4</h1>
+	<p class="aPropos">A propos du lieu</p> 
+	<p class="desc"><span style="font-weight:bold;">Le portail</span> 
+	<br>Vous êtes sur la plate-forme de voyage. C'est par ici que vous êtes entré, et c'est par ici que vous repartirez. Ce portail est l'unique lien entre Eyjar i Eldinn et les autres civilisations. Tous les jours y transitent marchandises et citoyens.</p>
 
 	<nav class="navChapitres">
 		<ul>
-			<li><a href='#'><img src="img/testCH1.png"></img> </br> <h2>Chapitre 1 : Sur le fil</h2></a></li>
-			<li><a href='#'><img src="img/testCH2.png"></img> </br> <h2>Chapitre 2 : Sur la blanche</h2></a></li>
-			<li><a href='#'><img src="img/testCH3.jpg"></img> </br> <h2>Chapitre 3 : Sur le câble</h2></a></li>
-			<li><a href='#'><img src="img/testCH4.jpg"></img> </br> <h2>Chapitre 4 : Sur la ligne</h2></a></li>
+			<li><a href='#'><img src="../toolsMenus/testCH1.png"></img> </br> <h2>Chapitre 1 </br> Sur le fil</h2></a></li>
+			<li><a href='#'><img src="../toolsMenus/testCH2.png"></img> </br> <h2>Chapitre 2 </br> Sur la blanche</h2></a></li>
+			<li><a href='#'><img src="../toolsMenus/testCH3.jpg"></img> </br> <h2>Chapitre 3 </br> Sur le câble</h2></a></li>
+			<li><a href='#'><img src="../toolsMenus/testCH4.jpg"></img> </br> <h2>Chapitre 4 </br> Sur la ligne</h2></a></li>
 		</ul>
 	</nav>
 	
@@ -38,14 +44,32 @@
 			<li><a href="http://boreatti.deviantart.com/" target="_blank" >Profil DeviantArt</a></li>
 		</ul>
 	</nav>
+  </div>
 </div>
 
 
 </div>
 
-<div class="btnRepli">	<p>Replier le menu</p>   </div>
-<div class="retour">  <a href="../menu/menu.html"><p>Retour à la vue principale</p></a>  </div>
+<div class='containerButonBottom'>
+	  
+	<div class="containerOneButton">
+	    <p>Replier le menu</p>   
+		<div id="rpP"></div>
+		<div class="containerElement" id="btnRepli">	 
+			<img class="image2"  src="../toolsMenus/butonShowMenuHover.png" alt=""> 
+	    	<img class="image1" id="rpImg"  src="../toolsMenus/butonShowMenu.png" alt="">
+		</div>
+	</div>
 
+	<div class="containerOneButton">
+		<a href="../menu/menu.html">Retour à la vue principale</a>  
+		<div class="containerElement" id="btnretour">  
+			<img class="image2"  src="../toolsMenus/butonShowMenuHover.png" alt=""> 
+		    <img class="Image1" id="rtImg"  src="../toolsMenus/butonShowMenu.png" alt="">
+		 </div>
+	 </div>
+
+</div>
     <script src="scriptPartie4.js"></script>
     <script src="../functions.js"></script>
 </body>
