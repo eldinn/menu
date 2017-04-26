@@ -4,7 +4,8 @@
 
 var p = 0;
 $.arrPreload = [];
-$.arrPreload[p++] = "img/bgPartie1-2.jpg";
+$.arrPreload[p++] = "img/bgPartie1-anim.gif";
+$.arrPreload[p++] = "../toolsMenus/bgMenus2.png"
 
 
 $(document.createElement('img')).bind('load', function () {
@@ -30,16 +31,16 @@ $(document).ready(function() {
 ----- - MENU PLIE/DEPLIE -   ---- 
 ******************************************************/
  $(function(){
-        $('.btnRepli').on('click touch', function(e){
+        $('#rpP').on('click touch', function(e){
             $('.menuChapitres').slideToggle();
             // $('.btnRepli p').replaceWith('<p>Montrer le menu</p>');
             e.preventDefault();
 
-            if ($('.btnRepli p').html() == 'Replier le menu'){
-       			 $('.btnRepli p').replaceWith('<p>Montrer le menu</p>');
+            if ($('.containerButonBottom p').html() == 'Replier le menu'){
+       			 $('.containerButonBottom p').replaceWith('<p>Montrer le menu</p>');
     		}
     		else{
-    			$('.btnRepli p').replaceWith('<p>Replier le menu</p>');
+    			$('.containerButonBottom p').replaceWith('<p>Replier le menu</p>');
     		}
 
           });
@@ -47,3 +48,28 @@ $(document).ready(function() {
         });
 
 });
+
+
+/********************************************************   
+----- - LECTEUR MUSIQUE -   ---- 
+******************************************************/
+      function play(idPlayer, control) {
+          var player = document.querySelector('#' + idPlayer);
+          var image = document.getElementById ("controlSon");
+  
+          if (player.paused) {
+              player.play();
+              image.src = '../menu/img/iconSonActive.png';
+          } else {
+              player.pause(); 
+              image.src = '../menu/img/iconSonInactive.png';
+          }
+      };
+
+      function resume(idPlayer) {
+          var player = document.querySelector('#' + idPlayer);
+  
+          player.currentTime = 0;
+          player.pause();
+      };
+
