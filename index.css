@@ -1,0 +1,1439 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Grand+Hotel|Just+Me+Again+Down+Here|Montez|Nothing+You+Could+Do|Patrick+Hand|Poiret+One');
+@import url('https://fonts.googleapis.com/css?family=Bahiana|Dorsa|Orbitron|The+Girl+Next+Door|Exo'); 
+*{ 
+  margin:0;
+  padding:0;
+}
+
+html,body{
+  width: 100%;
+  /*height:100%;*/
+  /*background-color: #17051e;*/
+  background-color: #170517;
+/*  background-image: url(imgIntro/BG-V2.jpg);
+  background-repeat: repeat;*/
+    font-family: 'Roboto', sans-serif;
+}
+
+#bodySkroll{
+  width: 100%;
+  /*height: 100%;*/
+  /*position: absolute;*/
+  z-index: 0;
+  /*top: 0;*/
+  overflow: hidden;
+}
+  
+#BGplan1{
+  width: 100%;
+  /*height: 100%;*/
+  background-image: url(imgIntro/BGplan1-V2.png);
+  background-repeat: repeat;
+  background-size: 100%;
+  background-position: 50% 50%;
+}
+#BGplan2{
+  width: 100%;
+  /*height: 100%;*/
+  background-image: url(imgIntro/BGplan2-V3.png);
+  background-repeat: repeat;
+  background-size: 90%;
+  background-position: 50% 50%;
+}
+#BGplan3{
+  width: 100%;
+  /*height: 100%;*/
+  background-image: url(imgIntro/BGplan3-72.png);
+  background-repeat: repeat;
+  background-size: 45%;
+  background-position: 50% 50%;
+
+}
+#particulesDebut{
+  width: 100%;
+  /*height: 100%;*/
+  position: absolute;
+  z-index: 1;
+    -webkit-animation-name: flash;
+  animation-name: flash;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+/*audio{
+  position: absolute;
+  z-index: 2;
+  border-radius: 10px;
+}*/
+ 
+/*-----------------------------------------*/
+/*      LOAD                          */
+/*-----------------------------------------------------------*/
+@-webkit-keyframes changes {
+0% { background-color: #7a7a9b;}
+10% { background-color: #ae97b1;}
+20% {background-color: #6e6c6c;}
+30% { background-color: #485858;}
+40% { background-color: #7a9b85;}
+50% {background-color: #b7b1a8;}
+60% { background-color: #999b7a;}
+70% { background-color: #705b5a;}
+80% { background-color: #584858;}
+90% {background-color: #4d5151;}
+100% { background-color: #7a7a9b;}
+}
+@keyframes changes {
+0% {background-color: #7a7a9b;}
+10% { background-color: #ae97b1;}
+20% { background-color: #6e6c6c;}
+30% {background-color: #485858;}
+40% {background-color: #7a9b85;}
+50% { background-color: #b7b1a8;}
+60% {background-color: #999b7a;}
+70% { background-color: #705b5a;}
+80% {background-color: #584858;}
+90% {background-color: #4d5151;}
+100% {background-color: #7a7a9b;}
+}
+#oLoading:hover {
+-webkit-animation-name: changes;
+-webkit-animation-duration: 10s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+animation-name: changes;
+animation-duration: 10s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+
+#oLoading{
+  position:fixed;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  z-index:100;
+  background:#ae97b1;
+}
+
+#oLoading div{
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:255px;
+  height:242px;
+  margin-left:-148px;
+  margin-top:-107px;
+
+  color:#fff;
+  font-family:Arial;
+  text-align:center;
+}
+
+
+#oLoading div img{
+  width: 90%;
+  position:relative;
+  vertical-align:middle;
+  top:-2px;
+  margin:0 3px 0 0;
+}
+
+
+/*-----------------------------------------*/
+/*    TOOLS                         */
+/*-----------------------------------------------------------*/
+a{
+  z-index: 99999;
+}
+
+.repere{
+  min-height: 1px;
+  text-align: center;
+}
+.space50{
+  min-height: 50px;
+}
+.space100{
+  min-height: 100px;
+}
+.space150{
+  min-height: 150px;
+}
+.space200{
+  min-height: 200px;
+}
+.space300{
+  min-height: 300px;
+}
+.space400{
+  min-height: 400px;
+}
+.space500{
+  min-height: 500px;
+}
+.space1000{
+  min-height: 1000px;
+}
+
+
+
+.hide{
+  visibility : hidden;
+}
+.transparent{
+  opacity: 0;
+}
+.clear{
+  display: none;
+}
+
+/*.planete{
+  opacity: 1;
+  -webkit-transition: opacity 1s ease; 
+  transition: opacity 1s ease;
+}
+.planete:hover{
+  opacity: 0;
+}*/
+
+
+/*SON*/
+#controlSon{
+  position: fixed;
+  width: 80px;
+  padding: 3px;
+  right: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+audio{
+  display: none;
+}
+/*-----------------------------------------*/
+/*    SCENE 1 : PRESENTATION                         */
+/*-----------------------------------------------------------*/
+.scene1{
+  width: 100%;
+  height: 600px;
+}
+/*
+.banniereTop{
+  width: 100%;
+  height: 230px;
+  background-image: url(imgIntro/banniereIntroSite.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: 50% 50%;
+  margin-top: -60px;
+
+}*/
+/*#texteIntro{
+    width: 1000px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}*/
+.containerTexteIntro{
+  width: 255px;
+  height: 460px;
+  position: absolute;
+  background-image: url('toolsMenus/bgMenus2.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 100% 100%;
+  border-radius: 20px;
+  display: block;
+  margin-top: 200px;
+  margin-left: 93px;
+  
+}
+.containerTexteIntro p{
+  padding: 32px 37px;
+  text-align: justify;
+  position: absolute;
+  z-index: 9;
+}
+
+
+.containerEldinn{
+  width: 1000px;
+  margin: 0 auto;
+}
+h1{
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: -490px;
+  display: block;
+  position: absolute;
+  font: normal 120px 'Bahiana', sans-serif;
+  word-spacing: 10px;
+  letter-spacing: 2px;
+  text-align: center;
+  /*color: #fff;*/
+  /*background: -webkit-gradient(linear, left top, left bottom, from(#ea5f44), to(#170517));*/
+  background: -webkit-gradient(linear, left top, left bottom, from(#f24121), to(#00052d));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 1;
+}
+h2{
+  width: 1000px;
+   margin: 0 auto;
+  margin-top: -355px;
+  display: block;
+  position: absolute;
+  font: bold 25px 'Poiret One', sans-serif;
+  text-align: center;
+  color: #090d5a;
+  z-index: 1;
+}
+/*.containerMedio p{
+  margin-top: -190px;
+  display: block;
+  position: relative;
+}*/
+/*#containerEldinnPlanete{
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: -640px;
+  display: block;
+  position: relative;
+}*/
+#eldinnPlanete{
+  width: 500px;
+  margin-left: 255px;
+  position: relative;
+  margin-top: -640px;
+}
+#eldinnHalo{
+  width: 800px;
+  margin-left: 100px;
+  display: block;
+  animation: animationBreath ease-in 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: animationBreath ease-in 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: animationBreath ease-in 2s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: animationBreath ease-in 2s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: animationBreath ease-in 2s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+}
+/*#repereBlocText{
+  margin-top: -32px;
+}
+.planeteS1{
+  width: 1000px;
+  height: 58%;
+  min-height: 200px;
+  margin: 0 auto;
+  position: relative;
+}*/
+/*.planeteS1 img{
+    display: block;
+}*/
+/*
+.vortasgoth{
+  width: 410px;
+  height: 400px;
+  display: block;
+}
+.vortasgoth img{
+  position: absolute;
+  width: 40%;
+}
+
+#vortasgothPsion{    
+  -webkit-animation:animationRotateD 10s linear infinite;
+  -moz-animation:animationRotateD 10s linear infinite;
+  animation:animationRotateD 10s linear infinite;
+}
+#vortasgothBD{    
+  -webkit-animation:animationRotateG 4s linear infinite;
+  -moz-animation:animationRotateG 4s linear infinite;
+  animation:animationRotateG 4s linear infinite;
+  }
+#vortasgothAutre{ 
+  -webkit-animation:animationRotateD 1s linear infinite;
+  -moz-animation:animationRotateD 1s linear infinite;
+  animation:animationRotateD 1s linear infinite;}
+
+
+.husphel{
+  margin: -163px 0px 0px 750px;
+}
+.husphel img{
+  position: absolute;
+  width: 15%;
+}
+
+#nune{
+  width: 2%;
+  margin: 0px 0px 0px 929px;
+}
+#flux1S1{
+  width: 59%;
+  margin: -290px 0px 0px -258px;
+}
+#flux2S1{
+  margin: -684px 0px 0px 302px;
+}
+#flux3S1{
+  margin: -529px 0px 0px 864px;
+}
+
+.blocText{
+  width: 1000px;
+  margin: 0 auto;
+}
+*/
+/*#containtBoxIntro{
+  width: 293px;
+  margin-left: 350px;
+  display: block;
+  position: absolute;
+  z-index: 9999;
+}*/
+/*
+#boxIntro{
+  width: 293px;
+  background-color: #6AEAFC;
+  border-radius: 10px;
+  padding: 10px 15px;
+  position: absolute;
+  display: block;
+  margin-left: 350px;
+  z-index: 9999;
+}
+#boxIntro p{
+  font-size: 10px;
+}
+.cellule{
+  display: block;
+  position: absolute;
+}
+#cellule1{
+  margin-top: -27px;
+  margin-left: -20px;
+}
+#cellule2{
+  margin-top: -20px;
+  margin-left: 149px;
+}
+#cellule3{
+  margin-top: 41px;
+  margin-left: 136px;
+}
+#cellule4{
+  margin-top: 45px;
+  margin-left: -17px;
+}
+
+
+.flux{
+  animation: animationFrames ease-in 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: animationFrames ease-in 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: animationFrames ease-in 2s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: animationFrames ease-in 2s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: animationFrames ease-in 2s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+}
+*/
+
+.reperePlanete{
+  margin-top: -80px;
+}
+
+
+/*-----------------------------------------*/
+/*    SCENE 2 : SYSTEME                       */
+/*-----------------------------------------------------------*/
+.scene2{
+  width: 100%;
+  height: 4000px;
+  margin-top: -400px;
+  /*background: #000;*/
+  text-align: center;
+}
+/*.scene2:before{
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}*/
+/*.blocPlaneteS3{
+  width: 100%;
+  height: 1000px;
+}*/
+.containHyperspace{
+  width: 100%;
+  /*height: 1000px;*/
+  padding-top: 500px;
+  position: relative;
+  /*overflow: hidden;*/
+}
+.wall{
+  background: url(http://s.cdpn.io/18515/PIA09959-1280x800.jpg);
+  background-size: cover;
+  display: none;
+}
+.scene{
+  display: inline-block;
+  vertical-align: middle;
+  perspective: 5px;
+  perspective-origin: 50% 50%;
+  position: relative;
+}
+
+.wrap{
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  left: -500px;
+  top: -500px;
+  transform-style: preserve-3d;
+  /*animation: move 20s infinite linear;*/
+  animation-fill-mode: forwards;
+}
+
+.wrap:nth-child(2){
+  /*animation: move 20s infinite linear;*/
+  animation-delay: 6s;
+}
+.wall {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  /*animation: fade 20s infinite linear;*/
+  animation-delay: 0;
+  z-index: 1;
+}
+
+.wrap:nth-child(2) .wall {
+  animation-delay: 6s;
+}
+
+.wall-right {
+  transform: rotateY(90deg) translateZ(500px);
+}
+
+.wall-left {
+  transform: rotateY(-90deg) translateZ(500px);
+}
+
+.wall-top {
+  transform: rotateX(90deg) translateZ(500px);
+}
+
+.wall-bottom {
+  transform: rotateX(-90deg) translateZ(500px);
+}
+
+.wall-back {
+  transform: rotateX(180deg) translateZ(500px);
+}
+@keyframes move {
+  0%{
+    transform: translateZ(-500px) rotate(0deg);
+  }
+  100%{
+    transform: translateZ(500px) rotate(0deg);
+  }
+}
+
+@keyframes fade {
+  0%{
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.repereApparition{
+  position: absolute;
+}
+.A1{
+  margin-top: 400px;
+}
+.A2{
+  margin-top: 800px;
+}
+.A3{
+  margin-top: 1200px;
+}
+.A4{
+  margin-top: 1900px;
+}
+
+
+
+.blocPlaneteS3{
+    width: 1000px;
+  /*height: 1200px;*/
+  margin: 0 auto;
+  position: relative;
+  margin-top: -2500px;
+}
+.planeteS3{
+  width: 1000px;
+  height: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+/*.ebes, .nox, .tintyph, .roack, .vortasgoth, .nune, .husphel, .dyamtirie{
+
+}*/
+#repereFixeSysteme{
+  /*margin-top: 640px;*/
+  position: absolute;
+}
+
+
+#hideEldinn{
+  margin-top: 103px;
+  position: absolute;
+}
+#showEldinn{
+  margin-top: 99px;
+  position: absolute;
+}
+
+/*.blocPlanete1, .blocPlanete2, .blocPlanete3, .blocPlanete4, .blocPlanete5{
+  width: 0px;
+}*/
+
+/*.containerPlanete{*/
+/*  width: 0px; !important*/
+    /*opacity: 0;*/
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#06051e+0,000000+100&0.94+1,0.93+30,0.74+47,0+60,0+100 */
+/*background: -moz-radial-gradient(center, ellipse cover,  rgba(6,5,30,0.94) 0%, rgba(6,5,30,0.94) 1%, rgba(4,4,21,0.93) 30%, rgba(3,3,16,0.74) 47%, rgba(2,2,12,0) 60%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+/*background: -webkit-radial-gradient(center, ellipse cover,  rgba(6,5,30,0.94) 0%,rgba(6,5,30,0.94) 1%,rgba(4,4,21,0.93) 30%,rgba(3,3,16,0.74) 47%,rgba(2,2,12,0) 60%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+/*background: radial-gradient(ellipse at center,  rgba(6,5,30,0.94) 0%,rgba(6,5,30,0.94) 1%,rgba(4,4,21,0.93) 30%,rgba(3,3,16,0.74) 47%,rgba(2,2,12,0) 60%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f006051e', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+/*}*/
+
+.planete{
+  width: 0px;
+  position: absolute;
+  /*display: block;*/
+}
+
+
+
+
+
+.blocPortail{
+  opacity: 0;
+  width: 100%;
+  height: 1000px;
+  /*height: 100%;*/
+  /*min-height: 100%;*/
+  /*margin: 0 auto;*/
+  /*padding-top: -100px;*/
+  /*margin-top: -2000px;*/
+  position: absolute;
+  /*background-image: url(imgIntro/fondPortail.png);*/
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.fondPortail{
+  position: absolute;
+  width: 100%;
+  /*height: 150%;*/
+  margin: 0 auto;
+  /*padding-top: 350px;*/
+  /*background-image: url(imgIntro/fondPortail.png);*/
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: block;
+}
+.containerPortail{
+  width: 1200px;
+  height: 600px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  margin-top: -100%;
+}
+
+#fondPortailImg{
+  width: 100%;
+  /*position: absolute;*/
+  /*margin-top: -1000px;*/
+  /*margin-left: -380px;*/
+  height: 100%;
+}
+
+#fondPortailAnim{
+  width: 90%;
+  height: 90%;
+  /*position: absolute;*/
+  animation: animationBreath ease-in 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: animationBreath ease-in 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: animationBreath ease-in 2s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: animationBreath ease-in 2s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: animationBreath ease-in 2s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+}
+#reperePortailFixe{
+  margin-top: -1500px;
+  position: absolute;
+}
+
+#portail{
+  opacity: 0;
+  /*position: absolute;*/
+  /*width: 600px;*/
+  height: 100%;
+  /*margin: 0 auto;*/
+  /*margin-top: -680px;*/
+  margin-left: -150px;
+/*      -webkit-animation: animationBreath2 5s ease-out infinite normal;
+    animation: animationBreath2 5s ease-out infinite normal;*/
+}
+.blocPortail a{
+  margin-top: -260px;
+  margin-left: 500px;
+  display: block;
+  position: absolute;
+  /*bottom: 425;*/
+  opacity: 0;
+/*        -webkit-animation: animationBreath2 5s ease-out infinite normal;
+    animation: animationBreath2 5s ease-out infinite normal;*/
+}
+#reperePortalFadeIn{
+    margin-top: -500px;
+  position: absolute;
+}
+
+svg{
+  position: absolute;
+}
+/*#repereFluxMonde1{
+  margin-top: 400px;
+  position: absolute;
+}
+#repereFluxMonde2{
+  margin-top: 600px;
+  position: absolute;
+}
+#svgFluxMonde1{
+  /*margin-left: -386px;*/
+/*  margin-left: -104px;
+  margin-top: 162px;
+  overflow: visible;
+  opacity: 0.5;
+}
+#svgfluxMonde2{
+  margin: -570px -313px;
+  transform: rotate(-15deg);
+    opacity: 0.5;
+}
+#svgFluxMonde3{
+  margin:-362px 475px;
+  transform: rotate(30deg);
+    opacity: 0.5;
+}
+#svgFluxMonde4{
+  margin:-619px 180px;
+  transform: rotate(-108deg);
+    opacity: 0.5;
+}
+#svgFluxMonde5{
+  margin:-195px 634px;
+    opacity: 0.5;
+}*/
+
+/*.fluxMonde1-css{
+  animation: fill-rect 4s linear infinite;
+}
+@keyframes fill-rect {
+    to {fill: red;}
+}*/
+/*.containerTerre{*/
+  /*width: 100%;*/
+  /*height: 2000px;*/
+  /*margin-top: -475px;*/
+  /*overflow: hidden;*/
+/*}*/
+/*.terre{
+  width: 300%;
+  height: 100%;
+  border-radius: 50%;
+  margin-left: -570px;*/
+  /*position: relative;*/
+/*}*/
+/*.terre img{*/
+  /*position: absolute;*/
+
+  /*display: block;*/
+/*}*/
+
+/*
+.heeytee{
+  width: 40px;
+  height: 40px;
+  margin: 300px 0px 0px 643px;
+}
+.heeytee img{width: 40px;}
+
+.nune{
+  width: 135px;
+  height: 135px;
+  margin: -40px 0px 0px 670px;
+}
+.nune img{width: 135px;}
+
+.dyamtirie{
+  width: 165px;
+  height: 165px;
+  margin: -90px 0px 0px 540px;
+  /*opacity: 0;*/
+/*}
+.dyamtirie img{width: 165px; }
+
+.naoisis{
+  width: 50px;
+  height: 50px;
+  margin: -40px 0px 0px 655px;
+}
+.naoisis img{width: 50px;}
+
+.mudlafrig{
+  width: 60px;
+  height: 60px;
+  margin: -25px 0px 0px 900px;
+}
+.mudlafrig img{width: 60px;}
+
+.gooss{
+  width: 90px;
+  height: 90px;
+  margin: -93px 0px 0px 573px;
+}
+.gooss img{width: 90px;}
+
+.uzukzh{
+  width: 60px;
+  height: 60px;
+  margin: -30px 0px 0px 750px;
+}
+.uzukzh img{width: 60px;}
+
+.roack{
+  width: 150px;
+  height: 150px;
+  margin: -92px 0px 0px 771px;
+}
+.roack img{width: 150px;}
+
+.ebes{
+  width: 500px;
+  height: 500px;
+  margin: -245px 0px 0px -165px;
+}
+.ebes img{width: 500px;}
+
+.medio{
+  width: 150px;
+  height: 150px;
+  margin: -345px 0px 0px 400px;
+}
+.medio img{width: 150px;}
+
+.nox{
+  width: 140px;
+  height: 140px;
+  margin: -52px 0px 0px -240px;
+}
+.nox img{width: 140px;}
+
+.keks{
+  width: 40px;
+  height: 40px;
+  margin: -189px 0px 0px 892px;
+}
+.keks img{width: 40px;}
+
+.aroll{
+  width: 90px;
+  height: 90px;
+  margin: -45px 0px 0px 914px;
+}
+.aroll img{width: 90px;}
+
+.tam{
+  width: 20px;
+  height: 20px;
+  margin: -45px 0px 0px 992px;
+}
+.tam img{width: 20px;}
+
+.suah{
+  width: 90px;
+  height: 90px;
+  margin: -45px 0px 0px 1000px;
+}
+.suah img{width: 90px;}
+
+.vortasgoth{
+  width: 270px;
+  height: 270px;
+  margin: -84px 0px 0px 640px;
+}
+.vortasgoth img{width: 270px;}
+
+.soth{
+  width: 80px;
+  height: 80px;
+  margin: -215px 0px 0px 1054px;
+}
+.soth img{width: 80px;}
+
+.omian{
+  width: 110px;
+  height: 110px;
+  margin: -15px 0px 0px 400px;
+}
+.omian img{width: 110px;}
+
+.doplis{
+  width: 45px;
+  height: 45px;
+  margin: -41px 0px 0px 396px;
+}
+.doplis img{width: 45px;}
+
+.atus{
+  width: 20px;
+  height: 20px;
+  margin: -13px 0px 0px 426px;
+}
+.atus img{width: 30px;}
+
+.sifh{
+  width: 60px;
+  height: 60px;
+  margin: -130px 0px 0px 1056px;
+}
+.sifh img{width: 60px;}
+
+.jufus{
+  width: 90px;
+  height: 90px;
+  margin: 33px 0px 0px 450px;
+}
+.jufus img{width: 90px;}
+
+.eolia{
+  width: 100px;
+  height: 100px;
+  margin: -57px 0px 0px 393px;
+}
+.eolia img{width: 100px;}
+
+.husphel{
+  width: 230px;
+  height: 230px;
+  margin: -237px 0px 0px 849px;
+}
+.husphel img{
+  width: 230px;
+}
+
+.tintyph{
+  width: 170px;
+  height: 170px;
+  margin: -203px 0px 0px -87px;
+}
+.tintyph img{width: 170px;}
+
+.hriude{
+  width: 80px;
+  height: 80px;
+  margin: -50px 0px 0px 64px;
+}
+.hriude img{width: 80px;}
+
+.paaju{
+  width: 90px;
+  height: 90px;
+  margin: -50px 0px 0px 1008px;
+}
+.paaju img{width: 90px;}
+*/
+
+
+/*.ebes :nth-child(4), .ebes :nth-child(5){
+  width: 550px;
+  height: 500px;
+}*/
+
+
+/*.eldinn{
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  margin: -654px 0px 0px 251px;
+  display: none;
+}
+.eldinn img{
+  position: absolute;
+  width: 50px;
+}*/
+
+#repereEldinnDown{
+  margin-top: -850px;
+  position: absolute;
+}
+
+/*-----------------------------------------*/
+/*    SCENE 3 : ELDINN                         */
+/*-----------------------------------------------------------*/
+.scene3{
+  width: 100%;
+  height: 1200px;
+  /*margin: 0 auto;*/
+}
+#particules{
+  width: 100%;
+  height: 60%;
+  margin-top: 440px;
+  position: absolute;
+}
+
+
+
+
+
+
+
+/*-----------------------------------------*/
+/*    SCENE 4 : HISTOIRE                         */
+/*-----------------------------------------------------------*/
+#repereFluxTxt{
+  margin-top: -230px;
+}
+
+.blocFluxS3{
+  width: 1200px;
+  margin-top: -1200px;
+}
+#flux1S3{
+  width: 561px;
+  height: 1px;
+  background-image: url(imgIntro/flux1S3gg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: block;
+  float: right;
+  margin-right: 368px;
+  margin-top: -81px;
+  /*border-bottom: 1px solid #CCC;*/
+}
+#flux2S3{
+  width: 800px;
+  height: 1px;
+  background-image: url(imgIntro/flux2S3.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+  position: absolute;
+  margin: -200px 0px 0px -700px;
+  /*overflow: hidden;*/
+}
+
+
+.blocHistoire{
+  width: 1000px;
+  margin: 0 auto;
+  z-index: 1;
+}
+#boxHistoire{
+  width: 1000px;
+  height: 515px;
+  /*background-color: #fff;*/
+  /*margin-top: 160px;*/
+  padding: 30px 10px;
+  margin: 0 auto;
+  background-image: url(imgIntro/boxTkt3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform : scale(0);
+  /*transition: transform 0.3s ease-out;*/
+  /*position: relative;*/
+}
+
+#boxHistoire p{
+  font-size: 20px;
+  width: 50%;
+  height: 45%;
+  overflow: hidden;
+  margin: 0 auto;
+  /*padding-top: 160px;*/
+    /*display: block;*/
+}
+#fluxBTG{
+  width: 333px;
+  height: 1px;
+  position: absolute;
+  display: inline-block;
+  background-image: url(imgIntro/fluxBoxTxtG3.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#fluxBTD{
+  width: 253px;
+  height: 1px;
+  position: absolute;
+  display: inline-block;
+  background-image: url(imgIntro/fluxBoxTxtD2.png);
+    background-size: 100%;
+  background-repeat: no-repeat;
+  margin-left: 700px;
+}
+#flecheHaut{
+      width: 3%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 110px;
+    padding-bottom: 20px;
+}
+#flecheBas{
+    width: 3%;
+    margin: 0 auto;
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+
+.bulleTxt{
+  position: absolute;
+  background-color: #C4B1E2;
+  padding: 15px 15px;
+  border-radius: 30px;
+  /*opacity: 0;*/
+}
+#bulle1{
+  margin-top: -500px;
+  margin-left: 100px;
+  opacity: 0;
+}
+#bulle2{
+  margin-top: -400px;
+  margin-left: 150px;
+  opacity: 0;
+}
+#bulle3{
+  margin-top: -350px;
+  margin-left: 380px;
+  opacity: 0;
+}
+#bulle4{
+  margin-top: -200px;
+  margin-left: 300px;
+  opacity: 0;
+}
+#bulle5{
+ margin-top: -184px;
+ margin-left: 900px;
+ font-size: 20px; 
+ font-style: italic; 
+ opacity: 0;
+}
+#bulle6{
+ margin-top: -50px;
+ margin-left: 400px;
+ opacity: 0;  
+}
+#bulle7{
+  margin-top: 0px;
+  margin-left: 450px;
+  opacity: 0;
+}
+#bulle8{
+  
+}
+#bulle9{
+
+}
+/*-----------------------------------------*/
+/*    SCENE 4 : FLUX                         */
+/*-----------------------------------------------------------*/
+.scene4{
+  width: 100%;
+}
+.blocFluxS4{
+  margin-top: -100px;
+}
+.fluxS4{
+  width: 1000px;
+  height: 1500px;
+  margin: 0 auto;
+  z-index: 0;
+}
+.fluxS4 div{
+  position: absolute;
+  height: 1px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#flux1S4{
+  width: 330px;
+  margin-top: -200px;
+  margin-left: -37px;
+  background-image: url(imgIntro/fluxFin1V4.png);
+
+}
+#flux2S4{
+  width: 520px;
+  margin-left: 310px;
+  background-image: url(imgIntro/fluxFin2V3.png);
+}
+#flux3S4{
+  width: 684px;
+  margin-top: -157px;
+  margin-left: 270px;
+  background-image: url(imgIntro/fluxFin3V2.png);
+}
+#flux4S4{
+  width: 1014px;
+  margin-left: 200px;
+  background-image: url(imgIntro/fluxFin4V2.png);
+}
+ 
+
+/*-----------------------------------------*/ 
+/*    SCENE 5 : PORTAIL (fin)                         */
+/*-----------------------------------------------------------*/
+.scene5{
+  width: 100%;
+}
+
+.containerCristal{
+  width: 10%;
+  height: 20%;
+}
+.containerCristal img{
+  position: absolute;
+  width: 10%;
+}
+
+.cristalLux{
+  width: 10%;
+  height: 20%;
+  position: absolute;
+  opacity: 0;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fbffef+0,c1ffe7+99&1+0,0.56+34,0+73 */
+  background: -moz-radial-gradient(center, ellipse cover, rgba(251,255,239,1) 0%, rgba(231,255,236,0.56) 34%, rgba(208,255,233,0) 73%, rgba(193,255,231,0) 99%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(251,255,239,1) 0%,rgba(231,255,236,0.56) 34%,rgba(208,255,233,0) 73%,rgba(193,255,231,0) 99%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, rgba(251,255,239,1) 0%,rgba(231,255,236,0.56) 34%,rgba(208,255,233,0) 73%,rgba(193,255,231,0) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbffef', endColorstr='#00c1ffe7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+#cristal1{
+  margin: 10px 0px 10px 0px;
+}
+
+#cristal2{
+    margin: 260px 0px 0px 1000px;
+}
+
+#cristal3{
+    margin: 45px 0px 0px 123px;
+}
+
+#cristal4{
+    margin: -140px 0px 0px 800px;
+}
+
+/*#cristal5{
+  position: absolute;
+  right: 1200;
+  bottom: 830;
+
+}*/
+
+#repereCristal1{
+    margin-top: 850px;
+  position: absolute;
+}
+#repereCristal2{
+    margin-top: 950px;
+  position: absolute;
+}
+#repereCristal3{
+    margin-top: 1250px;
+  position: absolute;
+}
+#repereCristal4{
+    margin-top: 1500px;
+  position: absolute;
+}
+
+/*-----------------------------------------*/
+/*   ANIMATIONS                      */
+/*-----------------------------------------------------------*/
+
+
+@keyframes animationBreath{
+  0% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+  50% {opacity:0.63; transform:  scaleX(1.02) scaleY(1.02) ; }
+  100% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+}
+
+@-moz-keyframes animationBreath{
+  0% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+  50% {opacity:0.63; transform:  scaleX(1.02) scaleY(1.02) ; }
+  100% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+}
+
+@-webkit-keyframes animationBreath {
+  0% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+  50% {opacity:0.63; transform:  scaleX(1.02) scaleY(1.02) ; }
+  100% { opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+}
+
+@-o-keyframes animationBreath {
+  0% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+  50% { opacity:0.63; transform:  scaleX(1.02) scaleY(1.02) ; }
+  100% { opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+}
+
+@-ms-keyframes animationBreath {
+  0% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+  50% {opacity:0.63; transform:  scaleX(1.02) scaleY(1.02) ; }
+  100% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+}
+
+
+
+@keyframes animationBreath2{
+  0% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+  50% {opacity:0.63; transform:  scaleX(1.04) scaleY(1.04) ; }
+  100% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+}
+
+@-moz-keyframes animationBreath2{
+  0% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+  50% {opacity:0.63; transform:  scaleX(1.04) scaleY(1.04) ; }
+  100% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+}
+
+@-webkit-keyframes animationBreath2 {
+  0% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+  50% {opacity:0.63; transform:  scaleX(1.04) scaleY(1.04) ; }
+  100% { opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+}
+
+@-o-keyframes animationBreath2 {
+  0% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+  50% { opacity:0.63; transform:  scaleX(1.04) scaleY(1.04) ; }
+  100% { opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+}
+
+@-ms-keyframes animationBreath2 {
+  0% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+  50% {opacity:0.63; transform:  scaleX(1.04) scaleY(1.04) ; }
+  100% {opacity:1; transform:  scaleX(1.00) scaleY(1.00) ; }
+}
+
+/*@keyframes animationRotateD{ 100% {transform:rotate(360deg);} }
+@-moz-keyframes animationRotateD { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes animationRotateD { 100% { -webkit-transform: rotate(360deg); } }
+
+@keyframes animationRotateG{ 100% {transform:rotate(-360deg);} }
+@-moz-keyframes animationRotateG { 100% { -moz-transform: rotate(-360deg); } }
+@-webkit-keyframes animationRotateG { 100% { -webkit-transform: rotate(-360deg); } }*/
+
+
+
+@keyframes bounceIn{
+  0%{opacity: 0; transform: scale(0.3) translate3d(0,0,0);}
+  50%{opacity: 0.9; transform: scale(1.1);}
+  80%{opacity: 1; transform: scale(0.89);}
+  100%{opacity: 1; transform: scale(1) translate3d(0,0,0);}
+}
+
+@keyframes fadeIn{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+@keyframes fadeOut{
+  0%{opacity: 1;}
+  100%{opacity: 0;}
+}
+
+
+  @-webkit-keyframes flash {
+    0%, 50%, 100% {
+    opacity: 1;
+    }
+    25%, 75% {
+    opacity: 0;
+    }
+  }
+  
+  @keyframes flash {
+  0%, 50%, 100% {
+  opacity: 1;
+  }
+  
+  25%, 75% {
+  opacity: 0.8;
+  }
+  } 
