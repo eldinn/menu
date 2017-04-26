@@ -1,4 +1,4 @@
-<!DOCTYPE HTML />  
+<!DOCTYPE HTML />   
 <html>
 <head>
 	<meta charset="utf-8" />
@@ -127,17 +127,48 @@ F   A       A  CCCC EEEEE BBBBB     OO       OO    K   K   ::
 
 <body>
 <div id="oLoading"><div><!-- <p>Vous voyagez hors de la matière ...</p> --><img src="img/loading5.gif" alt="Vous voyagez hors de la matière..." /></div></div>
-<audio src="menu-keosz-lowDown.mp3" controls loop="-1" autoplay></audio>
+
+<audio id="audioPlayer" src="menu-keosz-lowDown.mp3" controls loop="-1" autoplay></audio>
+
+      <!-- <button class="control" >Pause</button> -->
+      <img id="controlSon" src="img/iconSonActive.png" onclick="play('audioPlayer', this)">
+
 
     <div id="blocMenu">
 
 
         <div id="blocUIg">
             <div class="containerOnglets">
-              <img id="imgMenu1" src="img/onglet1.png" >
-              <img id="imgMenu2" src="img/onglet3.png" >
-              <img id="imgMenu3" src="img/onglet2.png" >
-              <img id="imgMenu4" src="img/onglet4.png" >
+                <div id="onglet1" >
+                    <img class="image2Onglet" src="img/onglet1T.png" >
+                    <a href="http://www.webfiction-eldinn.com" target="_blank"><img class="image1Onglet" id="imgMenu1" src="img/onglet1Hover.png" ></a>
+                     <div class="tooltip">
+                        <p class="tooltiptxt">L'encyclopédie de l'univers</p>
+                    </div>
+                </div>
+
+                <div id="onglet2" >
+                    <img class="image2Onglet" src="img/onglet2T.png" >
+                    <a href="" target="_blank"><img class="image1Onglet" id="imgMenu2" src="img/onglet2Hover.png" ></a>
+                     <div class="tooltip">
+                        <p class="tooltiptxt">Plan du site</p>
+                    </div>
+                </div>
+                <div id="onglet3">
+                    <img class="image2Onglet" src="img/onglet3T.png" >
+                    <a href="http://www.facebook.com/M.Boreatti" target="_blank"><img class="image1Onglet" id="imgMenu3" src="img/onglet3Hover.png" ></a>
+                     <div class="tooltip">
+                        <p class="tooltiptxt">Page Facebook</p>
+                    </div>
+                </div>
+
+                <div id="onglet4" >
+                    <img class="image2Onglet" src="img/onglet4T.png" >
+                    <a href="http://www.webfiction-eldinn.com/contact" target="_blank"><img class="image1Onglet" id="imgMenu4" src="img/onglet4Hover.png" ></a>
+                     <div class="tooltip">
+                        <p class="tooltiptxt">Contact</p>
+                    </div>
+                </div>
             </div>
             <img id="UIg" src="img/UIg.png">
             <div class="containerMenu">
@@ -198,7 +229,7 @@ F   A       A  CCCC EEEEE BBBBB     OO       OO    K   K   ::
                 <div class="containerElemt" id="partie4">
                     <img class="image2"  src="img/portailAnim.gif" alt=""> 
                     <img class="image1"  src="img/portail2.png" alt="">
-                        <div class="tooltip">
+                    <div class="tooltip">
                         <p class="tooltiptxt">Partie 4 :</br> Les Glorieuses</p>
                     </div>
                 </div>
@@ -226,17 +257,20 @@ F   A       A  CCCC EEEEE BBBBB     OO       OO    K   K   ::
 
             <div id="blocTexte">
                 <img id="flecheHaut" src="img/flecheHaut.png">
-                <p id="texte">Nec minus feminae quoque calamitatum participes fuere similium. nam ex hoc quoque sexu peremptae sunt originis altae conplures, adulteriorum flagitiis obnoxiae vel stuprorum. inter quas notiores fuere Claritas et Flaviana, quarum altera cum duceretur ad mortem, indumento, quo vestita erat, abrepto, ne velemen quidem secreto membrorum sufficiens retinere permissa est. ideoque carnifex nefas admisisse convictus inmane, vivus exustus est.
+                <p id="texte"><span style="font-weight:bold;">Bienvenue sur Eyjar i Eldinn. </span>
+                <br><br>J’espère que le voyage par le portail ne vous a pas trop chamboulé. Ça peut être assez éprouvant les premières fois. A moins que vous ne soyez déjà un habitué. 
+                <br>Comme vous avez pu le remarquer en arrivant ici, vous allez devoir interagir souvent avec votre environnement pour vous déplacer dans le récit. 
+
                 </br></br>
-                Ultima Syriarum est Palaestina per intervalla magna protenta, cultis abundans terris et nitidis et civitates habens quasdam egregias, nullam nulli cedentem sed sibi vicissim velut ad perpendiculum aemulas: Caesaream, quam ad honorem Octaviani principis exaedificavit Herodes, et Eleutheropolim et Neapolim itidemque Ascalonem Gazam aevo superiore exstructas.
+                A partir de ce point de vue, vous avez accès aux cinq grandes époques de l'histoire. Elles peuvent être lues dans n'importe quel ordre, cela n'a pas d'incidence sur la compréhension. Chaque époque est elle-même découpée en chapitres qui eux doivent être lus dans l'ordre. 
                 </br></br>
-                Cum autem commodis intervallata temporibus convivia longa et noxia coeperint apparari vel distributio sollemnium sportularum, anxia deliberatione tractatur an exceptis his quibus vicissitudo debetur, peregrinum invitari conveniet, et si digesto plene consilio id placuerit fieri, is adhibetur qui pro domibus excubat aurigarum aut artem tesserariam profitetur aut secretiora quaedam se nosse confingit.</p>
+                Visitez l'endroit qui vous fait envie ou <a href="http://localhost/eldinnWorld-V2/public_html">revoyez l'intro</a>.</p>
                  <img id="flecheBas" src="img/flecheBas.png">
             </div>
 
 
 
-            <img id="UId" src="img/UId2.png">
+            <img id="UId" src="img/uiD2.png">
              
             <div id="containerVues">
                 <div class="containerVue1">
