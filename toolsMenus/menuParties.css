@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Bahiana|Dorsa|Orbitron|The+Girl+Next+Door');
+@import url('https://fonts.googleapis.com/css?family=Abel|Exo|Exo+2|Khand|Work+Sans|Yanone+Kaffeesatz');
+
+*{ 
+  margin:0;
+  padding:0;
+}
+
+html,body{
+  width: 100%;
+  height:100%;
+  background-color: #1D010F;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+
+/*LOAD*/
+@-webkit-keyframes changes {
+0% { background-color: #7a7a9b;}
+10% { background-color: #ae97b1;}
+20% {background-color: #6e6c6c;}
+30% { background-color: #485858;}
+40% { background-color: #7a9b85;}
+50% {background-color: #b7b1a8;}
+60% { background-color: #999b7a;}
+70% { background-color: #705b5a;}
+80% { background-color: #584858;}
+90% {background-color: #4d5151;}
+100% { background-color: #7a7a9b;}
+}
+@keyframes changes {
+0% {background-color: #7a7a9b;}
+10% { background-color: #ae97b1;}
+20% { background-color: #6e6c6c;}
+30% {background-color: #485858;}
+40% {background-color: #7a9b85;}
+50% { background-color: #b7b1a8;}
+60% {background-color: #999b7a;}
+70% { background-color: #705b5a;}
+80% {background-color: #584858;}
+90% {background-color: #4d5151;}
+100% {background-color: #7a7a9b;}
+}
+#oLoading:hover {
+-webkit-animation-name: changes;
+-webkit-animation-duration: 10s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+animation-name: changes;
+animation-duration: 10s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+
+#oLoading{
+  position:fixed;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  z-index:100;
+  background:#ae97b1;
+}
+
+#oLoading div{
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:255px;
+  height:242px;
+  margin-left:-148px;
+  margin-top:-107px;
+
+  color:#fff;
+  font-family:Arial;
+  text-align:center;
+}
+
+
+#oLoading div img{
+  width: 90%;
+  position:relative;
+  vertical-align:middle;
+  top:-2px;
+  margin:0 3px 0 0;
+}
+
+
+
+/*MENU CHAPITRES */
+.menuChapitres{
+  position: relative;
+  /*display: inline-block;*/
+  margin: 0 auto;
+  width: 85%;
+  height: 80%; 
+  background-image: url('../toolsMenus/bgMenus2.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#95f9db+0,ffffff+100&0.5+0,0.5+100 */
+  /*background: -moz-linear-gradient(top, rgba(149,249,219,0.6) 0%, rgba(149,249,219,0.6) 100%); /* FF3.6-16 */
+  /*background: -webkit-linear-gradient(top, rgba(149,249,219,0.6) 0%,rgba(149,249,219,0.6) 100%); /* Chrome10-26,Safari6.1-6 */
+  /*background: linear-gradient(to bottom, rgba(149,249,219,0.6) 0%,rgba(149,249,219,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8095f9db', endColorstr='#80ffffff',GradientType=0 ); /* IE6-9 */
+  border-radius: 10px;
+}
+
+.containChapitres{
+  padding: 1%;
+}
+
+h1{
+  font-family: 'Bahiana', cursive;
+  font-weight: normal;
+  /*font-size: 50px;*/
+  text-align: center;
+  padding: 2%;
+}
+h2{
+  font-size: 1.3em;
+  padding: 7%;
+  /*font-family: 'Abel', sans-serif;*/
+  /*font-family: 'Work Sans', sans-serif;*/
+  font-family: 'Exo', sans-serif;
+  /*font-family: 'Khand', sans-serif;*/
+}
+.aPropos{
+  position: absolute;
+  font-style: italic;
+  margin-top: -1.4%;
+  margin-left: 7%;
+  font-size: 20px;
+  font-family: 'The Girl Next Door', cursive;
+}
+.desc{
+  width: 97%;
+  padding: 1%;
+  background: -moz-linear-gradient(top, rgba(229,255,240,0.2) 0%, rgba(229,255,240,0.2) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(229,255,240,0.2) 0%,rgba(229,255,240,0.2) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(229,255,240,0.2) 0%,rgba(229,255,240,0.2) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80e5fff0', endColorstr='#80e5fff0',GradientType=0 ); /* IE6-9 */
+  border-radius: 10px;
+}
+.navChapitres{
+  height: 50%;
+  margin-top: 1%;
+  overflow: auto;
+}
+.navChapitres ul{
+  list-style: none;
+}
+.navChapitres li{
+  display: inline-block;
+  width: 15%;
+  height: 60%;
+  text-align: center;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5fff0+0,e5fff0+100&0.5+0,0.5+100 */
+  background: -moz-linear-gradient(top, rgba(229,255,240,0.2) 0%, rgba(229,255,240,0.2) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(229,255,240,0.2) 0%,rgba(229,255,240,0.2) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(229,255,240,0.2) 0%,rgba(229,255,240,0.2) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80e5fff0', endColorstr='#80e5fff0',GradientType=0 ); /* IE6-9 */
+  border-radius: 10px;
+  padding: 20px 10px;
+  margin: 20px 10px;
+  -webkit-transition: opacity 0.5s;/* Safari */
+  transition: opacity 0.5s;
+}
+.navChapitres li img{
+  width: 60%;
+  height: 60%;
+  border-radius: 10px;
+  opacity: 0.6;
+  border: 1.5px solid #15D28B;
+/*  -webkit-transition: opacity 0.5s; Safari 
+    transition: opacity 0.5s;*/
+}
+.navChapitres a{
+/*    width: 200px;
+   height: 200px;
+     padding: 20px 10px;*/
+    text-decoration: none;
+    /*color: #13C90D;*/
+    color: #00BF8E;
+}
+.navChapitres li:hover{
+  background: -moz-linear-gradient(top, rgba(229,255,240,0.5) 0%, rgba(190,255,220,0.5) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(229,255,240,0.5) 0%,rgba(190,255,220,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(229,255,240,0.5) 0%,rgba(190,255,220,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80e5fff0', endColorstr='#80e5fff0',GradientType=0 ); /* IE6-9 */
+  border-radius: 10px;
+  padding: 20px 10px;
+}
+.navChapitres li:hover img{
+  opacity: 1;
+  border-color: #AFFFAC;
+}
+.navChapitres a:hover{
+  /*color: #BEFFDF;*/
+  color: #3BD636;
+}
+
+
+.navContact{
+  position: absolute;
+  padding: 1%;
+  bottom: 0;
+  right: 0;
+}
+.navContact ul{
+  list-style: none;
+}
+.navContact li a{
+    text-decoration: none;
+    color: #27A57B;
+}
+.navContact li{
+    display: inline-block;
+    bottom: 0;
+    background: -moz-linear-gradient(top, rgba(229,255,240,0.5) 0%, rgba(229,255,240,0.5) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(229,255,240,0.5) 0%,rgba(229,255,240,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(229,255,240,0.5) 0%,rgba(229,255,240,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80e5fff0', endColorstr='#80e5fff0',GradientType=0 ); /* IE6-9 */
+    border-radius: 5px;
+    padding: 3px 5px;
+     margin: 5px 5px;
+}
+
+
+.navContact li:hover{
+  background: -moz-linear-gradient(top, rgba(229,255,240,0.8) 0%, rgba(229,255,240,0.8) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(229,255,240,0.8) 0%,rgba(229,255,240,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(229,255,240,0.8) 0%,rgba(229,255,240,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80e5fff0', endColorstr='#80e5fff0',GradientType=0 ); /* IE6-9 */
+}
+.navContact li:hover a{
+  color: #3BED8B;
+}
+
+/*SON*/
+#controlSon{
+  position: absolute;
+  width: 80px;
+  padding: 3px;
+  right: 0;
+  z-index: 1;
+}
+audio{
+  display: none;
+}
+
+/*BOUTON REPLI MENU*/
+
+.containerButonBottom{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 16%;
+}
+
+.containerOneButton{
+  width: 15%;
+  height: 95%;
+  display: inline-flex;
+}
+.containerOneButton:nth-child(2){
+  width: 21%;
+}
+
+.containerElement {
+position:relative; 
+width: 100%;
+cursor:pointer;
+display: inline-block;
+}
+.containerElement img {
+position:absolute; 
+width: 100%;
+height: 100%;
+top:0; 
+left:0; 
+-webkit-transition: opacity 0s ease; 
+transition: opacity 0s ease;
+}
+
+
+
+
+#btnRepli{
+  /*position: absolute;*/
+  /*bottom: 10;*/
+  /*left: 10;*/
+/*  width: 15%;
+  height: 98%;*/
+  /*background-color: #FFAC3C;*/
+/*  background-image: url("../imgMenus/butonShowMenu.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;*/
+  /*border-radius: 10px;*/
+  cursor:pointer;
+}
+#btnRepli p{
+  width: 100%;
+  /*height: 100%;*/
+  /*margin: 25% 11%;*/
+  /*padding: 5% 15%;*/
+  /*padding-top:10%;*/
+}
+
+#btnretour{
+  /*position: absolute;*/
+  /*bottom: 10;*/
+  /*left: 250;*/
+/*  width: 15%;
+  height: 98%;*/
+  /*background-color: #FFAC3C;
+  border-radius: 10px;*/
+  /*background-image: url("../imgMenus/butonShowMenu.png");*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: 100% 100%;*/
+  cursor:pointer;
+}
+ #rpP{
+  position: absolute;
+  padding: 2%;
+  width: 12%;
+  height: 40%;
+  z-index: 1;
+ }
+.containerButonBottom p{
+  position: absolute;
+  font-family: 'Bahiana', cursive;
+  font-size: 20px;
+  font-weight: normal;
+  bottom: 5%;
+  left: 2.5%;
+  padding: 2.5% 3%;
+  color: #a3b7e3;
+  text-align: center;
+  z-index: 1;
+}
+.containerButonBottom a{
+  position: absolute;
+  font-family: 'Bahiana', cursive;
+  font-weight: normal;
+  font-size: 20px;
+  /*width: 10%;*/
+/*  margin-top: 3%;
+  margin-left: 4%;*/
+  bottom: 5%;
+  left: 17.5%;
+  padding: 2.5% 5%;
+  text-decoration: none;
+  color: #a3b7e3;
+  text-align: center;
+  z-index: 1;
+}
+
+
+#rpP:hover ~ #btnRepli #rpImg {
+opacity:0;
+}
+.containerButonBottom a:hover ~ #btnretour #rtImg {
+opacity:0;
+}
+
+#rpP:hover{
+  color: #ffbfe3;
+  cursor: pointer;
+}
+.containerButonBottom a:hover{
+  color: #ffbfe3;
+}
+
+
+
+
+
+@media screen and (min-width: 2000px) {
+  .aPropos{
+  margin-top: -0.9%;
+  }
+  .containerOneButton:nth-child(2){
+  width: 18%;
+  }
+  .containerButonBottom p{
+  font-size: 30px;
+  padding: 3% 4%;
+  }
+  .containerButonBottom a{
+  font-size: 30px;
+  padding: 3% 4%;
+  }
+}
+
+
+@media screen and (max-width: 1280px) and (max-height: 1024px) {
+  .navChapitres li{
+    width: 25%;
+  }
+  .containerButonBottom p{
+    bottom: 19%;
+  }
+  .containerButonBottom a{
+    bottom: 19%;
+  }
+}
+@media screen and (max-aspect-ratio : 4/3){
+  .navChapitres li{
+    width: 25%;
+  }
+  .containerButonBottom p{
+    bottom: 19%;
+  }
+  .containerButonBottom a{
+    bottom: 19%;
+  }
+
+}
+
