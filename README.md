@@ -18,9 +18,7 @@ http://www.webfiction-eldinn.com/
 
 
 # A propos
-Pour l'instant, une seule personne est l'initiative de ce projet (écriture, illustration, développement...). 
-Ma spécialité étant l'illustration, je code un peu comme je l'entends^^ Il y aura surement quelques trucs louches, mais du moment que ça marche ;) Manquant d’expérience, je suis loin d'être pro de l'optimisation ! 
-Je ne suis pas adepte des "bonnes-pratiques-du-web", des "on-fait-comme-ça-depuis-toujours" et autres mentalités du genre (qui au passage me font un peu peur) que j'ai pu observer sur des forums ou en parlant avec d'autres développeurs...
+Pour l'instant, une seule personne est l'initiative de ce projet (écriture, illustration, développement...), ma spécialité étant l'illustration.
 
 # English
 (coming soon)
